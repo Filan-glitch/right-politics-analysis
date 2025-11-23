@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interaktiver Leitfaden: Rechte Symbolik</title>
+    <title>Interaktiver Leitfaden: Rechte Symbolik & Codes</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Chosen Palette: Sober Neutral (Slate, Gray, White) -->
-    <!-- Application Structure Plan: Die SPA nutzt eine obere Navigationsleiste, um thematische Kategorien (z.B. Zahlen, Symbole, Kleidung) zu filtern. Ein Klick auf eine Kategorie blendet per JavaScript alle anderen Inhaltsblöcke aus und zeigt nur den relevanten an. Dies wurde gewählt, da der "Bericht" eine Sammlung von diskreten Informationseinheiten ist. Diese Struktur ermöglicht es dem Benutzer, die Informationen gezielt zu explorieren, anstatt einen langen, linearen Text zu lesen, was die Benutzerfreundlichkeit und das Auffinden von Informationen massiv verbessert. Der 'Disclaimer' wird beim Start prominent angezeigt. -->
-    <!-- Visualization & Content Choices: Da der Berichtsinhalt qualitativ ist (Beschreibungen von Symbolen), werden keine Diagramme (Chart.js) benötigt. Die "Visualisierung" erfolgt durch ein kartenbasiertes Layout (HTML/CSS/Tailwind Grid), um jede Informationseinheit (Symbol, Code, Marke) klar zu strukturieren. Jede Karte enthält das Symbol/den Code, seine Bedeutung und eine kontextualisierende Beschreibung (Ziel: Informieren/Organisieren). Für visuelle Symbole (Runen, etc.), bei denen eine reine Textbeschreibung unzureichend wäre, wird der [Image of X]-Tag verwendet, um die visuelle Erkennung zu lehren, wie von den Systemanweisungen erlaubt. Interaktivität wird durch die JS-basierte Navigation (Klick -> Inhaltsfilterung) realisiert. Dies ist effektiver als eine statische Liste. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8fafc;
         }
         .content-section {
             display: none;
-        }
-        .emoji-large {
-            font-size: 3rem;
         }
         nav ul li {
             transition: all 0.2s ease-in-out;
@@ -36,49 +29,47 @@
         .animate-fade-in {
             animation: fadeIn 0.6s ease-out forwards;
         }
-        /* Prevent background scroll while landing overlay is visible */
         body.landing-open {
             overflow: hidden;
+        }
+        .rune-text {
+            font-family: 'Segoe UI Symbol', 'Noto Sans Runic', sans-serif;
         }
     </style>
 </head>
 <body class="text-slate-800 min-h-screen flex flex-col landing-open">
 
-    <!-- LANDING PAGE (adapted from reference.html; three boxes removed) -->
     <section id="landing-page" class="fixed inset-0 z-[100] bg-slate-900 text-white flex flex-col justify-center items-center p-6 text-center transition-opacity duration-500">
-        <div class="max-w-3xl">
+        <div class="max-w-4xl">
             <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
-                Versteckte Codes.<br><span class="text-indigo-400">Erkennen & Verstehen.</span>
+                Die Architektur des Hasses.<br><span class="text-indigo-400">Codes erkennen. Metapolitik verstehen.</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-                Rechtsextreme Symbolik wandelt sich. Was früher Stiefel und Bomberjacke waren, sind heute Emojis, TikTok-Sounds und subtile Codes in Kommentarspalten.
-                Dieser interaktive Leitfaden hilft Eltern, Lehrkräften und Jugendlichen, die Signale zu erkennen.
+            <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Rechtsextremismus hat eine semiotische Metamorphose durchlaufen. Statt Springerstiefeln sehen wir heute Emojis, "Algospeak" und popkulturelle Referenzen.
+                Dieser Leitfaden dekonstruiert die Chiffren, Runen und digitalen Dog Whistles, mit denen extremistische Akteure versuchen, den vorpolitischen Raum zu besetzen.
             </p>
 
             <button onclick="enterApp()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-indigo-500/50 transition transform hover:-translate-y-1">
-                Leitfaden starten
+                Analyse starten
             </button>
-            <p class="mt-6 text-xs text-slate-500 uppercase tracking-widest">Ein Bildungsprojekt gegen Extremismus</p>
+            <p class="mt-6 text-xs text-slate-500 uppercase tracking-widest">Ein Bildungsprojekt basierend auf aktuellen Monitoring-Berichten</p>
         </div>
     </section>
 
     <header class="bg-slate-800 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col sm:flex-row justify-between items-center py-4">
-                <h1 class="text-2xl font-bold text-center sm:text-left">
-                    Leitfaden: Versteckte rechte Symbolik
+            <div class="flex flex-col xl:flex-row justify-between items-center py-4">
+                <h1 class="text-xl font-bold text-center sm:text-left mb-4 xl:mb-0">
+                    Leitfaden: Versteckte Codes
                 </h1>
-                <nav class="mt-4 sm:mt-0">
-                    <ul class="flex flex-wrap justify-center sm:justify-end space-x-1 sm:space-x-2">
-                        <!-- Konzept nav item removed -->
-                        <li data-target="section-zahlen" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Zahlen & Codes</li>
-                        <li data-target="section-symbole" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Symbole & Farben</li>
-                        <li data-target="section-kleidung" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Kleidung</li>
-                        <li data-target="section-gesten" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Gesten</li>
-                        <li data-target="section-emoji" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Emoji</li>
-                        <li data-target="section-musik" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Musik & Audio</li>
-                        <!-- removed Online-Kultur nav item -->
-                        <!-- removed Konklusion & Handeln nav item -->
+                <nav>
+                    <ul class="flex flex-wrap justify-center xl:justify-end gap-2 text-xs sm:text-sm">
+                        <li data-target="section-zahlen" class="px-3 py-2 rounded-md font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Zahlen & Text</li>
+                        <li data-target="section-symbole" class="px-3 py-2 rounded-md font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Symbole & Runen</li>
+                        <li data-target="section-digital" class="px-3 py-2 rounded-md font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Digital & Emoji</li>
+                        <li data-target="section-kleidung" class="px-3 py-2 rounded-md font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Mode & Lifestyle</li>
+                        <li data-target="section-musik" class="px-3 py-2 rounded-md font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Musik & Ästhetik</li>
+                        <li data-target="section-recht" class="px-3 py-2 rounded-md font-medium text-red-300 hover:bg-red-900 hover:text-white cursor-pointer border border-red-900">§ Rechtlicher Rahmen</li>
                     </ul>
                 </nav>
             </div>
@@ -87,258 +78,348 @@
 
     <main class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-7xl flex-1 overflow-auto pb-12">
 
-        <section id="section-disclaimer" class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-bold mb-4">Wichtiger Hinweis</h2>
-            <p class="mb-3">Diese Anwendung dient ausschließlich zu Bildungs- und Aufklärungszwecken. Die hier dargestellten Symbole, Codes und Begriffe werden von rechtsextremen und verfassungsfeindlichen Gruppen verwendet. Die Darstellung dieser Inhalte stellt keine Befürwortung oder Verbreitung dieser Ideologien dar, sondern soll helfen, diese zu erkennen und zu verstehen.</p>
-            <p class="font-semibold">Kontext ist entscheidend: Viele Symbole (z.B. Runen, bestimmte Gesten oder Memes) haben einen legitimen, nicht-extremistischen Ursprung. Ihre extremistische Bedeutung hängt stark vom Kontext, dem Träger und der Situation ab. Ein einzelnes Symbol ist selten ein eindeutiger Beweis.</p>
-        </section>
-
-        <!-- section-konzept removed; landing overlay inserted above -->
-
-        <!-- Visuell merged into Symbole & Farben section -->
-
-        <section id="section-emoji" class="content-section">
-            <h2 class="text-3xl font-bold mb-6">Emoji-Symbolik & Dog Whistles</h2>
-            <p class="text-lg text-slate-600 mb-4">Emojis und kleine Symbole werden gezielt eingesetzt, um Botschaften zu verschleiern oder Gruppenzugehörigkeit zu signalisieren.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">👌</h3>
-                    <p class="text-gray-600">Wurde als "White Power"-Zeichen umgedeutet (W + P). Entstand als Troll-Kampagne, wurde aber realweltlich von Extremisten übernommen.</p>
+        <section id="section-disclaimer" class="bg-yellow-50 border-l-4 border-yellow-500 text-yellow-900 p-6 rounded-lg shadow-sm mb-8">
+            <div class="flex items-start">
+                <div class="flex-shrink-0">
+                    <svg class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">⚡⚡</h3>
-                    <p class="text-gray-600">Steht symbolisch für die SS-Sieg-Rune; wird als Umgehung direkter Code-Symbole verwendet.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">💙</h3>
-                    <p class="text-gray-600">Kennzeichen für AfD-Unterstützung in bestimmten Online-Kontexten; häufig in koordinierten Aktionen verwendet.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">🤡 / "Honk Honk"</h3>
-                    <p class="text-gray-600">Clown- und "Honkler"-Meme, das eine nihilistische rechte Weltanschauung ausdrückt.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">🥛</h3>
-                    <p class="text-gray-600">Milch als symbolische Andeutung für vermeintliche "weiße" Überlegenheit (Laktosetoleranz als dog whistle).</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">🐸</h3>
-                    <p class="text-gray-600">Pepe der Frosch: von harmlos zu einem von rechten Gruppen vereinnahmten Meme.</p>
+                <div class="ml-4">
+                    <h3 class="text-lg font-bold">Wichtiger Hinweis zur Plausiblen Abstreitbarkeit</h3>
+                    <p class="mt-2 text-sm leading-relaxed">
+                        Rechtsextreme Akteure nutzen gezielt Strategien der „Plausiblen Abstreitbarkeit“ (Plausible Deniability). Symbole und Emojis werden so gewählt, dass sie mehrdeutig sind. Ein „Clown“-Emoji kann harmlos sein oder eine nihilistische rechtsextreme Weltanschauung ausdrücken. Die Einordnung erfordert immer eine <strong>Kontextanalyse</strong> (Begleitsymbole, Profilbeschreibung, Kommentare).
+                        <br><br>
+                        <em>Warnung: Diese Seite zeigt verfassungsfeindliche Symbole zu Zwecken der staatsbürgerlichen Aufklärung (§ 86 Abs. 3 StGB).</em>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Numerische codes merged into Zahlen section -->
+        <section id="section-digital" class="content-section">
+            <h2 class="text-3xl font-bold mb-2">Digitale Dog Whistles & Algospeak</h2>
+            <p class="text-lg text-slate-600 mb-8">Um Content-Filter und Sperren (Bans) zu umgehen, hat sich eine Sprache entwickelt, die Harmlosigkeit als Waffe nutzt („Algospeak“).</p>
+            
+            <h3 class="text-xl font-bold text-slate-700 mb-4 border-b pb-2">Das Emoji-Codebuch</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="emoji-large">🥷</span>
+                        <span class="text-xs font-bold bg-slate-100 px-2 py-1 rounded">Code</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Der Ninja</h4>
+                    <p class="text-sm text-gray-600">Visueller und phonetischer Platzhalter für das N-Wort. Ermöglicht rassistische Beleidigungen unter dem Radar der Moderations-KI. Framt Rassismus als „edgy“ Jugendhumor.</p>
+                </div>
 
-        <!-- Auditive Indoktrination merged into Musik section -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="emoji-large">⚡⚡</span>
+                        <span class="text-xs font-bold bg-slate-100 px-2 py-1 rounded">Visuell</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Doppel-Blitz</h4>
+                    <p class="text-sm text-gray-600">Einzeln stehen Blitze für Energie, doppelt sind sie ein fast eindeutiger Ersatz für die verbotenen SS-Runen. Häufig in User-Bios zu finden.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="emoji-large">🥛</span>
+                        <span class="text-xs font-bold bg-slate-100 px-2 py-1 rounded">Symbolik</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Glas Milch</h4>
+                    <p class="text-sm text-gray-600">„White Purity“. Basiert auf der rassistischen Nutzung der genetischen Verteilung von Laktosetoleranz als Beweis für „weiße Überlegenheit“ (4chan-Meme).</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="emoji-large">🤡</span>
+                        <span class="text-xs font-bold bg-slate-100 px-2 py-1 rounded">Meme</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Clown World / Honk Honk</h4>
+                    <p class="text-sm text-gray-600">Symbolisiert eine nihilistische Sicht, dass die diverse Demokratie ein absurder „Zirkus“ sei. „Honk Honk“ steht oft chiffriert für „HH“ (Heil Hitler).</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="emoji-large">💙</span>
+                        <span class="text-xs font-bold bg-slate-100 px-2 py-1 rounded">Politik</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Blaues Herz</h4>
+                    <p class="text-sm text-gray-600">Erkennungszeichen für AfD-Sympathisanten. Kritisch wird es in Kombination (z.B. 💙⚡), wo die Brücke vom Parlamentarismus zum Neonazismus geschlagen wird.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="emoji-large">🐑</span>
+                        <span class="text-xs font-bold bg-slate-100 px-2 py-1 rounded">Verschwörung</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Das Schaf</h4>
+                    <p class="text-sm text-gray-600">Abwertung der Mehrheitsgesellschaft als „Schlafschafe“, die blind den „Lügen“ (Regierung/Medien) folgen. Zentral im QAnon- und Querdenken-Kontext.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="emoji-large">🧃</span>
+                        <span class="text-xs font-bold bg-slate-100 px-2 py-1 rounded">Antisemitismus</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Apfelsaft / Juice</h4>
+                    <p class="text-sm text-gray-600">Phonetischer Code: Das englische Wort "Juice" klingt wie "Jews". Emoji-Kombinationen wie „Gas the 🧃“ sind Chiffren für antisemitische Gewaltaufrufe.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="emoji-large">🦅</span>
+                        <span class="text-xs font-bold bg-slate-100 px-2 py-1 rounded">Nationalismus</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Der Adler</h4>
+                    <p class="text-sm text-gray-600">Dient im Emoji-Kontext oft als Ersatzsymbol für den deutschen Reichsadler. Signalisiert nationalistische Gesinnung oder imperiale Nostalgie, ohne verbotene Symbole zu zeigen.</p>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-700 mb-4 border-b pb-2">Algospeak & Begriffe</h3>
+            <div class="bg-slate-100 p-6 rounded-lg">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="font-bold text-red-600 w-32 flex-shrink-0">„Jogger“</span>
+                        <span class="text-gray-700">Code für das N-Wort (Bezug auf den Mordfall Ahmaud Arbery). Wird genutzt, um Mordfantasien zu äußern, ohne Schlagworte zu triggern.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-red-600 w-32 flex-shrink-0">„Goldstücke“</span>
+                        <span class="text-gray-700">Zynische Umdeutung eines eigentlich positiven Begriffs (ähnlich „Fachkräfte“), um über kriminelle Migranten zu berichten. KI stuft das Wort oft als positiv ein.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="font-bold text-red-600 w-32 flex-shrink-0">„H1tler / Arier“</span>
+                        <span class="text-gray-700">Leetspeak oder Nutzung von Akzenten, um Textfilter zu täuschen.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <section id="section-zahlen" class="content-section">
-            <h2 class="text-3xl font-bold mb-6">Zahlencodes</h2>
-            <p class="text-lg text-slate-600 mb-8">Zahlencodes werden als Chiffren für Buchstaben des Alphabets verwendet, um verbotene Slogans oder Namen zu verschleiern. Sie sind in der Szene weit verbreitet und finden sich auf Kleidung, Tattoos und in Online-Profilen.</p>
+            <h2 class="text-3xl font-bold mb-6">Zahlencodes & Akronyme</h2>
+            <p class="text-lg text-slate-600 mb-8">Codes dienen als „Shibboleths“: Sie markieren die Zugehörigkeit zur In-Group und schließen Außenstehende aus.</p>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">18</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Adolf Hitler</h4>
-                    <p class="text-gray-600">Steht für den ersten ('A') und achten ('H') Buchstaben im Alphabet. Dient als gängige Chiffre für Adolf Hitler.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">88</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Heil Hitler</h4>
-                    <p class="text-gray-600">Steht für den achten ('H') Buchstaben im Alphabet. "88" wird als Ersatz für den in Deutschland verbotenen Hitlergruß verwendet.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">14</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Die 14 Worte (Fourteen Words)</h4>
-                    <p class="text-gray-600">Ein Glaubensbekenntnis des US-amerikanischen Rechtsterroristen David Lane: "We must secure the existence of our people and a future for white children." (Wir müssen die Existenz unseres Volkes und eine Zukunft für weiße Kinder sichern.)</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">18 / 88</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">A.H. / H.H.</p>
+                    <p class="text-gray-600 text-sm">Die Klassiker. 1=A (Adolf), 8=H (Hitler). 88 steht für den verbotenen Gruß. Oft getarnt als Preis „14,88 €“ oder Trikotnummer.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">444</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Deutschland den Deutschen (DdD)</h4>
-                    <p class="text-gray-600">Steht für den vierten ('D') Buchstaben im Alphabet. Eine gängige ausländerfeindliche Parole.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">14</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Fourteen Words</p>
+                    <p class="text-gray-600 text-sm">Glaubenssatz des US-Terroristen David Lane zur Sicherung der „weißen Rasse“. Oft als <strong>1488</strong> kombiniert.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">28</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Blood & Honour</h4>
-                    <p class="text-gray-600">Steht für den zweiten ('B') und achten ('H') Buchstaben. Der Name eines internationalen, in Deutschland verbotenen Neonazi-Netzwerks.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-red-100 border-2">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">444</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Deutschland den Deutschen</p>
+                    <p class="text-gray-600 text-sm">DdD (4. Buchstabe). Aktuell massive Renaissance durch den <strong>„L'amour Toujours“-Skandal</strong> (Sylt-Effekt), wo der Code visuell oder akustisch verbreitet wird.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">19/8</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Sieg Heil</h4>
-                    <p class="text-gray-600">Steht für den neunzehnten ('S') und achten ('H') Buchstaben im Alphabet. Eine Chiffre für den verbotenen Gruß "Sieg Heil".</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">1161</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Anti-Antifa-Aktion</h4>
-                    <p class="text-gray-600">Wird als Code für "Anti-Antifa-Aktion" verwendet. Tritt in Nutzernamen, Graffiti oder Gruppensymbolik auf und signalisiert feindselige Haltung gegenüber Antifa oder linken Gruppen.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">13/52</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Bio-Rassismus</p>
+                    <p class="text-gray-600 text-sm">Auch 13/90. Bezieht sich auf verdrehte US-Kriminalstatistiken, um rassistische Vorurteile als „Fakten“ zu tarnen. Beliebt in Kommentarspalten.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">111</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Anti-Antifa (Variante)</h4>
-                    <p class="text-gray-600">Eine Kurzform/Verschlüsselung, die ebenfalls für "Anti-Antifa-Aktion" oder "AAA" stehen kann. Wird ähnlich wie 1161 zur Kennzeichnung militant orientierter Gruppen oder Aktionen genutzt.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">19/8</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Sieg Heil</p>
+                    <p class="text-gray-600 text-sm">Steht für den neunzehnten ('S') und achten ('H') Buchstaben im Alphabet. Eine Chiffre für den verbotenen Gruß "Sieg Heil".</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">168:1</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Terrorverherrlichung (Referenz)</h4>
-                    <p class="text-gray-600">Wird genutzt, um sich auf Anschläge oder deren Opferzahlen zu beziehen (z.B. Oklahoma City) und dient in extremistischen Kreisen der Verherrlichung von Gewalt.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">1161 / 111</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Anti-Antifaschistische-Aktion</p>
+                    <p class="text-gray-600 text-sm">Wird als Code für "Anti-Antifa-Aktion" verwendet. Tritt in Nutzernamen, Graffiti oder Gruppensymbolik auf und signalisiert feindselige Haltung gegenüber Antifa oder linken Gruppen.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">109</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Antisemitische Mythen</h4>
-                    <p class="text-gray-600">Eine Zahl, die in antisemitischen Verschwörungsmythen auftaucht (z. B. falsche Behauptungen über Vertreibungen). Sie dient zur Verbreitung und Kodierung antisemitischer Narrative.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-red-100 border-2">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">271k</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Holocaust-Leugnung</p>
+                    <p class="text-gray-600 text-sm">Zynischer Code, der behauptet, es seien „nur“ 271.000 Juden ermordet worden (basierend auf gefälschten Statistiken). Dient der Verharmlosung des Holocaust (§ 130 StGB).</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <h3 class="text-4xl font-bold text-slate-700 mb-3">6MWE</h3>
-                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Holocaust-Verherrlichung</h4>
-                    <p class="text-gray-600">Abkürzung für "6 Million Wasn't Enough" — eine offen antisemitische, verabscheuenswerte Verherrlichung des Holocaust. Solche Codes werden als Erkennungszeichen und Provokation genutzt.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">6MWE</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Holocaust-Verherrlichung</p>
+                    <p class="text-gray-600 text-sm">Abkürzung für "6 Million Wasn't Enough" — eine offen antisemitische, verabscheuenswerte Verherrlichung des Holocaust. Solche Codes werden als Erkennungszeichen und Provokation genutzt.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">RaHoWa</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Racial Holy War</p>
+                    <p class="text-gray-600 text-sm">Prophezeiung eines endzeitlichen Rassenkriegs. Signalisiert extrem hohe Gewaltbereitschaft.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-4xl font-black text-slate-800 mb-2">ZOG</h3>
+                    <p class="text-sm font-semibold text-indigo-600 mb-2">Zionist Occupied Government</p>
+                    <p class="text-gray-600 text-sm">Antisemitischer Verschwörungsmythos. Legitimiert Terror gegen den Staat, da dieser als von Juden „besetzt“ angesehen wird.</p>
                 </div>
             </div>
         </section>
 
         <section id="section-symbole" class="content-section">
-            <h2 class="text-3xl font-bold mb-6">Symbole & Farben</h2>
-            <p class="text-lg text-slate-600 mb-8">Viele Symbole werden aus historischen oder mythologischen Kontexten entlehnt und oft umgedeutet. Farben und Bildsprache dienen zusätzlich als unterschwellige Erkennungszeichen. Kontext entscheidet über Bedeutung.</p>
+            <h2 class="text-3xl font-bold mb-6">Symbole, Runen & Flaggen</h2>
+            <p class="text-lg text-slate-600 mb-8">Rechtsextremismus nutzt heidnische Symbolik, um eine mythische „ewige“ Identität zu konstruieren und Verbote zu umgehen.</p>
 
-            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
-                <h3 class="text-xl font-semibold mb-2">Farben</h3>
-                <p class="text-gray-600 mb-2"><strong>Blau:</strong> Häufiges Identifikationsmerkmal für AfD-nahe oder neue rechte Gruppen. Das blaue Herz (💙) erscheint oft in organisierten Kommentar-Aktionen.</p>
-                <p class="text-gray-600 mb-2"><strong>Schwarz-Weiß-Rot:</strong> Ablehnung der demokratischen Farben; wird als nostalgische Reminiszenz an imperiale/rechtsextreme Ideologien verwendet.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="assets/BlackSun.png" alt="Schwarze Sonne" class="h-48 object-contain mb-4" />
+                    <h3 class="text-2xl font-bold text-slate-800">Schwarze Sonne</h3>
+                    <p class="text-gray-600 mt-2 text-sm text-left w-full"><strong>Hintergrund:</strong> Keine antike Rune, sondern ein SS-Kunstprodukt (Bodenmosaik in der Wewelsburg). Dient als Ersatz für das Hakenkreuz und symbolisiert die Verbindung zur SS-Elite.<br><strong>Status:</strong> In Deutschland legal, aber eindeutiges Erkennungszeichen.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="assets/Wolfsangel.png" alt="Wolfsangel" class="h-48 object-contain mb-4" />
+                    <h3 class="text-2xl font-bold text-slate-800">Wolfsangel</h3>
+                    <p class="text-gray-600 mt-2 text-sm text-left w-full"><strong>Hintergrund:</strong> Ursprünglich eine Wolfsfalle. Verwendet von SS-Divisionen („Das Reich“) und heute vom Asow-Regiment. <br><strong>Status:</strong> Als Kennzeichen der „Jungen Front“ (JF) oder im NS-Kontext verboten. In historischen Stadtwappen erlaubt (Doppelstrategie).</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="assets/OdalRune.png" alt="Odal Rune" class="h-48 object-contain mb-4" />
+                    <h3 class="text-2xl font-bold text-slate-800">Odal-Rune (Othala)</h3>
+                    <p class="text-gray-600 mt-2 text-sm text-left w-full"><strong>Hintergrund:</strong> Steht für „Blut und Boden“. <br><strong>Status:</strong> Mit kleinen „Füßchen“ (Serifen) ist sie das Kennzeichen der verbotenen „Wiking-Jugend“ und <strong>strafbar</strong>. Ohne Füßchen oft als Grauzonen-Symbol genutzt.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="assets/CelticCross.png" alt="Keltenkreuz" class="h-48 object-contain mb-4" />
+                    <h3 class="text-2xl font-bold text-slate-800">Keltenkreuz</h3>
+                    <p class="text-gray-600 mt-2 text-sm text-left w-full"><strong>Hintergrund:</strong> Symbol für „White Power“ weltweit.<br><strong>Status:</strong> In der stilisierten Form (Balken ragen nicht über den Kreis) als Symbol der verbotenen VSBD/PdA <strong>strafbar</strong>. Öffentliches Zeigen wird fast immer verfolgt.</p>
+                </div>
             </div>
 
-            <!-- removed Bildideen block as requested -->
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Schwarze Sonne</h3>
-                    <div class="flex-grow flex items-center justify-center my-4">
-                        <img src="assets/BlackSun.png" alt="Schwarze Sonne" class="max-h-40 object-contain" />
+            <div class="mt-8 bg-slate-100 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Weitere relevante Runen & Flaggen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <span class="text-3xl rune-text font-bold block mb-2">ᛏ</span>
+                        <h4 class="font-bold">Tiwaz (Tyr-Rune)</h4>
+                        <p class="text-sm text-gray-600">Kampf-Rune. Symbolisiert Tatkraft und Opferbereitschaft. Beliebt im rechtsextremen Kampfsport und bei der Marke „Thor Steinar“.</p>
                     </div>
-                    <p class="text-gray-600 mt-4">Ein aus der Wewelsburg bekanntes Mosaik, das aus zwölf gespiegelten Sig-Runen oder drei übereinandergelegten Hakenkreuzen besteht. Es ist ein zentrales esoterisches Symbol in der rechtsextremen Szene.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Wolfsangel</h3>
-                    <div class="flex-grow flex items-center justify-center my-4">
-                        <img src="assets/Wolfsangel.png" alt="Wolfsangel" class="max-h-40 object-contain" />
+                    <div class="p-4 bg-white rounded shadow">
+                        <span class="text-3xl rune-text font-bold block mb-2">ᛉ / ᛦ</span>
+                        <h4 class="font-bold">Algiz & Yr (Lebens- & Todesrune)</h4>
+                        <p class="text-sm text-gray-600">Ersetzten im NS-Kult das Sternchen (*) und das Kreuz (†) in Anzeigen. Symbolisieren völkischen Ahnenkult.</p>
                     </div>
-                    <p class="text-gray-600 mt-4">Ein historisches Symbol (ursprünglich ein Jagdgerät), das von verschiedenen NS-Einheiten (z.B. SS-Division "Das Reich") verwendet wurde. In stilisierter Form wird es von modernen Neonazi-Gruppen genutzt.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Odal-Rune</h3>
-                    <div class="flex-grow flex items-center justify-center my-4">
-                        <img src="assets/OdalRune.png" alt="Odal Rune" class="max-h-40 object-contain" />
+                    <div class="p-4 bg-white rounded shadow col-span-1 md:col-span-2">
+                        <h4 class="font-bold">Reichskriegsflagge & Inverted Flag</h4>
+                        <p class="text-sm text-gray-600">Die Reichskriegsflagge (1867–1921) ist nicht verboten, kann aber polizeilich als Ordnungswidrigkeit eingezogen werden (Einschüchterungswirkung). Die umgedrehte Deutschlandfahne (Gold oben) symbolisiert die Ablehnung der BRD als „Unrechtsstaat“.</p>
                     </div>
-                    <p class="text-gray-600 mt-4">Diese Rune (o) stand im germanischen Kontext für Erbbesitz und Adel. Sie wurde von NS-Organisationen ("Blut und Boden"-Ideologie) verwendet. Eine Variante mit "Füßen" ist heute ein gängiges Erkennungszeichen.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Keltenkreuz</h3>
-                    <div class="flex-grow flex items-center justify-center my-4">
-                        <img src="assets/CelticCross.png" alt="Keltenkreuz" class="max-h-40 object-contain" />
-                    </div>
-                    <p class="text-gray-600 mt-4">Ein ursprünglich christliches Symbol aus dem irisch-keltischen Raum. Es wurde von der "White Power"-Bewegung als Hakenkreuz-Ersatz adaptiert und ist in Deutschland in Verbindung mit rassistischen Gruppen verboten.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Triskele</h3>
-                    <div class="flex-grow flex items-center justify-center my-4">
-                        <img src="assets/Triskele.png" alt="Triskele" class="max-h-40 object-contain" />
-                    </div>
-                    <p class="text-gray-600 mt-4">Ähnlich der Schwarzen Sonne, ein Symbol aus drei Armen oder Beinen. Eine Variante, die einem Hakenkreuz ähnelt, wurde von einer südafrikanischen Neonazi-Gruppe (AWB) verwendet und ist in der Szene als Ersatzsymbol verbreitet.</p>
                 </div>
             </div>
         </section>
 
         <section id="section-kleidung" class="content-section">
-            <h2 class="text-3xl font-bold mb-6">Kleidungsmarken & Codes</h2>
-            <p class="text-lg text-slate-600 mb-8">Kleidung dient als wichtiges Erkennungsmerkmal. Einige Marken wurden gezielt für die rechte Szene gegründet, während andere (sog. "Nazihobbymarken") von ihr vereinnahmt wurden. Oft geht es um subtile Botschaften.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
+            <h2 class="text-3xl font-bold mb-6">Kleidung, Lifestyle & „Nipster“</h2>
+            <p class="text-lg text-slate-600 mb-8">Rechtsextremismus ist heute ein Lifestyle. Neben klassischen „Nazihobbymarken“ gibt es Eigenmarken, die Gewinne in die Szene spülen, und ästhetische Bewegungen wie „Tradwives“.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Thor Steinar</h3>
-                    <p class="text-gray-600 mb-4">Eine der bekanntesten Marken, die sich gezielt an die rechtsextreme Szene richtet. Sie verwendet oft nordische Mythologie und Runen-ähnliche Logos. Der Vertrieb ist an vielen Orten (z.B. Landtage, Fußballstadien) verboten.</p>
+                    <h3 class="text-xl font-bold text-slate-700">Thor Steinar</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Der Klassiker. Nordische Mythologie und koloniale Anspielungen. In vielen Stadien und Parlamenten verboten.</p>
                 </div>
-
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Consdaple</h3>
-                    <p class="text-gray-600 mb-4">Eine Marke, die beliebt ist, weil sie die Buchstabenfolge <span class="font-bold text-red-600">NSDAP</span> im Namen enthält. Das Tragen der Kleidung wird oft so arrangiert (z.B. unter einer offenen Jacke), dass nur dieser Teil sichtbar ist.</p>
+                    <h3 class="text-xl font-bold text-slate-700">Erik and Sons</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Abspaltung von Thor Steinar. Bedient den härteren Kern der Szene mit expliziterer Bildsprache.</p>
                 </div>
-
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Lonsdale</h3>
-                    <p class="text-gray-600 mb-4"><span class="font-semibold">Kontext ist hier alles.</span> Die Marke (Boxsport) wurde in der Skinhead-Szene populär, weil sie die Buchstaben <span class="font-bold text-red-600">NSDA</span> enthält (sichtbar unter offener Jacke). Die Firma Lonsdale selbst positioniert sich seit Jahren massiv gegen Rassismus, wird aber teils immer noch als Code getragen.</p>
+                    <h3 class="text-xl font-bold text-slate-700">Ansgar Aryan</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Name ist Programm („Ansgar Arier“). Aggressive Motive, offenes Bekenntnis, Finanzierung der Szene.</p>
                 </div>
-
                 <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Fred Perry</h3>
-                    <p class="text-gray-600 mb-4">Ähnlich wie Lonsdale. Das Poloshirt mit Lorbeerkranz wurde zu einer Art Uniform der "Alt-Right"-Bewegung in den USA (z.B. Proud Boys). Die Marke hat sich wiederholt davon distanziert und den Verkauf bestimmter Farbkombinationen in den USA eingestellt.</p>
+                    <h3 class="text-xl font-bold text-slate-700">White Rex</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Russische Kampfsportmarke (Gründung 14.8. -> 14/88). Vernetzt Neonazis international über MMA-Turniere.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-slate-700">Consdaple</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Eine Marke, die beliebt ist, weil sie die Buchstabenfolge <span class="font-bold text-red-600">NSDAP</span> im Namen enthält. Das Tragen der Kleidung wird oft so arrangiert (z.B. unter einer offenen Jacke), dass nur dieser Teil sichtbar ist.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-slate-700">Lonsdale</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Kontext ist hier alles. Die Marke (Boxsport) wurde in der Skinhead-Szene populär, weil sie die Buchstaben <span class="font-bold text-red-600">NSDA</span> enthält (sichtbar unter offener Jacke). Die Firma Lonsdale selbst positioniert sich seit Jahren massiv gegen Rassismus, wird aber teils immer noch als Code getragen.</p>
                 </div>
             </div>
-        </section>
-        
-        <!-- Konklusion & Handeln section removed per user request -->
 
-        <section id="section-gesten" class="content-section">
-            <h2 class="text-3xl font-bold mb-6">Gesten & Handzeichen</h2>
-            <p class="text-lg text-slate-600 mb-8">Neben dem offen verbotenen Hitlergruß existieren diverse Ersatzgesten, die als Erkennungszeichen dienen. Einige wurden gezielt als mehrdeutige "Troll"-Gesten popularisiert.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Kühnengruß / Widerstandsgruß</h3>
-                    <p class="text-gray-600 mb-4">Ein Gruß mit ausgestrecktem Arm, bei dem Daumen, Zeige- und Mittelfinger abgespreizt werden (ähnelt einem 'W' für Widerstand). Er wurde vom Neonazi Michael Kühnen als Ersatz für den Hitlergruß eingeführt und ist in Deutschland strafbar.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">"OK"-Handzeichen (White Power)</h3>
-                    <p class="text-gray-600 mb-4">Ein klassisches Beispiel für Mehrdeutigkeit. Das international harmlose "OK"-Zeichen wurde durch eine 4chan-Kampagne als "White Power"-Symbol (W+P) umgedeutet. Obwohl als Scherz gestartet, wurde es von der "Alt-Right"-Bewegung und Attentätern (z.B. Christchurch) aufgegriffen und wird nun ernsthaft als Erkennungszeichen genutzt.</p>
-                </div>
+            <div class="bg-pink-50 p-6 rounded-lg border border-pink-200">
+                <h3 class="text-2xl font-bold text-pink-900 mb-2">Trend: Tradwives & Cottagecore</h3>
+                <p class="text-pink-800 text-sm">
+                    Auf Instagram/TikTok inszenieren sich Frauen in 50er-Jahre-Kleidung (#TradLife). Was harmlos wirkt (Backen, Gärtnern), transportiert oft antifeministische Ideologie und die „Great Replacement“-Theorie: Die weiße Frau als Gebärmaschine zur Rettung der Rasse.
+                </p>
             </div>
         </section>
 
         <section id="section-musik" class="content-section">
-            <h2 class="text-3xl font-bold mb-6">Musik & Subkulturen</h2>
-            <p class="text-lg text-slate-600 mb-8">Musik ist ein zentrales Medium zur Rekrutierung, Finanzierung und Gemeinschaftsbildung in der rechten Szene. Die Texte verbreiten Ideologie, Geschichtsrevisionismus und Feindbilder.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <h2 class="text-3xl font-bold mb-6">Musik: Von Rechtsrock zu Phonk</h2>
+            <p class="text-lg text-slate-600 mb-6">Musik ist das wichtigste Rekrutierungstool. Während Rechtsrock (NSHC) die Basis bildet, dringen neue Genres in den Mainstream.</p>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Rechtsrock / NS-Hardcore (NSHC)</h3>
-                    <p class="text-gray-600 mb-4">Sammelbegriffe für diverse Musikgenres (Rock, Metal, Hardcore-Punk), deren Texte offen nationalsozialistisch, rassistisch, antisemitisch und gewaltverherrlichend sind. Viele Bands und Tonträger sind in Deutschland indiziert oder verboten.</p>
+            <div class="space-y-6">
+                <div class="bg-gradient-to-r from-indigo-50 to-white p-6 rounded-lg border-l-4 border-indigo-600 shadow-md">
+                    <h3 class="text-xl font-bold text-indigo-900">Der „Sylt-Effekt“: L'amour Toujours</h3>
+                    <p class="text-gray-700 mt-2">
+                        Der Eurodance-Hit von Gigi D'Agostino wurde 2024 massiv gekapert. Zur Melodie wird die Parole „Deutschland den Deutschen, Ausländer raus“ gegrölt.
+                        <br><strong>Die Dog Whistle:</strong> Es reicht heute, ein Video zu posten, in dem man stumm zum Lied nickt oder „Ihr kennt den Text“ schreibt. Das Lied wurde „akustisch besetzt“.
+                    </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Neofolk / Dark Folk</h3>
-                    <p class="text-gray-600 mb-4">Einige Akteure in diesem Genre spielen bewusst mit totalitärer Ästhetik, heidnischen und völkischen Themen. Während nicht das gesamte Genre rechts ist, gibt es erhebliche Überschneidungen und Akteure mit direkten Verbindungen zur "Neuen Rechten". Die Abgrenzung ist oft schwierig.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Phonk & #SaveEurope</h3>
+                        <p class="text-sm text-gray-600">Aggressive Hip-Hop-Beats („Phonk“) unterlegt mit Videos von Wehrmachtssoldaten oder antiken Statuen. Propagiert einen gewaltsamen Kampf zur Verteidigung des „Abendlandes“ (Hypermaskulinität).</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Fashwave</h3>
+                        <p class="text-sm text-gray-600">Synthie-Pop + Neon-Ästhetik der 80er. Inszeniert den Faschismus als saubere, futuristische Utopie („Retro-Futurismus“) und entkoppelt ihn von der historischen Gewalt. Zielt auf Gamer und IT-Affine.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">AI Covers</h3>
+                        <p class="text-sm text-gray-600">KI-generierte Stimmen von Hitler oder Goebbels, die Kochrezepte oder Memes vorlesen. Ziel: Entdämonisierung und Gewöhnungseffekte.</p>
+                    </div>
                 </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">Meme-Musik & Grauzone</h3>
-                    <p class="text-gray-600 mb-2">Beispiele: Instrumentale oder out-of-context Songclips (z.B. populäre Dance- oder Club-Songs) werden wiederholend verwendet, um eine Stimmung zu erzeugen, die später mit Ideologie besetzt wird.</p>
-                    <p class="text-gray-600">Lieder wie <em>"L'Amour Toujours"</em> können instrumental als Code genutzt werden; klassische Marschlieder oder Wehrmachtslieder erscheinen in remixten Kontexten.</p>
-                </div>
-
-                <!-- removed duplicate Rechtsrock block (kept main Rechtsrock/NSHC entry above) -->
             </div>
         </section>
 
-        <!-- removed Online-Kultur section per request -->
-        
+        <section id="section-recht" class="content-section">
+            <h2 class="text-3xl font-bold mb-6 text-red-700">Rechtlicher Rahmen (§ 86a StGB)</h2>
+            <p class="text-lg text-slate-600 mb-8">Wissen schützt. Nicht alles ist verboten, aber vieles ist strafbar.</p>
+
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Kategorie</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Beispiele</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Rechtsfolge</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-red-600">Absolutes Verbot</td>
+                            <td class="px-6 py-4">Hakenkreuz, SS-Sig-Runen, Totenkopf (SS-Variante), Keltenkreuz (VSBD-Stil)</td>
+                            <td class="px-6 py-4">Strafbar nach § 86a StGB (Verwenden von Kennzeichen verfassungswidriger Organisationen).</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-orange-600">Verbotene Organisationen</td>
+                            <td class="px-6 py-4">Blood & Honour (Triskele), Combat 18 (Drache), Compact Magazin Logo (seit 2024), Wiking-Jugend (Odal-Rune mit Füßen)</td>
+                            <td class="px-6 py-4">Kennzeichen werden mit dem Vereinsverbot illegal (§ 9 VereinsG).</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-600">Grauzone / Ordnungswidrigkeit</td>
+                            <td class="px-6 py-4">Reichskriegsflagge, Schwarze Sonne, Zahlen (18, 88 - kontextabhängig)</td>
+                            <td class="px-6 py-4">Meist straffrei. Polizei kann Symbole zur Gefahrenabwehr sicherstellen (Ordnungswidrigkeit).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-4 text-xs text-gray-500">Hinweis: Diese Übersicht ersetzt keine Rechtsberatung. Stand: 2025.</p>
+        </section>
+
     </main>
 
     <footer class="bg-slate-800 text-slate-300 py-6 mt-auto">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm" style="padding-bottom: env(safe-area-inset-bottom, 0px);">
-            <p>&copy; 2025 Interaktiver Leitfaden. Dieser Inhalt dient ausschließlich zu Aufklärungszwecken.</p>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 Interaktiver Leitfaden. Inhalt dient der staatsbürgerlichen Aufklärung.</p>
         </div>
     </footer>
 
@@ -349,11 +430,11 @@
             const disclaimerSection = document.getElementById('section-disclaimer');
 
             function showSection(targetId) {
-                // hide the disclaimer whenever navigating to a content section
-                const disclaimer = disclaimerSection;
-                if (disclaimer) disclaimer.style.display = 'none';
+                // Disclaimer logic: Show detailed disclaimer only on landing or specific pages if needed.
+                // For now, we hide the big disclaimer block when navigating to specific content to save space,
+                // or keep it if it's relevant. Let's hide it to focus on content.
+                if (disclaimerSection) disclaimerSection.style.display = 'none';
 
-                // hide all sections and remove animation
                 contentSections.forEach(section => {
                     section.style.display = 'none';
                     section.classList.remove('animate-fade-in');
@@ -366,7 +447,6 @@
                 const targetSection = document.getElementById(targetId);
                 if (targetSection) {
                     targetSection.style.display = 'block';
-                    // add a subtle entrance animation (defined in CSS)
                     targetSection.classList.add('animate-fade-in');
                 }
 
@@ -383,28 +463,24 @@
                 });
             });
 
-            // Expose an enterApp function to the landing button. This hides the landing overlay
-            // and shows the first content section with the existing showSection animation.
             window.enterApp = () => {
                 const landing = document.getElementById('landing-page');
                 if (landing) landing.style.opacity = '0';
-                // re-enable background scrolling
                 document.body.classList.remove('landing-open');
                 setTimeout(() => {
                     if (landing) landing.style.display = 'none';
                     if (navLinks.length > 0) {
-                        const firstTarget = navLinks[0].getAttribute('data-target');
-                        showSection(firstTarget);
+                        // Start with numbers section
+                        showSection('section-zahlen');
+                        // Show disclaimer once at the top
+                        if (disclaimerSection) disclaimerSection.style.display = 'block';
                     }
-                    if (disclaimerSection) disclaimerSection.style.display = 'block';
                 }, 500);
             };
 
-            if (contentSections.length > 0) {
-                const firstTarget = navLinks[0].getAttribute('data-target');
-                showSection(firstTarget);
-                // keep the disclaimer visible on initial load
-                if (disclaimerSection) disclaimerSection.style.display = 'block';
+            // Init state if landing page was bypassed (dev mode)
+            if (document.getElementById('landing-page').style.display === 'none') {
+                showSection('section-zahlen');
             }
         });
     </script>
