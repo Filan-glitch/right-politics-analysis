@@ -13,21 +13,54 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* slate-50 */
+            background-color: #f8fafc;
         }
         .content-section {
             display: none;
         }
+        .emoji-large {
+            font-size: 3rem;
+        }
         nav ul li {
-            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
         nav ul li.active {
-            background-color: #f8fafc; /* slate-50 */
-            color: #1e293b; /* slate-800 */
+            background-color: #f8fafc;
+            color: #1e293b;
+            border-bottom: 3px solid #6366f1; /* Indigo accent */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        /* Prevent background scroll while landing overlay is visible */
+        body.landing-open {
+            overflow: hidden;
         }
     </style>
 </head>
-<body class="text-slate-800">
+<body class="text-slate-800 min-h-screen flex flex-col landing-open">
+
+    <!-- LANDING PAGE (adapted from reference.html; three boxes removed) -->
+    <section id="landing-page" class="fixed inset-0 z-[100] bg-slate-900 text-white flex flex-col justify-center items-center p-6 text-center transition-opacity duration-500">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
+                Versteckte Codes.<br><span class="text-indigo-400">Erkennen & Verstehen.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
+                Rechtsextreme Symbolik wandelt sich. Was früher Stiefel und Bomberjacke waren, sind heute Emojis, TikTok-Sounds und subtile Codes in Kommentarspalten.
+                Dieser interaktive Leitfaden hilft Eltern, Lehrkräften und Jugendlichen, die Signale zu erkennen.
+            </p>
+
+            <button onclick="enterApp()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-indigo-500/50 transition transform hover:-translate-y-1">
+                Leitfaden starten
+            </button>
+            <p class="mt-6 text-xs text-slate-500 uppercase tracking-widest">Ein Bildungsprojekt gegen Extremismus</p>
+        </div>
+    </section>
 
     <header class="bg-slate-800 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,25 +70,67 @@
                 </h1>
                 <nav class="mt-4 sm:mt-0">
                     <ul class="flex flex-wrap justify-center sm:justify-end space-x-1 sm:space-x-2">
-                        <li data-target="section-zahlen" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Zahlen</li>
-                        <li data-target="section-symbole" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Runen & Symbole</li>
+                        <!-- Konzept nav item removed -->
+                        <li data-target="section-zahlen" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Zahlen & Codes</li>
+                        <li data-target="section-symbole" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Symbole & Farben</li>
                         <li data-target="section-kleidung" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Kleidung</li>
                         <li data-target="section-gesten" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Gesten</li>
-                        <li data-target="section-musik" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Musik</li>
-                        <li data-target="section-online" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Online-Kultur</li>
+                        <li data-target="section-emoji" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Emoji</li>
+                        <li data-target="section-musik" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white cursor-pointer">Musik & Audio</li>
+                        <!-- removed Online-Kultur nav item -->
+                        <!-- removed Konklusion & Handeln nav item -->
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <main class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-7xl">
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-7xl flex-1 overflow-auto pb-12">
 
         <section id="section-disclaimer" class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-6 rounded-lg shadow-md mb-8">
             <h2 class="text-2xl font-bold mb-4">Wichtiger Hinweis</h2>
             <p class="mb-3">Diese Anwendung dient ausschließlich zu Bildungs- und Aufklärungszwecken. Die hier dargestellten Symbole, Codes und Begriffe werden von rechtsextremen und verfassungsfeindlichen Gruppen verwendet. Die Darstellung dieser Inhalte stellt keine Befürwortung oder Verbreitung dieser Ideologien dar, sondern soll helfen, diese zu erkennen und zu verstehen.</p>
             <p class="font-semibold">Kontext ist entscheidend: Viele Symbole (z.B. Runen, bestimmte Gesten oder Memes) haben einen legitimen, nicht-extremistischen Ursprung. Ihre extremistische Bedeutung hängt stark vom Kontext, dem Träger und der Situation ab. Ein einzelnes Symbol ist selten ein eindeutiger Beweis.</p>
         </section>
+
+        <!-- section-konzept removed; landing overlay inserted above -->
+
+        <!-- Visuell merged into Symbole & Farben section -->
+
+        <section id="section-emoji" class="content-section">
+            <h2 class="text-3xl font-bold mb-6">Emoji-Symbolik & Dog Whistles</h2>
+            <p class="text-lg text-slate-600 mb-4">Emojis und kleine Symbole werden gezielt eingesetzt, um Botschaften zu verschleiern oder Gruppenzugehörigkeit zu signalisieren.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">👌</h3>
+                    <p class="text-gray-600">Wurde als "White Power"-Zeichen umgedeutet (W + P). Entstand als Troll-Kampagne, wurde aber realweltlich von Extremisten übernommen.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">⚡⚡</h3>
+                    <p class="text-gray-600">Steht symbolisch für die SS-Sieg-Rune; wird als Umgehung direkter Code-Symbole verwendet.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">💙</h3>
+                    <p class="text-gray-600">Kennzeichen für AfD-Unterstützung in bestimmten Online-Kontexten; häufig in koordinierten Aktionen verwendet.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">🤡 / "Honk Honk"</h3>
+                    <p class="text-gray-600">Clown- und "Honkler"-Meme, das eine nihilistische rechte Weltanschauung ausdrückt.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">🥛</h3>
+                    <p class="text-gray-600">Milch als symbolische Andeutung für vermeintliche "weiße" Überlegenheit (Laktosetoleranz als dog whistle).</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">🐸</h3>
+                    <p class="text-gray-600">Pepe der Frosch: von harmlos zu einem von rechten Gruppen vereinnahmten Meme.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Numerische codes merged into Zahlen section -->
+
+        <!-- Auditive Indoktrination merged into Musik section -->
 
         <section id="section-zahlen" class="content-section">
             <h2 class="text-3xl font-bold mb-6">Zahlencodes</h2>
@@ -97,12 +172,51 @@
                     <h4 class="text-xl font-semibold text-gray-700 mb-3">Sieg Heil</h4>
                     <p class="text-gray-600">Steht für den neunzehnten ('S') und achten ('H') Buchstaben im Alphabet. Eine Chiffre für den verbotenen Gruß "Sieg Heil".</p>
                 </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-4xl font-bold text-slate-700 mb-3">1161</h3>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Anti-Antifa-Aktion</h4>
+                    <p class="text-gray-600">Wird als Code für "Anti-Antifa-Aktion" verwendet. Tritt in Nutzernamen, Graffiti oder Gruppensymbolik auf und signalisiert feindselige Haltung gegenüber Antifa oder linken Gruppen.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-4xl font-bold text-slate-700 mb-3">111</h3>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Anti-Antifa (Variante)</h4>
+                    <p class="text-gray-600">Eine Kurzform/Verschlüsselung, die ebenfalls für "Anti-Antifa-Aktion" oder "AAA" stehen kann. Wird ähnlich wie 1161 zur Kennzeichnung militant orientierter Gruppen oder Aktionen genutzt.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-4xl font-bold text-slate-700 mb-3">168:1</h3>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Terrorverherrlichung (Referenz)</h4>
+                    <p class="text-gray-600">Wird genutzt, um sich auf Anschläge oder deren Opferzahlen zu beziehen (z.B. Oklahoma City) und dient in extremistischen Kreisen der Verherrlichung von Gewalt.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-4xl font-bold text-slate-700 mb-3">109</h3>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Antisemitische Mythen</h4>
+                    <p class="text-gray-600">Eine Zahl, die in antisemitischen Verschwörungsmythen auftaucht (z. B. falsche Behauptungen über Vertreibungen). Sie dient zur Verbreitung und Kodierung antisemitischer Narrative.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-4xl font-bold text-slate-700 mb-3">6MWE</h3>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Holocaust-Verherrlichung</h4>
+                    <p class="text-gray-600">Abkürzung für "6 Million Wasn't Enough" — eine offen antisemitische, verabscheuenswerte Verherrlichung des Holocaust. Solche Codes werden als Erkennungszeichen und Provokation genutzt.</p>
+                </div>
             </div>
         </section>
 
         <section id="section-symbole" class="content-section">
-            <h2 class="text-3xl font-bold mb-6">Runen & Symbole</h2>
-            <p class="text-lg text-slate-600 mb-8">Viele dieser Symbole werden aus der germanischen Mythologie oder historischen Kontexten entlehnt und umgedeutet. Sie dienen als Ersatz für direkt verbotene Symbole (wie das Hakenkreuz) und zur Schaffung einer Gruppenidentität.</p>
+            <h2 class="text-3xl font-bold mb-6">Symbole & Farben</h2>
+            <p class="text-lg text-slate-600 mb-8">Viele Symbole werden aus historischen oder mythologischen Kontexten entlehnt und oft umgedeutet. Farben und Bildsprache dienen zusätzlich als unterschwellige Erkennungszeichen. Kontext entscheidet über Bedeutung.</p>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                <h3 class="text-xl font-semibold mb-2">Farben</h3>
+                <p class="text-gray-600 mb-2"><strong>Blau:</strong> Häufiges Identifikationsmerkmal für AfD-nahe oder neue rechte Gruppen. Das blaue Herz (💙) erscheint oft in organisierten Kommentar-Aktionen.</p>
+                <p class="text-gray-600 mb-2"><strong>Schwarz-Weiß-Rot:</strong> Ablehnung der demokratischen Farben; wird als nostalgische Reminiszenz an imperiale/rechtsextreme Ideologien verwendet.</p>
+            </div>
+
+            <!-- removed Bildideen block as requested -->
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
@@ -174,6 +288,8 @@
             </div>
         </section>
         
+        <!-- Konklusion & Handeln section removed per user request -->
+
         <section id="section-gesten" class="content-section">
             <h2 class="text-3xl font-bold mb-6">Gesten & Handzeichen</h2>
             <p class="text-lg text-slate-600 mb-8">Neben dem offen verbotenen Hitlergruß existieren diverse Ersatzgesten, die als Erkennungszeichen dienen. Einige wurden gezielt als mehrdeutige "Troll"-Gesten popularisiert.</p>
@@ -205,30 +321,23 @@
                     <h3 class="text-2xl font-bold text-slate-700 mb-3">Neofolk / Dark Folk</h3>
                     <p class="text-gray-600 mb-4">Einige Akteure in diesem Genre spielen bewusst mit totalitärer Ästhetik, heidnischen und völkischen Themen. Während nicht das gesamte Genre rechts ist, gibt es erhebliche Überschneidungen und Akteure mit direkten Verbindungen zur "Neuen Rechten". Die Abgrenzung ist oft schwierig.</p>
                 </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Meme-Musik & Grauzone</h3>
+                    <p class="text-gray-600 mb-2">Beispiele: Instrumentale oder out-of-context Songclips (z.B. populäre Dance- oder Club-Songs) werden wiederholend verwendet, um eine Stimmung zu erzeugen, die später mit Ideologie besetzt wird.</p>
+                    <p class="text-gray-600">Lieder wie <em>"L'Amour Toujours"</em> können instrumental als Code genutzt werden; klassische Marschlieder oder Wehrmachtslieder erscheinen in remixten Kontexten.</p>
+                </div>
+
+                <!-- removed duplicate Rechtsrock block (kept main Rechtsrock/NSHC entry above) -->
             </div>
         </section>
 
-        <section id="section-online" class="content-section">
-            <h2 class="text-3xl font-bold mb-6">Online-Kultur & Memes</h2>
-            <p class="text-lg text-slate-600 mb-8">Die "Alt-Right" und "Neue Rechte" nutzen Online-Memes zur Verbreitung ihrer Ideologie. Durch Ironie und Mehrdeutigkeit ("Ironische Brechung") werden extreme Inhalte salonfähig gemacht und Kritiker als humorlos dargestellt.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Pepe der Frosch</h3>
-                    <p class="text-gray-600 mb-4">Eine ursprünglich harmlose Comicfigur, die von der "Alt-Right"-Bewegung auf 4chan gekapert wurde. Pepe wird oft in rassistischen oder antisemitischen Kontexten oder als Symbolfigur der Bewegung (z.B. mit "Make America Great Again"-Mütze) dargestellt. Der Kontext ist alles entscheidend.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-slate-700 mb-3">Clown-Welt / "Honk Honk"</h3>
-                    <p class="text-gray-600 mb-4">Das Clown-Meme (oft "Honkler" genannt) wird verwendet, um die moderne westliche Gesellschaft als absurd, dekadent und gescheitert darzustellen. Es ist ein Ausdruck eines nihilistischen, rechten Kulturpessimismus, der oft mit der "Boogaloo"-Bewegung in Verbindung steht.</p>
-                </div>
-            </div>
-        </section>
+        <!-- removed Online-Kultur section per request -->
         
     </main>
 
-    <footer class="bg-slate-800 text-slate-300 mt-12 py-6">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+    <footer class="bg-slate-800 text-slate-300 py-6 mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm" style="padding-bottom: env(safe-area-inset-bottom, 0px);">
             <p>&copy; 2025 Interaktiver Leitfaden. Dieser Inhalt dient ausschließlich zu Aufklärungszwecken.</p>
         </div>
     </footer>
@@ -240,10 +349,14 @@
             const disclaimerSection = document.getElementById('section-disclaimer');
 
             function showSection(targetId) {
-                disclaimerSection.style.display = 'none';
+                // hide the disclaimer whenever navigating to a content section
+                const disclaimer = disclaimerSection;
+                if (disclaimer) disclaimer.style.display = 'none';
 
+                // hide all sections and remove animation
                 contentSections.forEach(section => {
                     section.style.display = 'none';
+                    section.classList.remove('animate-fade-in');
                 });
 
                 navLinks.forEach(link => {
@@ -253,6 +366,8 @@
                 const targetSection = document.getElementById(targetId);
                 if (targetSection) {
                     targetSection.style.display = 'block';
+                    // add a subtle entrance animation (defined in CSS)
+                    targetSection.classList.add('animate-fade-in');
                 }
 
                 const activeLink = document.querySelector(`[data-target="${targetId}"]`);
@@ -268,11 +383,28 @@
                 });
             });
 
+            // Expose an enterApp function to the landing button. This hides the landing overlay
+            // and shows the first content section with the existing showSection animation.
+            window.enterApp = () => {
+                const landing = document.getElementById('landing-page');
+                if (landing) landing.style.opacity = '0';
+                // re-enable background scrolling
+                document.body.classList.remove('landing-open');
+                setTimeout(() => {
+                    if (landing) landing.style.display = 'none';
+                    if (navLinks.length > 0) {
+                        const firstTarget = navLinks[0].getAttribute('data-target');
+                        showSection(firstTarget);
+                    }
+                    if (disclaimerSection) disclaimerSection.style.display = 'block';
+                }, 500);
+            };
+
             if (contentSections.length > 0) {
                 const firstTarget = navLinks[0].getAttribute('data-target');
-                navLinks[0].classList.add('active');
-                document.getElementById(firstTarget).style.display = 'block';
-                disclaimerSection.style.display = 'block';
+                showSection(firstTarget);
+                // keep the disclaimer visible on initial load
+                if (disclaimerSection) disclaimerSection.style.display = 'block';
             }
         });
     </script>
