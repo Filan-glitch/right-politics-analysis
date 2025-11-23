@@ -35,11 +35,15 @@
         .rune-text {
             font-family: 'Segoe UI Symbol', 'Noto Sans Runic', sans-serif;
         }
+        /* enable smooth touch scrolling inside the landing overlay */
+        .landing-scroll {
+            -webkit-overflow-scrolling: touch;
+        }
     </style>
 </head>
 <body class="text-slate-800 min-h-screen flex flex-col landing-open">
 
-    <section id="landing-page" class="fixed inset-0 z-[100] bg-slate-900 text-white flex flex-col justify-center items-center p-6 text-center transition-opacity duration-500">
+    <section id="landing-page" class="fixed inset-0 z-[100] bg-slate-900 text-white flex flex-col overflow-auto items-start justify-start md:justify-center md:items-center p-6 text-center transition-opacity duration-500 landing-scroll">
         <div class="max-w-4xl">
             <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
                 Die Architektur des Hasses.<br><span class="text-indigo-400">Codes erkennen. Metapolitik verstehen.</span>
