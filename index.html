@@ -39,6 +39,10 @@
         .landing-scroll {
             -webkit-overflow-scrolling: touch;
         }
+        .music-play-btn[data-state="playing"] {
+            background-color: #1d4ed8;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body class="text-slate-800 min-h-screen flex flex-col landing-open">
@@ -366,20 +370,32 @@
                         Der Eurodance-Hit von Gigi D'Agostino wurde 2024 massiv gekapert. Zur Melodie wird die Parole „Deutschland den Deutschen, Ausländer raus“ gegrölt.
                         <br><strong>Die Dog Whistle:</strong> Es reicht heute, ein Video zu posten, in dem man stumm zum Lied nickt oder „Ihr kennt den Text“ schreibt. Das Lied wurde „akustisch besetzt“.
                     </p>
+                    <button type="button" class="music-play-btn mt-4 inline-flex items-center gap-2 rounded-full border border-indigo-300 bg-white px-4 py-2 text-sm font-semibold text-indigo-700 hover:bg-indigo-100 transition" data-audio-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" data-default-label="▶ Betroffenen Ausschnitt abspielen">
+                        ▶ Betroffenen Ausschnitt abspielen
+                    </button>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white p-6 rounded-lg shadow-lg">
                         <h3 class="text-xl font-bold text-slate-800 mb-2">Phonk & #SaveEurope</h3>
                         <p class="text-sm text-gray-600">Aggressive Hip-Hop-Beats („Phonk“) unterlegt mit Videos von Wehrmachtssoldaten oder antiken Statuen. Propagiert einen gewaltsamen Kampf zur Verteidigung des „Abendlandes“ (Hypermaskulinität).</p>
+                        <button type="button" class="music-play-btn mt-4 inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 transition" data-audio-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" data-default-label="▶ Betroffenen Ausschnitt abspielen">
+                            ▶ Betroffenen Ausschnitt abspielen
+                        </button>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-lg">
                         <h3 class="text-xl font-bold text-slate-800 mb-2">Fashwave</h3>
                         <p class="text-sm text-gray-600">Synthie-Pop + Neon-Ästhetik der 80er. Inszeniert den Faschismus als saubere, futuristische Utopie („Retro-Futurismus“) und entkoppelt ihn von der historischen Gewalt. Zielt auf Gamer und IT-Affine.</p>
+                        <button type="button" class="music-play-btn mt-4 inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 transition" data-audio-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" data-default-label="▶ Betroffenen Ausschnitt abspielen">
+                            ▶ Betroffenen Ausschnitt abspielen
+                        </button>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-lg">
                         <h3 class="text-xl font-bold text-slate-800 mb-2">AI Covers</h3>
                         <p class="text-sm text-gray-600">KI-generierte Stimmen von Hitler oder Goebbels, die Kochrezepte oder Memes vorlesen. Ziel: Entdämonisierung und Gewöhnungseffekte.</p>
+                        <button type="button" class="music-play-btn mt-4 inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 transition" data-audio-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" data-default-label="▶ Betroffenen Ausschnitt abspielen">
+                            ▶ Betroffenen Ausschnitt abspielen
+                        </button>
                     </div>
                 </div>
             </div>
@@ -538,8 +554,51 @@
             const navLinks = document.querySelectorAll('nav ul li');
             const contentSections = document.querySelectorAll('.content-section');
             const disclaimerSection = document.getElementById('section-disclaimer');
+            const musicPlayButtons = document.querySelectorAll('.music-play-btn');
+            const sharedAudio = new Audio();
+            let activeMusicButton = null;
 
             renderArgumente(argumentsData, 'argumente-list');
+
+            function resetMusicButton(button) {
+                if (!button) return;
+                button.dataset.state = 'idle';
+                button.textContent = button.dataset.defaultLabel || '▶ Betroffenen Ausschnitt abspielen';
+            }
+
+            musicPlayButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const audioSrc = button.dataset.audioSrc;
+                    const isActive = activeMusicButton === button;
+                    const isPlaying = button.dataset.state === 'playing';
+
+                    if (isActive && isPlaying) {
+                        sharedAudio.pause();
+                        resetMusicButton(button);
+                        activeMusicButton = null;
+                        return;
+                    }
+
+                    if (activeMusicButton) {
+                        resetMusicButton(activeMusicButton);
+                    }
+
+                    sharedAudio.src = audioSrc;
+                    sharedAudio.currentTime = 0;
+                    sharedAudio.play().catch(() => {
+                        resetMusicButton(button);
+                    });
+
+                    button.dataset.state = 'playing';
+                    button.textContent = '⏸ Wiedergabe stoppen';
+                    activeMusicButton = button;
+                });
+            });
+
+            sharedAudio.addEventListener('ended', () => {
+                resetMusicButton(activeMusicButton);
+                activeMusicButton = null;
+            });
 
             function showSection(targetId) {
                 // Disclaimer logic: Show detailed disclaimer only on landing or specific pages if needed.
