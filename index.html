@@ -505,41 +505,124 @@
             {
                 topic: 'Migration & Demografie',
                 claim: '„Deutschland wird von Geflüchteten überfremdet.“',
-                fact_check: 'Die Bevölkerungsentwicklung in Deutschland wird vor allem durch Alterung, Fachkräftemangel und niedrige Geburtenraten geprägt. Migration ist ein relevanter, aber politisch steuerbarer Faktor und bedeutet nicht automatisch „Verdrängung" der Mehrheitsbevölkerung.',
+                fact_check: 'Die Bevölkerungsentwicklung in Deutschland ist primär durch Alterung, niedrige Geburtenraten und Fachkräftemangel geprägt. Migration ist ein regulierter Bestandteil der Bevölkerungsentwicklung und führt nicht automatisch zu einer „Verdrängung“ der Mehrheitsbevölkerung. Deutschland nimmt im internationalen Vergleich einen moderaten Anteil an Geflüchteten auf, während der Großteil weltweiter Fluchtbewegungen in unmittelbaren Nachbarregionen stattfindet.',
                 stats: [
-                    '2023 hatten rund 24,9 Mio. Menschen in Deutschland eine Migrationsgeschichte (ca. 29,7 % der Bevölkerung, Destatis Mikrozensus).',
-                    'Der Ausländeranteil lag 2023 bei rund 15 % und umfasst viele EU-Bürger:innen, Studierende und Erwerbstätige (Destatis).',
-                    'Das IAB zeigt: Zuwanderung stabilisiert den Arbeitsmarkt, insbesondere in Pflege, Bau und Logistik.'
+                    '2023 lebten rund 24,9 Mio. Menschen mit Migrationsgeschichte in Deutschland (ca. 29,7 % der Bevölkerung; Destatis Mikrozensus).',
+                    'Der Ausländeranteil lag 2023 bei etwa 15 %.',
+                    '80 % aller Geflüchteten weltweit bleiben in Nachbarstaaten ihrer Herkunftsländer (UNHCR).',
+                    'Migration wirkt laut IAB stabilisierend auf den Arbeitsmarkt (Pflege, Bau, Logistik).'
                 ],
                 visual: {
                     type: 'chart-placeholder',
-                    title: 'Platzhalter: Liniendiagramm „Bevölkerungsentwicklung ohne/mit Migration seit 1991"',
-                    note: 'Empfehlung: Zeitreihe mit Destatis-Daten (Gesamtbevölkerung, Ausländeranteil, Erwerbstätigenquote).'
+                    title: 'Linien- oder Zeitreihendiagramm',
+                    note: 'Gesamtbevölkerung seit 1991, Bevölkerung mit/ohne Migration, Erwerbstätigenquote nach Herkunft.'
                 },
                 sources: [
                     { title: 'Statistisches Bundesamt (Destatis): Bevölkerung mit Migrationshintergrund', url: 'https://www.destatis.de' },
-                    { title: 'Institut für Arbeitsmarkt- und Berufsforschung (IAB): Migration und Arbeitsmarkt', url: 'https://www.iab.de' },
+                    { title: 'UNHCR: Global Trends Report', url: 'https://www.unhcr.org' },
+                    { title: 'IAB: Migration und Arbeitsmarkt', url: 'https://www.iab.de' },
                     { title: 'Mediendienst Integration: Faktencheck Migration', url: 'https://mediendienst-integration.de' }
                 ]
             },
             {
-                topic: 'Kriminalität & Statistik',
-                claim: '„Migranten sind krimineller als Deutsche.“',
-                fact_check: 'Kriminalitätszahlen sind keine „ethnischen“ Eigenschaften. Sie hängen u.a. mit Alter, Geschlecht, Einkommen, Wohnlage und Polizeikontrollen zusammen. Die Polizeiliche Kriminalstatistik erfasst Tatverdächtige, nicht rechtskräftig Verurteilte.',
+                topic: 'Innere Sicherheit & Kriminalität',
+                claim: '„Ausländer sind für den Großteil der Kriminalität verantwortlich.“',
+                fact_check: 'Die Polizeiliche Kriminalstatistik unterscheidet zwischen Tatverdächtigen und Verurteilten. Nichtdeutsche Tatverdächtige sind überproportional vertreten, was u. a. auf Altersstruktur, sozioökonomische Faktoren und Anzeigeverhalten zurückzuführen ist. Die Mehrheit der Straftaten wird weiterhin von deutschen Staatsangehörigen begangen.',
                 stats: [
-                    'In der PKS sind junge Männer generell überrepräsentiert – unabhängig von Nationalität (BKA).',
-                    'Bestimmte Delikte (z. B. Aufenthaltsverstöße) können nur von Nichtdeutschen begangen werden und verzerren den Vergleich.',
-                    'Kriminologische Studien zeigen: Mit sozialer Integration sinkt das Risiko für Straffälligkeit deutlich (Kriminologisches Forschungsinstitut).'
+                    '2024: 35,4 % nichtdeutsche Tatverdächtige (ohne ausländerrechtliche Verstöße; BKA).',
+                    'Rund 64 % der Tatverdächtigen besitzen die deutsche Staatsangehörigkeit.',
+                    'Rückgang tatverdächtiger Clan-Mitglieder von 727 (2023) auf 565 (2024; BKA).'
                 ],
                 visual: {
                     type: 'chart-placeholder',
-                    title: 'Platzhalter: Balkendiagramm „Tatverdächtige nach Altersgruppen und Deliktarten"',
-                    note: 'Empfehlung: Delikte mit/ohne ausländerrechtliche Verstöße getrennt darstellen.'
+                    title: 'Balkendiagramm',
+                    note: 'Tatverdächtige nach Staatsangehörigkeit, Altersstrukturvergleich, Entwicklung Clankriminalität.'
                 },
                 sources: [
-                    { title: 'Bundeskriminalamt (BKA): Polizeiliche Kriminalstatistik', url: 'https://www.bka.de' },
-                    { title: 'Bundesinnenministerium: Einordnung zur Sicherheitslage', url: 'https://www.bmi.bund.de' },
-                    { title: 'Kriminologisches Forschungsinstitut Niedersachsen (KFN)', url: 'https://kfn.de' }
+                    { title: 'Bundeskriminalamt: Polizeiliche Kriminalstatistik', url: 'https://www.bka.de' },
+                    { title: 'Mediendienst Integration: Kriminalität und Migration', url: 'https://mediendienst-integration.de' },
+                    { title: 'BKA Lagebild Organisierte Kriminalität', url: 'https://www.bka.de' }
+                ]
+            },
+            {
+                topic: 'Sozialstaat & Arbeitsmarkt',
+                claim: '„Migranten belasten den deutschen Sozialstaat.“',
+                fact_check: 'Studien zeigen, dass Zuwanderer im Durchschnitt positiv zu den Sozialkassen beitragen. Viele arbeiten in systemrelevanten oder strukturellen Mangelberufen. Die Sozialleistungen für Asylbewerber liegen unter regulären Sozialleistungen und machen einen geringen Anteil am Bundeshaushalt aus.',
+                stats: [
+                    'ZEW-Studie: 22 Mrd. € Nettobeitrag von Ausländern zu öffentlichen Haushalten.',
+                    'Rund ein Drittel aller Erwerbstätigen hat eine Einwanderungsgeschichte.',
+                    'Asylbewerberleistungen < 1 % des Bundeshaushalts.',
+                    'Hohe Beschäftigungsanteile von Migranten in Pflege, Gastronomie, Bau.'
+                ],
+                visual: {
+                    type: 'chart-placeholder',
+                    title: 'Säulendiagramm',
+                    note: 'Nettofiskalischer Beitrag nach Bevölkerungsgruppe, Beschäftigungsanteil nach Branche.'
+                },
+                sources: [
+                    { title: 'ZEW Mannheim: Fiskalische Effekte von Migration', url: 'https://www.zew.de' },
+                    { title: 'IAB: Beschäftigungsstruktur nach Herkunft', url: 'https://www.iab.de' },
+                    { title: 'Bundeshaushalt (BMF)', url: 'https://www.bundesfinanzministerium.de' }
+                ]
+            },
+            {
+                topic: 'Klimawandel & Energiepolitik',
+                claim: '„Der Klimawandel ist übertrieben / Klimapolitik zerstört die Wirtschaft.“',
+                fact_check: 'Deutschland verzeichnet einen klar messbaren Temperaturanstieg. Wissenschaftlicher Konsens bestätigt den anthropogenen Einfluss. Der Anteil erneuerbarer Energien am Strommix steigt kontinuierlich. Investitionen in erneuerbare Technologien schaffen wirtschaftliche Chancen.',
+                stats: [
+                    '2024: Wärmstes Jahr seit Beginn der Aufzeichnungen.',
+                    '+2,7 °C gegenüber Referenzperiode 1961–1990 (Deutschland).',
+                    '64,1 % Strom aus erneuerbaren Energien (2025, Destatis).'
+                ],
+                visual: {
+                    type: 'chart-placeholder',
+                    title: 'Zeitreihe',
+                    note: 'Temperaturentwicklung seit 1881, Strommix-Anteile seit 2000.'
+                },
+                sources: [
+                    { title: 'Umweltbundesamt: Klimadaten', url: 'https://www.umweltbundesamt.de' },
+                    { title: 'Destatis: Stromerzeugung', url: 'https://www.destatis.de' },
+                    { title: 'IPCC-Berichte', url: 'https://www.ipcc.ch' }
+                ]
+            },
+            {
+                topic: 'Medien & Demokratievertrauen',
+                claim: '„Die Medien sind gleichgeschaltet / Lügenpresse.“',
+                fact_check: 'Deutschland zählt international zu den Ländern mit hoher Pressefreiheit. Mehrheitsumfragen zeigen weiterhin ein stabiles Vertrauen in etablierte Medien. Fehler werden öffentlich korrigiert; Medien unterliegen journalistischen Standards und Selbstkontrolle.',
+                stats: [
+                    '61 % der Bevölkerung vertrauen deutschen Medien (Infratest 2025).',
+                    'Rang 11 im weltweiten Pressefreiheitsindex (2024).'
+                ],
+                visual: {
+                    type: 'chart-placeholder',
+                    title: 'Balkendiagramm',
+                    note: 'Medienvertrauen nach Parteipräferenz, Entwicklung Vertrauen 2015–2025.'
+                },
+                sources: [
+                    { title: 'Infratest dimap', url: 'https://www.infratest-dimap.de' },
+                    { title: 'Reporter ohne Grenzen', url: 'https://www.reporter-ohne-grenzen.de' },
+                    { title: 'Deutscher Presserat', url: 'https://www.presserat.de' }
+                ]
+            },
+            {
+                topic: 'Europa & Souveränität',
+                claim: '„Die EU nimmt Deutschland die Souveränität und kostet nur Geld.“',
+                fact_check: 'Deutschland gestaltet EU-Politik aktiv mit. Als Exportnation profitiert es vom Binnenmarkt und gemeinsamen Standards. Die wirtschaftlichen Vorteile der EU-Mitgliedschaft übersteigen die Nettozahlungen.',
+                stats: [
+                    '447 Mio. EU-Bürger im Binnenmarkt.',
+                    '14,5 Bio. € Wirtschaftsleistung (EU).',
+                    'Nettozahlung 2024: ca. 13,1 Mrd. €.',
+                    'EU-Finanzrahmen > 2 Bio. € Investitionsvolumen.'
+                ],
+                visual: {
+                    type: 'chart-placeholder',
+                    title: 'Infografik',
+                    note: 'Handelsvolumen Deutschland–EU, Nettozahlungen vs. wirtschaftlicher Nutzen.'
+                },
+                sources: [
+                    { title: 'KfW Research', url: 'https://www.kfw.de' },
+                    { title: 'Europäische Kommission', url: 'https://commission.europa.eu' },
+                    { title: 'Bundesministerium der Finanzen', url: 'https://www.bundesfinanzministerium.de' }
                 ]
             }
         ];
