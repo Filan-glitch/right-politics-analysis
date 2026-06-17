@@ -1,0 +1,325 @@
+/* styles.css - Styles für Right-Politics-Analysis Website */
+
+:root {
+    --color-indigo-600: #4f46e5;
+    --color-indigo-500: #6366f1;
+    --color-slate-800: #1e293b;
+    --color-slate-700: #334155;
+}
+
+/* Responsiver Text */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    color-scheme: dark;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.sr-only:focus:not(.focus\\:not-sr-only),
+.focus\\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* Navigation */
+nav ul li {
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul li[aria-selected="true"] {
+    background-color: #f8fafc;
+    color: var(--color-slate-800);
+    border-bottom: 3px solid var(--color-indigo-600);
+}
+
+/* Dark Mode */
+body.dark-mode nav ul li[aria-selected="true"] {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border-bottom-color: #6366f1;
+}
+
+/* Karten-Layouts */
+.code-card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-indigo-600);
+    transition: all 0.3s ease;
+}
+
+.code-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+body.dark-mode .code-card {
+    background: #1f2937;
+    border-left-color: #818cf8;
+}
+
+/* Risiko-Badges */
+.risk-high {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+body.dark-mode .risk-high {
+    background-color: #7f1d1d;
+    color: #fca5a5;
+}
+
+.risk-medium {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+body.dark-mode .risk-medium {
+    background-color: #78350f;
+    color: #fde68a;
+}
+
+.risk-low {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+body.dark-mode .risk-low {
+    background-color: #15803d;
+    color: #86efac;
+}
+
+/* Musik-Player */
+.music-play-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    color: #1e293b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.music-play-btn:hover {
+    background-color: #f1f5f9;
+}
+
+.music-play-btn[data-state="playing"] {
+    background-color: var(--color-indigo-600);
+    color: white;
+    border-color: var(--color-indigo-600);
+}
+
+body.dark-mode .music-play-btn {
+    border-color: #475569;
+    background: #1f2937;
+    color: #f1f5f9;
+}
+
+body.dark-mode .music-play-btn:hover {
+    background-color: #374151;
+}
+
+/* Suchfeld */
+#search-input {
+    transition: all 0.2s;
+}
+
+#search-input:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Platform-Badges */
+.platform-badge {
+    display: inline-block;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+body.dark-mode .platform-badge {
+    background: #374151;
+    border-color: #4b5563;
+}
+
+/* Quellen-Liste */
+.sources-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sources-list li {
+    margin-bottom: 0.5rem;
+}
+
+.sources-list a {
+    color: var(--color-indigo-600);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.sources-list a:hover {
+    color: var(--color-indigo-500);
+}
+
+body.dark-mode .sources-list a {
+    color: #818cf8;
+}
+
+/* Rune-Text */
+.rune-text {
+    font-family: 'Segoe UI Symbol', 'Noto Sans Runic', monospace;
+    font-size: 1.5rem;
+}
+
+/* Filter und Search Results */
+#search-results {
+    margin-top: 2rem;
+}
+
+.search-result-item {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background: #f8fafc;
+    border-left: 3px solid #cbd5e1;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search-result-item:hover {
+    background: #f1f5f9;
+    border-left-color: var(--color-indigo-600);
+}
+
+body.dark-mode .search-result-item {
+    background: #1f2937;
+    border-left-color: #4b5563;
+}
+
+body.dark-mode .search-result-item:hover {
+    background: #374151;
+    border-left-color: #818cf8;
+}
+
+.search-highlight {
+    background-color: #fef08a;
+    font-weight: 600;
+}
+
+body.dark-mode .search-highlight {
+    background-color: #7c2d12;
+}
+
+/* Responsive Grid */
+.code-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .code-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Accessibility */
+*:focus-visible {
+    outline: 2px solid var(--color-indigo-600);
+    outline-offset: 2px;
+}
+
+body.dark-mode *:focus-visible {
+    outline-color: #818cf8;
+}
+
+/* Print Styles */
+@media print {
+    #landing-page,
+    header,
+    #dark-mode-toggle,
+    .music-play-btn {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .code-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
