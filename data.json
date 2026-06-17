@@ -167,6 +167,8 @@
             "context": "Findet sich in Tattoos, Websites und extremistischen Materialen. Es ist ein zentrales Symbol der modernen Neonazi-Szene.",
             "risk": "high",
             "platforms": ["White Power Forums", "Telegramm", "Discord"],
+            "image": "assets/BlackSun.png",
+            "imageAlt": "Schwarze Sonne Symbol - ein Kreis mit zwölf Runen",
             "sources": [
                 {
                    "title": "ADL: Black Sun Symbol",
@@ -187,10 +189,70 @@
             "context": "Wird oft in Tattoos und von White-Power-Gruppen verwendet. In vielen Ländern ist die Nutzung als extremistisches Symbol strafbar.",
             "risk": "high",
             "platforms": ["Tattoo-Szene", "Graffiti", "White Power Merchandise"],
+            "image": "assets/CelticCross.png",
+            "imageAlt": "Keltenkreuz - ein Kreuz mit Kreis in der Mitte",
             "sources": [
                 {
                    "title": "ADL: Celtic Cross",
                    "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "symbol-wolfsangel",
+            "code": "ᚥ",
+            "category": "symbole",
+            "subtitle": "Wolfsangel / Wovl-Symbol",
+            "meaning": "Ein germanisches Runen-Symbol, das von der Nazi-Bewegung vereinnahmt wurde, speziell von der SS. Modern wird es als Symbol für Aryan Brotherhood und White Power Bewegungen verwendet.",
+            "context": "Häufig in Neonazi-Tattoos, Graffiti und Merchandise. Das Symbol ist in Deutschland und Österreich unter bestimmten Kontexten illegal.",
+            "risk": "high",
+            "platforms": ["Tattoo-Szene", "White Power Websites", "Discord"],
+            "image": "assets/Wolfsangel.png",
+            "imageAlt": "Wolfsangel - ein germanisches Rune-Symbol",
+            "sources": [
+                {
+                   "title": "BfV: Wolfsangel Symbol",
+                   "url": "https://www.bfv.bund.de"
+                },
+                {
+                   "title": "ADL: Nazi Symbols and Runes",
+                   "url": "https://www.adl.org"
+                }
+            ]
+        },
+        {
+            "id": "symbol-odal-rune",
+            "code": "ᚩ",
+            "category": "symbole",
+            "subtitle": "Odal-Rune / Erbland-Rune",
+            "meaning": "Eine germanische Rune, die Heimat/Erbland darstellt. Wurde von der Nazi-Bewegung für die Ideologie von 'Blut und Boden' (blood and soil) verwendet.",
+            "context": "Wird in extremistischen Tattoos und als Symbol für die Idee eines homogenen ethno-States verwendet. Part der modernen Neonazi-Ästhetik.",
+            "risk": "high",
+            "platforms": ["White Power Communities", "Tattoo-Szene", "Forums"],
+            "image": "assets/OdalRune.png",
+            "imageAlt": "Odal-Rune - germanisches Rune-Symbol für Heimat",
+            "sources": [
+                {
+                   "title": "BfV: Runen und ihre extremistische Verwendung",
+                   "url": "https://www.bfv.bund.de"
+                }
+            ]
+        },
+        {
+            "id": "symbol-triskele",
+            "code": "☿",
+            "category": "symbole",
+            "subtitle": "Triskele / Triskelion - Dreiarmiges Symbol",
+            "meaning": "Ein keltisches/altes europäisches Symbol mit drei Armen. Wird von extremistischen Gruppen zur Darstellung von 'europaischen' oder 'arischen' Wurzeln verwendet.",
+            "context": "Das Symbol selbst hat historische Bedeutung, wird aber in extremistischen Kontexten zur Identitätsbildung genutzt. Oft kombiniert mit anderen Runen.",
+            "risk": "medium",
+            "platforms": ["Extremist Websites", "Tattoo-Szene"],
+            "image": "assets/Triskele.png",
+            "imageAlt": "Triskele - dreiarmiges keltisches Symbol",
+            "sources": [
+                {
+                   "title": "ADL: Celtic and Germanic Symbols",
+                   "url": "https://www.adl.org"
                 }
             ]
         },
@@ -223,6 +285,140 @@
                 {
                    "title": "ADL: National Socialist Black Metal (NSBM)",
                    "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "music-rac",
+            "code": "RAC (Rock Against Communism)",
+            "category": "musik",
+            "subtitle": "Rechtsextreme Rockmusik",
+            "meaning": "Eine Musik-Bewegung, die aus den 1970er Jahren stammt. RAC verbindet aggressive Rockmusik mit explizit neonazistischen und rassistischen Texten.",
+            "context": "RAC-Bands fungieren als Rekrutierungswerkzeuge. Die Szene ist international und wird über Underground-Netzwerke verbreitet. In Deutschland häufig als 'Rechtsrock' bekannt.",
+            "risk": "high",
+            "platforms": ["Underground Music Scene", "White Power Networks", "Discord"],
+            "audioExample": "assets/böhse_onkelz.mp3",
+            "audioLabel": "Beispiel: Rechtsrock/RAC Musik (Warnung: Extremistische Inhalte)",
+            "sources": [
+                {
+                   "title": "ADL: Rock Against Communism",
+                   "url": "https://www.adl.org"
+                },
+                {
+                   "title": "BfV: Rechtsextreme Musik",
+                   "url": "https://www.bfv.bund.de"
+                }
+            ]
+        },
+        {
+            "id": "music-fashwave",
+            "code": "Fashwave",
+            "category": "musik",
+            "subtitle": "Ästhetische Rechtsextremismus-Bewegung",
+            "meaning": "Eine moderne Musikbewegung, die synthwave-Ästhetik mit rechtsextremen Idealen kombiniert. Verfügt über retrogelookkünstlerische Verpackung extremistischer Botschaften.",
+            "context": "Fashwave nutzt 1980er-Ästhetik als 'Plausible Deniability'. Die Musik wird auf Social Media verbreitet, oft mit vagen politischen Botschaften. Zielt auf junge Demografie ab.",
+            "risk": "high",
+            "platforms": ["Instagram", "TikTok", "Spotify", "SoundCloud"],
+            "audioExample": "assets/fashwave.mp3",
+            "audioLabel": "Beispiel: Fashwave-Musik (Ästhetik mit extremistischen Wurzeln)",
+            "sources": [
+                {
+                   "title": "Stanford Internet Observatory: Fashwave Analysis",
+                   "url": "https://www.standord.edu"
+                }
+            ]
+        },
+        {
+            "id": "music-phonk",
+            "code": "Phonk",
+            "category": "musik",
+            "subtitle": "Lo-Fi Hip-Hop Subgenre mit extremistischen Elementen",
+            "meaning": "Ein Hip-Hop-Subgenre, das 1990er-Samples nutzt. Während die Mehrheit nicht politisch ist, wurden bestimmte Phonk-Künstler und -Accounts von Neonazis kooptiert.",
+            "context": "Phonk ist nicht per se extremistisch, aber wird von extremistischen Akteuren zur Tarnung verwendet. Der 'Phonk'-Hashtag auf TikTok enthält teilweise rechtsextreme Inhalte von Künstlern.",
+            "risk": "medium",
+            "platforms": ["SoundCloud", "TikTok", "Discord"],
+            "audioExample": "assets/phonk.mp3",
+            "audioLabel": "Beispiel: Phonk-Musik (nicht automatisch extremistisch)",
+            "sources": [
+                {
+                   "title": "Correctiv: Phonk und Extremismus",
+                   "url": "https://correctiv.org"
+                }
+            ]
+        },
+        {
+            "id": "music-landser",
+            "code": "Landser (Band)",
+            "category": "musik",
+            "subtitle": "Neonazi-Rechtsrock Band",
+            "meaning": "Eine der bekanntesten rechtsextremistischen Bands aus Deutschland. Seit 1989 aktiv, Musik mit explizit neonazistischen Texten und Aufrufen zu Gewalt.",
+            "context": "Landser ist verboten in Deutschland. Trotzdem verbreitet sich die Musik in extremistischen Underground-Netzwerken und über VPNs. Ein Hauptrekrutierungstool.",
+            "risk": "critical",
+            "platforms": ["Underground Networks", "Telegram", "Encrypted Channels"],
+            "audioExample": "assets/landser.mp3",
+            "audioLabel": "Beispiel: Landser-Musik (Warnung: Extremistische Neonazi-Musik - in Deutschland verboten)",
+            "sources": [
+                {
+                   "title": "BfV: Landser Band",
+                   "url": "https://www.bfv.bund.de"
+                },
+                {
+                   "title": "Bundeszentrale für politische Bildung: Rechtsrock",
+                   "url": "https://www.bpb.de"
+                }
+            ]
+        },
+        {
+            "id": "music-lunikoff",
+            "code": "Lunikoff (Band)",
+            "category": "musik",
+            "subtitle": "Russischer Rechtsrock",
+            "meaning": "Eine bekannte russische Rechtsrock-Band. Musik mit nationalistischen und rassistischen Inhalten. Teil des internationalen Neonazi-Musiknetzwerks.",
+            "context": "Lunikoff ist international bekannt und wird auch im deutschsprachigen Raum verbreitet. Vertritt einen völkischen Nationalismus mit explizit antidemokratischen Botschaften.",
+            "risk": "high",
+            "platforms": ["YouTube", "VK (VKontakte)", "Telegram"],
+            "audioExample": "assets/lunikoff.mp3",
+            "audioLabel": "Beispiel: Lunikoff-Musik (Russischer Rechtsrock)",
+            "sources": [
+                {
+                   "title": "ADL: International White Power Music",
+                   "url": "https://www.adl.org"
+                }
+            ]
+        },
+        {
+            "id": "music-gerbenok",
+            "code": "Gerbenok (Band)",
+            "category": "musik",
+            "subtitle": "Extremistisches Hip-Hop Duo",
+            "meaning": "Ein deutsches Hip-Hop Duo mit rechtsextremen Wurzeln. Kombiniert Rap mit rassistischen und antisemitischen Inhalten.",
+            "context": "Nutzt Hip-Hop-Ästhetik zur Maskierung extremistischer Botschaften. Wird in Jugendmilieus über Streaming-Plattformen verbreitet.",
+            "risk": "high",
+            "platforms": ["SoundCloud", "Spotify (teilweise)", "YouTube"],
+            "audioExample": "assets/gerbenok.mp3",
+            "audioLabel": "Beispiel: Gerbenok-Musik (Hip-Hop mit extremistischen Inhalten)",
+            "sources": [
+                {
+                   "title": "Correctiv: Hip-Hop Extremismus",
+                   "url": "https://correctiv.org"
+                }
+            ]
+        },
+        {
+            "id": "music-böhse-onkelz",
+            "code": "Böhse Onkelz (Band)",
+            "category": "musik",
+            "subtitle": "Skinhead-Rock Gründer",
+            "meaning": "Eine der ältesten und einflussreichsten deutschen Rechtsrock-Bands. Gegründet 1981, Musik mit nationalistischen und rassistischen Texten.",
+            "context": "Böhse Onkelz ist Kultband der extremistischen Szene. Trotz Bandauflösung bleibt der Einfluss enorm. Die Musik wird als Zugehörigkeitssignal in der Szene genutzt.",
+            "risk": "high",
+            "platforms": ["Underground Networks", "Streaming (teilweise)", "Festivals"],
+            "audioExample": "assets/böhse_onkelz.mp3",
+            "audioLabel": "Beispiel: Böhse Onkelz-Musik (Deutsche Rechtsrock-Legende)",
+            "sources": [
+                {
+                   "title": "BfV: Böhse Onkelz",
+                   "url": "https://www.bfv.bund.de"
                 }
             ]
         },

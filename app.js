@@ -147,6 +147,8 @@ class App {
         card.className = 'code-card animate-fade-in';
 
         const riskClass = `risk-${code.risk || 'medium'}`;
+        const riskLabel = code.risk === 'high' ? 'KRITISCH' : code.risk === 'critical' ? '⚠️ KRITISCH' : code.risk === 'medium' ? 'MITTEL' : 'GERING';
+        
         const platformsHtml = code.platforms ? code.platforms
             .map(p => `<span class="platform-badge">${p}</span>`)
             .join('') : '';
@@ -155,20 +157,48 @@ class App {
             .map(src => `<li><a href="${src.url}" target="_blank" rel="noopener noreferrer">${src.title}</a></li>`)
             .join('') : '';
 
+        // Image rendering
+        const imageHtml = code.image ? `
+            <div class="mb-4">
+                <img src="${code.image}" alt="${code.imageAlt || code.code}" 
+                     class="w-full h-48 object-cover rounded-md border border-gray-300 dark:border-gray-600"
+                     loading="lazy">
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">${code.imageAlt || ''}</p>
+            </div>
+        ` : '';
+
+        // Audio player rendering
+        const audioHtml = code.audioExample ? `
+            <div class="mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-md border border-yellow-200 dark:border-yellow-800">
+                <p class="text-xs font-semibold text-yellow-900 dark:text-yellow-100 mb-2">⚠️ ${code.audioLabel}</p>
+                <audio controls class="w-full" style="height: 30px;">
+                    <source src="${code.audioExample}" type="audio/mpeg">
+                    Ihr Browser unterstützt das Audio-Element nicht.
+                </audio>
+                <p class="text-xs text-yellow-700 dark:text-yellow-200 mt-2">
+                    <strong>Hinweis:</strong> Diese Musik enthält extremistische Inhalte und dient nur zu Bildungszwecken.
+                </p>
+            </div>
+        ` : '';
+
         card.innerHTML = `
             <div class="flex justify-between items-start mb-3">
-                <div>
+                <div class="flex-1">
                     <span class="text-3xl font-bold">${code.code}</span>
                     ${code.subtitle ? `<p class="text-sm font-semibold text-indigo-600 dark:text-indigo-400">${code.subtitle}</p>` : ''}
                 </div>
-                <span class="${riskClass}">
-                    ${code.risk === 'high' ? 'KRITISCH' : code.risk === 'medium' ? 'MITTEL' : 'GERING'}
+                <span class="${riskClass} ml-2 flex-shrink-0">
+                    ${riskLabel}
                 </span>
             </div>
+
+            ${imageHtml}
 
             <p class="text-gray-700 dark:text-gray-300 mb-3"><strong>Bedeutung:</strong> ${code.meaning}</p>
 
             ${code.context ? `<p class="text-gray-700 dark:text-gray-300 mb-3"><strong>Kontext:</strong> ${code.context}</p>` : ''}
+
+            ${audioHtml}
 
             ${platformsHtml ? `
                 <div class="mb-3">
