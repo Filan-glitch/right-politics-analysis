@@ -529,126 +529,127 @@
     <script>
         const argumentsData = [
             {
-                topic: 'Migration & Demografie',
-                claim: '„Deutschland wird von Geflüchteten überfremdet.“',
-                fact_check: 'Die Bevölkerungsentwicklung in Deutschland ist primär durch Alterung, niedrige Geburtenraten und Fachkräftemangel geprägt. Migration ist ein regulierter Bestandteil der Bevölkerungsentwicklung und führt nicht automatisch zu einer „Verdrängung“ der Mehrheitsbevölkerung. Deutschland nimmt im internationalen Vergleich einen moderaten Anteil an Geflüchteten auf, während der Großteil weltweiter Fluchtbewegungen in unmittelbaren Nachbarregionen stattfindet.',
+                topic: 'Energiepolitik',
+                claim: '„Erneuerbare Energien funktionieren nicht ohne Kohle und Gas.“',
+                fact_check: 'Deutschland erzeugt inzwischen regelmäßig mehr als die Hälfte seines Stroms aus erneuerbaren Quellen. Wind- und Solarenergie sind volatil, werden aber durch Netzausbau, Speicher, Lastmanagement, europäischen Stromhandel und flexible Kraftwerke ergänzt.',
                 stats: [
-                    '2023 lebten rund 24,9 Mio. Menschen mit Migrationsgeschichte in Deutschland (ca. 29,7 % der Bevölkerung; Destatis Mikrozensus).',
-                    'Der Ausländeranteil lag 2023 bei etwa 15 %.',
-                    '80 % aller Geflüchteten weltweit bleiben in Nachbarstaaten ihrer Herkunftsländer (UNHCR).',
-                    'Migration wirkt laut IAB stabilisierend auf den Arbeitsmarkt (Pflege, Bau, Logistik).'
+                    '2025 stammte zeitweise deutlich über 50 % der Stromerzeugung aus Erneuerbaren.',
+                    'Windkraft ist inzwischen eine der wichtigsten Stromquellen Deutschlands.',
+                    'Die Kosten für Solar- und Windstrom sind in den letzten 15 Jahren massiv gefallen.'
                 ],
                 visual: {
                     type: 'chart-placeholder',
-                    title: 'Linien- oder Zeitreihendiagramm',
-                    note: 'Gesamtbevölkerung seit 1991, Bevölkerung mit/ohne Migration, Erwerbstätigenquote nach Herkunft.'
+                    title: 'Zeitreihe der Stromerzeugung',
+                    image: 'assets/Energiemix.png',
+                    note: 'Anteile Energiemix Deutschland in den Jahren 2010-2025.'
                 },
                 sources: [
-                    { title: 'Statistisches Bundesamt (Destatis): Bevölkerung mit Migrationshintergrund', url: 'https://www.destatis.de' },
-                    { title: 'UNHCR: Global Trends Report', url: 'https://www.unhcr.org' },
-                    { title: 'IAB: Migration und Arbeitsmarkt', url: 'https://www.iab.de' },
-                    { title: 'Mediendienst Integration: Faktencheck Migration', url: 'https://mediendienst-integration.de' }
+                    { title: 'Destatis', url: 'https://www.destatis.de' },
+                    { title: 'AG Energiebilanzen', url: 'https://www.ag-energiebilanzen.de' },
+                    { title: 'International Energy Agency', url: 'https://www.iea.org' }
                 ]
             },
             {
-                topic: 'Innere Sicherheit & Kriminalität',
-                claim: '„Ausländer sind für den Großteil der Kriminalität verantwortlich.“',
-                fact_check: 'Die Polizeiliche Kriminalstatistik unterscheidet zwischen Tatverdächtigen und Verurteilten. Nichtdeutsche Tatverdächtige sind überproportional vertreten, was u. a. auf Altersstruktur, sozioökonomische Faktoren und Anzeigeverhalten zurückzuführen ist. Die Mehrheit der Straftaten wird weiterhin von deutschen Staatsangehörigen begangen.',
+                topic: 'Kernenergie',
+                claim: '„Atomkraft ist die billigste und schnellste Lösung.“',
+                fact_check: 'Neue Kernkraftwerke gehören international zu den teuersten Energieprojekten überhaupt. Viele europäische Neubauten hatten massive Kostensteigerungen und Verzögerungen. Kernkraft kann CO₂-armen Strom liefern, ersetzt aber weder Planung noch Investitionen in Netz und Ausbau.',
                 stats: [
-                    '2024: 35,4 % nichtdeutsche Tatverdächtige (ohne ausländerrechtliche Verstöße; BKA).',
-                    'Rund 64 % der Tatverdächtigen besitzen die deutsche Staatsangehörigkeit.',
-                    'Rückgang tatverdächtiger Clan-Mitglieder von 727 (2023) auf 565 (2024; BKA).'
+                    'Mehrere europäische Reaktoren wurden Jahre später fertig als geplant.',
+                    'Die Baukosten lagen oft weit über ursprünglichen Kalkulationen.',
+                    'Solar- und Windkraft sind pro neu erzeugter Kilowattstunde inzwischen meist günstiger.'
                 ],
                 visual: {
                     type: 'chart-placeholder',
-                    title: 'Balkendiagramm',
-                    note: 'Tatverdächtige nach Staatsangehörigkeit, Altersstrukturvergleich, Entwicklung Clankriminalität.'
+                    title: 'Kosten- und Zeitvergleich',
+                    image: 'assets/Strommix_Kosten.jpeg',
+                    note: 'Neubaukosten, Verzögerungen und Stromgestehungskosten verschiedener Energieträger.'
                 },
                 sources: [
-                    { title: 'Bundeskriminalamt: Polizeiliche Kriminalstatistik', url: 'https://www.bka.de' },
-                    { title: 'Mediendienst Integration: Kriminalität und Migration', url: 'https://mediendienst-integration.de' },
-                    { title: 'BKA Lagebild Organisierte Kriminalität', url: 'https://www.bka.de' }
+                    { title: 'IEA', url: 'https://www.iea.org' },
+                    { title: 'World Nuclear Industry Status Report', url: 'https://www.worldnuclearreport.org' },
+                    { title: 'Fraunhofer ISE', url: 'https://www.ise.fraunhofer.de' }
                 ]
             },
             {
-                topic: 'Sozialstaat & Arbeitsmarkt',
-                claim: '„Migranten belasten den deutschen Sozialstaat.“',
-                fact_check: 'Studien zeigen, dass Zuwanderer im Durchschnitt positiv zu den Sozialkassen beitragen. Viele arbeiten in systemrelevanten oder strukturellen Mangelberufen. Die Sozialleistungen für Asylbewerber liegen unter regulären Sozialleistungen und machen einen geringen Anteil am Bundeshaushalt aus.',
+                topic: 'Migration',
+                claim: '„Deutschland wird ausgetauscht.“',
+                fact_check: 'Die sogenannte „Great Replacement“-Erzählung ist eine rechtsextreme Verschwörungsideologie. Bevölkerungsentwicklung entsteht durch Geburtenraten, Alterung, Arbeitsmigration und Fluchtbewegungen, nicht durch einen geheimen Plan.',
                 stats: [
-                    'ZEW-Studie: 22 Mrd. € Nettobeitrag von Ausländern zu öffentlichen Haushalten.',
-                    'Rund ein Drittel aller Erwerbstätigen hat eine Einwanderungsgeschichte.',
-                    'Asylbewerberleistungen < 1 % des Bundeshaushalts.',
-                    'Hohe Beschäftigungsanteile von Migranten in Pflege, Gastronomie, Bau.'
+                    'Deutschland altert stark und hat Fachkräftemangel.',
+                    'Migration ist ein normaler Bestandteil moderner Volkswirtschaften.',
+                    'Der Großteil weltweiter Geflüchteter bleibt in Nachbarregionen.'
                 ],
                 visual: {
                     type: 'chart-placeholder',
-                    title: 'Säulendiagramm',
-                    note: 'Nettofiskalischer Beitrag nach Bevölkerungsgruppe, Beschäftigungsanteil nach Branche.'
+                    title: 'Bevölkerungsentwicklung',
+                    note: 'Alterung, Geburten, Migration und globale Fluchtbewegungen im Vergleich.'
                 },
                 sources: [
-                    { title: 'ZEW Mannheim: Fiskalische Effekte von Migration', url: 'https://www.zew.de' },
-                    { title: 'IAB: Beschäftigungsstruktur nach Herkunft', url: 'https://www.iab.de' },
-                    { title: 'Bundeshaushalt (BMF)', url: 'https://www.bundesfinanzministerium.de' }
+                    { title: 'UNHCR', url: 'https://www.unhcr.org' },
+                    { title: 'Destatis', url: 'https://www.destatis.de' },
+                    { title: 'Mediendienst Integration', url: 'https://mediendienst-integration.de' }
                 ]
             },
             {
-                topic: 'Klimawandel & Energiepolitik',
-                claim: '„Der Klimawandel ist übertrieben / Klimapolitik zerstört die Wirtschaft.“',
-                fact_check: 'Deutschland verzeichnet einen klar messbaren Temperaturanstieg. Wissenschaftlicher Konsens bestätigt den anthropogenen Einfluss. Der Anteil erneuerbarer Energien am Strommix steigt kontinuierlich. Investitionen in erneuerbare Technologien schaffen wirtschaftliche Chancen.',
+                topic: 'Kriminalität',
+                claim: '„Ausländer sind grundsätzlich krimineller.“',
+                fact_check: 'Die Polizeiliche Kriminalstatistik erfasst Tatverdächtige, nicht Verurteilungen. Alter, Geschlecht, soziale Lage und Wohnsituation beeinflussen Kriminalitätsstatistiken stark. Die pauschale Gleichsetzung von Herkunft und Kriminalität ist wissenschaftlich nicht haltbar.',
                 stats: [
-                    '2024: Wärmstes Jahr seit Beginn der Aufzeichnungen.',
-                    '+2,7 °C gegenüber Referenzperiode 1961–1990 (Deutschland).',
-                    '64,1 % Strom aus erneuerbaren Energien (2025, Destatis).'
+                    'Junge Männer sind statistisch generell überrepräsentiert.',
+                    'Armut und soziale Perspektivlosigkeit erhöhen Kriminalitätsrisiken.',
+                    'Die Mehrheit der Straftaten wird weiterhin von Deutschen begangen.'
                 ],
                 visual: {
                     type: 'chart-placeholder',
-                    title: 'Zeitreihe',
-                    note: 'Temperaturentwicklung seit 1881, Strommix-Anteile seit 2000.'
+                    title: 'Tatverdächtige nach Merkmalen',
+                    image: 'assets/gewalt.png',
+                    note: 'Alter, Geschlecht, soziale Lage und Einordnung von PKS-Daten.'
                 },
                 sources: [
-                    { title: 'Umweltbundesamt: Klimadaten', url: 'https://www.umweltbundesamt.de' },
-                    { title: 'Destatis: Stromerzeugung', url: 'https://www.destatis.de' },
-                    { title: 'IPCC-Berichte', url: 'https://www.ipcc.ch' }
+                    { title: 'Bundeskriminalamt', url: 'https://www.bka.de' },
+                    { title: 'Mediendienst Integration', url: 'https://mediendienst-integration.de' },
+                    { title: 'Bundesregierung / PKS', url: 'https://www.bundesregierung.de' }
                 ]
             },
             {
-                topic: 'Medien & Demokratievertrauen',
-                claim: '„Die Medien sind gleichgeschaltet / Lügenpresse.“',
-                fact_check: 'Deutschland zählt international zu den Ländern mit hoher Pressefreiheit. Mehrheitsumfragen zeigen weiterhin ein stabiles Vertrauen in etablierte Medien. Fehler werden öffentlich korrigiert; Medien unterliegen journalistischen Standards und Selbstkontrolle.',
+                topic: 'Biologie & Rassismus',
+                claim: '„Es gibt biologisch klar getrennte Menschenrassen.“',
+                fact_check: 'Die moderne Genetik zeigt, dass Menschen biologisch extrem ähnlich sind. Genetische Unterschiede innerhalb sogenannter „ethnischer Gruppen“ sind oft größer als zwischen ihnen. „Rasse“ ist biologisch keine präzise Kategorie beim Menschen.',
                 stats: [
-                    '61 % der Bevölkerung vertrauen deutschen Medien (Infratest 2025).',
-                    'Rang 11 im weltweiten Pressefreiheitsindex (2024).'
+                    'Über 99,9 % der menschlichen DNA ist identisch.',
+                    '„Rasse“ ist biologisch keine präzise Kategorie beim Menschen.',
+                    'Hautfarbe beschreibt nur einen kleinen Teil genetischer Variation.'
                 ],
                 visual: {
                     type: 'chart-placeholder',
-                    title: 'Balkendiagramm',
-                    note: 'Medienvertrauen nach Parteipräferenz, Entwicklung Vertrauen 2015–2025.'
+                    title: 'Genetische Vielfalt',
+                    image: 'assets/rassentheorie.png',
+                    note: 'Gemeinsamkeiten, Variation und Grenzen biologischer Rassekonzepte.'
                 },
                 sources: [
-                    { title: 'Infratest dimap', url: 'https://www.infratest-dimap.de' },
-                    { title: 'Reporter ohne Grenzen', url: 'https://www.reporter-ohne-grenzen.de' },
-                    { title: 'Deutscher Presserat', url: 'https://www.presserat.de' }
+                    { title: 'UNESCO', url: 'https://www.unesco.org' },
+                    { title: 'Smithsonian Human Origins', url: 'https://humanorigins.si.edu' },
+                    { title: 'National Geographic – Human Genetics', url: 'https://www.nationalgeographic.com' }
                 ]
             },
             {
-                topic: 'Europa & Souveränität',
-                claim: '„Die EU nimmt Deutschland die Souveränität und kostet nur Geld.“',
-                fact_check: 'Deutschland gestaltet EU-Politik aktiv mit. Als Exportnation profitiert es vom Binnenmarkt und gemeinsamen Standards. Die wirtschaftlichen Vorteile der EU-Mitgliedschaft übersteigen die Nettozahlungen.',
+                topic: 'Wirtschaft',
+                claim: '„Hohe Steuern zerstören jede Wirtschaft.“',
+                fact_check: 'Mehrere wirtschaftlich starke Staaten besitzen höhere Steuer- und Abgabenquoten als Deutschland. Entscheidend sind Effizienz, Investitionen, Infrastruktur und Bildung. Steuerpolitik bleibt umstritten, aber höhere Abgaben führen nicht automatisch zu wirtschaftlichem Niedergang.',
                 stats: [
-                    '447 Mio. EU-Bürger im Binnenmarkt.',
-                    '14,5 Bio. € Wirtschaftsleistung (EU).',
-                    'Nettozahlung 2024: ca. 13,1 Mrd. €.',
-                    'EU-Finanzrahmen > 2 Bio. € Investitionsvolumen.'
+                    'Skandinavische Länder kombinieren hohe Steuern mit hoher Wettbewerbsfähigkeit.',
+                    'Investitionen in Infrastruktur und Bildung beeinflussen Wachstum stark.',
+                    'Extrem niedrige Steuern führen nicht automatisch zu Wohlstand.'
                 ],
                 visual: {
                     type: 'chart-placeholder',
-                    title: 'Infografik',
-                    note: 'Handelsvolumen Deutschland–EU, Nettozahlungen vs. wirtschaftlicher Nutzen.'
+                    title: 'Steuern und Wettbewerbsfähigkeit',
+                    note: 'Abgabenquoten, öffentliche Investitionen und Wachstum im Vergleich.'
                 },
                 sources: [
-                    { title: 'KfW Research', url: 'https://www.kfw.de' },
-                    { title: 'Europäische Kommission', url: 'https://commission.europa.eu' },
-                    { title: 'Bundesministerium der Finanzen', url: 'https://www.bundesfinanzministerium.de' }
+                    { title: 'OECD', url: 'https://www.oecd.org' },
+                    { title: 'International Monetary Fund', url: 'https://www.imf.org' },
+                    { title: 'World Bank', url: 'https://www.worldbank.org' }
                 ]
             }
         ];
@@ -666,9 +667,12 @@
                 const sourcesHtml = argument.sources
                     .map(source => `<li><a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.title}</a></li>`)
                     .join('');
-                const visualContent = typeof argument.visual === 'string'
-                    ? `Bildreferenz: ${argument.visual}`
-                    : argument.visual?.title || 'Visualisierung folgt.';
+                const visualImage = typeof argument.visual === 'object' ? argument.visual?.image : null;
+                const visualContent = visualImage
+                    ? `<img src="${visualImage}" alt="${argument.topic} Visualisierung" class="max-h-full max-w-full w-auto h-auto object-contain rounded-md bg-white p-2 shadow-sm" />`
+                    : typeof argument.visual === 'string'
+                        ? `Bildreferenz: ${argument.visual}`
+                        : argument.visual?.title || 'Visualisierung folgt.';
                 const visualNote = typeof argument.visual === 'object' && argument.visual?.note
                     ? argument.visual.note
                     : 'Empfehlung: Visualisierung passend zu den Quellen ergänzen.';
@@ -678,8 +682,7 @@
                 article.innerHTML = `
                     <div class="p-6 border-b border-slate-200">
                         <p class="text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-2">${argument.topic}</p>
-                        <h3 class="text-xl font-bold text-slate-800 mb-2">Claim</h3>
-                        <p class="text-red-700 font-semibold">${argument.claim}</p>
+                        <h2 class="text-2xl font-bold text-red-700">${argument.claim}</h2>
                     </div>
                     <div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div class="space-y-4">
@@ -694,7 +697,7 @@
                         </div>
                         <div class="bg-slate-50 border border-dashed border-slate-300 rounded-lg p-4">
                             <h4 class="text-sm uppercase tracking-wider text-indigo-700 font-bold mb-2">Visualisierung</h4>
-                            <div class="h-48 bg-gradient-to-br from-indigo-100 to-slate-100 rounded-md flex items-center justify-center text-slate-500 text-sm text-center px-4">${visualContent}</div>
+                            <div class="${visualImage ? 'h-72 md:h-96' : 'h-48'} bg-gradient-to-br from-indigo-100 to-slate-100 rounded-md flex items-center justify-center text-slate-500 text-sm text-center px-4 overflow-hidden">${visualContent}</div>
                             <p class="mt-3 text-xs text-slate-500">${visualNote}</p>
                         </div>
                     </div>
