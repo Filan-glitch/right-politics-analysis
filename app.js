@@ -24,6 +24,12 @@ class App {
             this.setupEventListeners();
             this.applyDarkMode();
             
+            // WCAG-AAA: Dark Mode Button Status setzen
+            const toggle = document.getElementById('dark-mode-toggle');
+            if (toggle) {
+                toggle.setAttribute('aria-pressed', this.darkMode ? 'true' : 'false');
+            }
+            
             // Erste Kategorie laden
             this.selectCategory(this.data.categories[0].id);
         } catch (error) {
@@ -322,6 +328,12 @@ class App {
         this.darkMode = !this.darkMode;
         this.applyDarkMode();
         localStorage.setItem('darkMode', JSON.stringify(this.darkMode));
+        
+        // WCAG-AAA: aria-pressed aktualisieren
+        const toggle = document.getElementById('dark-mode-toggle');
+        if (toggle) {
+            toggle.setAttribute('aria-pressed', this.darkMode ? 'true' : 'false');
+        }
     }
 
     applyDarkMode() {

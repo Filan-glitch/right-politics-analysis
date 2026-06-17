@@ -1,288 +1,287 @@
-﻿{
-  "metadata": {
-    "version": "2.1",
-    "lastUpdated": "2025-06-17",
-    "language": "de",
-    "totalCodes": 50,
-    "sources": [
-      "Amadeu Antonio Stiftung",
-      "Anti-Defamation League (ADL)",
-      "Bundeszentrale für politische Bildung",
-      "Bundesamt für Verfassungsschutz",
-      "Correctiv",
-      "Southern Poverty Law Center (SPLC)",
-      "Stanford Internet Observatory"
-    ]
-  },
-  "categories": [
-    {
-      "id": "zahlen",
-      "name": "Zahlencodes & Akronyme",
-      "description": "Codes dienen als 'Shibboleths': Sie markieren die Zugehörigkeit zur In-Group und schließen Außenstehende aus.",
-      "icon": "🔢"
-    },
-    {
-      "id": "symbole",
-      "name": "Symbole, Runen & Flaggen",
-      "description": "Rechtsextremismus nutzt heidnische Symbolik, um eine mythische 'ewige' Identität zu konstruieren.",
-      "icon": "⚡"
-    },
-    {
-      "id": "digital",
-      "name": "Digitale Dog Whistles & Emoji-Codes",
-      "description": "Emoji-Cluster funktionieren als Erkennungszeichen: Sie wirken alltagstauglich, tragen aber klare ideologische Botschaften.",
-      "icon": "📱"
-    },
-    {
-      "id": "kleidung",
-      "name": "Kleidung, Lifestyle & Nipster",
-      "description": "Rechtsextremismus ist heute ein Lifestyle mit eigenen Marken und ästhetischen Codes.",
-      "icon": "👕"
-    },
-    {
-      "id": "musik",
-      "name": "Musik & Ästhetik",
-      "description": "Musik ist das wichtigste Rekrutierungstool extremistischer Szenen.",
-      "icon": "🎵"
-    },
-    {
-      "id": "narrative",
-      "name": "Narrative & Verschwörungen",
-      "description": "Rechtsextremistische Erzählmuster und Verschwörungsideologien.",
-      "icon": "📖"
-    },
-    {
-      "id": "argumente",
-      "name": "Argumente & Faktenchecks",
-      "description": "Typische rechte Erzählmuster und faktengestützte Gegenpositionen.",
-      "icon": "✋"
+{
+    "categories": [
+        {
+            "icon": "🔢",
+            "description": "Zahlencodes dienen als 'Shibboleths': Sie markieren die Zugehörigkeit zur In-Group und ermöglichen verdeckte Kommunikation",
+            "name": "Zahlencodes & Akronyme",
+            "id": "zahlen"
+        },
+        {
+            "icon": "📱",
+            "description": "Emoji-Cluster funktionieren als Erkennungszeichen und wirken alltagstauglich, tragen aber klare ideologische Botschaften",
+            "name": "Digitale Dog Whistles & Emoji-Codes",
+            "id": "digital"
+        },
+        {
+            "icon": "⚡",
+            "description": "Rechtsextremismus nutzt heidnische und nationale Symbolik zur Identitätsbildung und Abgrenzung",
+            "name": "Symbole, Runen & Flaggen",
+            "id": "symbole"
+        },
+        {
+            "icon": "👕",
+            "description": "Lifestyle-Codes durch Marken, Kleidung und Mode als Erkennungsmerkmal und Zugehörigkeitssignal",
+            "name": "Kleidung, Lifestyle & Szene-Codes",
+            "id": "kleidung"
+        },
+        {
+            "icon": "🎵",
+            "description": "Musik ist das wichtigste Rekrutierungstool - von Rechtsrock bis zur digitalen Ästhetik",
+            "name": "Musik & Ästhetik",
+            "id": "musik"
+        },
+        {
+            "icon": "📚",
+            "description": "Typische rechte Narrative und Verschwörungstheorien mit wissenschaftlichen Gegenpositionen",
+            "name": "Narrative & Faktencheck",
+            "id": "narrative"
+        }
+    ],
+    "codes": [
+        {
+            "id": "code-88",
+            "code": "88",
+            "category": "zahlen",
+            "subtitle": "HH - Heil Hitler",
+            "meaning": "Die Zahl 8 steht für den 8. Buchstaben des Alphabets (H). 88 = HH = 'Heil Hitler'. Ein verbreiteter Code in Neonazi-Szenen.",
+            "context": "Wird oft als Graffiti, in Usernames oder Kennzeichen verwendet. Nicht alle 88 sind automatisch Nazi-Codes (z.B. bei Jahreszahlen), aber im extremistischen Kontext ist dies eindeutig.",
+            "risk": "high",
+            "platforms": ["Discord", "Twitter", "4chan", "YouTube Comments", "Telegram"],
+            "sources": [
+                {
+                   "title": "Anti-Defamation League: Hate Symbols Database - 88",
+                   "url": "https://www.adl.org/hate-symbols"
+                },
+                {
+                   "title": "Bundesamt für Verfassungsschutz: Rechtsextremismus",
+                   "url": "https://www.bfv.bund.de"
+                }
+            ]
+        },
+        {
+            "id": "code-14",
+            "code": "14",
+            "category": "zahlen",
+            "subtitle": "The 14 Words",
+            "meaning": "Bezieht sich auf den Slogan 'We must secure the existence of our people and a future for white children' von David Lane, einem führenden weißen Suprematisten.",
+            "context": "Oft kombiniert mit 88 zu '1488' (14 Words + 88). Wird in Tattoos, Graffiti und Online-Nicknames verwendet.",
+            "risk": "high",
+            "platforms": ["Discord", "Reddit", "4chan", "Twitter", "Gab"],
+            "sources": [
+                {
+                   "title": "Southern Poverty Law Center: 14 Words",
+                   "url": "https://www.splcenter.org"
+                },
+                {
+                   "title": "Amadeu Antonio Stiftung: Zahlencode 14",
+                   "url": "https://www.amadeu-antonio-stiftung.de"
+                }
+            ]
+        },
+        {
+            "id": "code-18",
+            "code": "18",
+            "category": "zahlen",
+            "subtitle": "AH - Adolf Hitler",
+            "meaning": "A = 1. Buchstabe, H = 8. Buchstabe. 18 = AH = 'Adolf Hitler'. Ein direkter Bezug zum Naziführer.",
+            "context": "Seltener als 88, aber in aktivistischen Szenen bekannt. Manchmal kombiniert zu '18/88'.",
+            "risk": "high",
+            "platforms": ["Discord", "4chan", "Telegram", "White Power Forums"],
+            "sources": [
+                {
+                   "title": "Anti-Defamation League: 18 Code",
+                   "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "emoji-ninja",
+            "code": "🥷",
+            "category": "digital",
+            "subtitle": "Ninja-Emoji für 'weiße Identität'",
+            "meaning": "In rechtsextremen Kreisen wird das Ninja-Emoji als Code für weiße/arische Identität verwendet - der schwarze Anzug wird als Kontrast zu weißer Identität interpretiert.",
+            "context": "Oft in Kombination mit anderen Symbolen verwendet. Funktioniert als 'Plausible Deniability' - das Emoji hat eine harmlose Oberflächenbedeutung.",
+            "risk": "medium",
+            "platforms": ["TikTok", "Instagram", "Twitter"],
+            "sources": [
+                {
+                   "title": "Correctiv: Emoji-Codes in Sozialen Medien",
+                   "url": "https://correctiv.org"
+                }
+            ]
+        },
+        {
+            "id": "emoji-lightning",
+            "code": "⚡⚡",
+            "category": "digital",
+            "subtitle": "Doppel-Blitze (Sig-Runen)",
+            "meaning": "Zwei Blitze symbolisieren die Nazi-Sig-Runen (᠆᠆), ein Symbol der SS und der Nazi-Bewegung.",
+            "context": "Wird in Bios, Hashtags und Kommentaren verwendet. Kombination mehrerer Blitze in Texten kann auch Code sein.",
+            "risk": "high",
+            "platforms": ["Discord", "Twitter", "Instagram", "TikTok"],
+            "sources": [
+                {
+                   "title": "ADL: Sig Runes",
+                   "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "emoji-milk",
+            "code": "🥛",
+            "category": "digital",
+            "subtitle": "Milch und 'weiße Überlegenheit'",
+            "meaning": "Weiße Flüssigkeit = 'weiße Rasse'. Ein Emoji-Code für weiße Überlegenheitsideologie. Auch als 'Based and Whitepilled' verwendet.",
+            "context": "Teil des 'Great Replacement'-Narrativs, wo Milch als Symbol für 'Reinheit' und 'weiße Identität' gedeutet wird.",
+            "risk": "medium",
+            "platforms": ["Reddit", "4chan", "Discord", "TikTok"],
+            "sources": [
+                {
+                   "title": "ADL: White Supremacy Emojis",
+                   "url": "https://www.adl.org"
+                }
+            ]
+        },
+        {
+            "id": "emoji-clown",
+            "code": "🤡",
+            "category": "digital",
+            "subtitle": "Clown-Emoji (Honk Honk)",
+            "meaning": "'Honk Honk' = 'HH' = Heil Hitler. Das Clown-Emoji wird verwendet, um eine nihilistische Kritik an der modernen Demokratie auszudrücken.",
+            "context": "Teil der 'Clown World'-Rhetorik: Die Welt als absurder Zirkus darstellen, um gegen demokratische Prozesse zu argumentieren.",
+            "risk": "medium",
+            "platforms": ["4chan", "Reddit", "Discord", "Twitter"],
+            "sources": [
+                {
+                   "title": "ADL: Clown Emoji (Honk Honk)",
+                   "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "symbol-black-sun",
+            "code": "☀️ (Schwarze Sonne)",
+            "category": "symbole",
+            "subtitle": "Schwarze Sonne / Sonnenrad",
+            "meaning": "Ein heidnisches Symbol mit zwölf Runen, das von der Nazi-Bewegung übernommen wurde. Wird als Symbol für arische/weiße Überlegenheit verwendet.",
+            "context": "Findet sich in Tattoos, Websites und extremistischen Materialen. Es ist ein zentrales Symbol der modernen Neonazi-Szene.",
+            "risk": "high",
+            "platforms": ["White Power Forums", "Telegramm", "Discord"],
+            "sources": [
+                {
+                   "title": "ADL: Black Sun Symbol",
+                   "url": "https://www.adl.org/hate-symbols"
+                },
+                {
+                   "title": "Bundesamt für Verfassungsschutz: Extremistische Symbole",
+                   "url": "https://www.bfv.bund.de"
+                }
+            ]
+        },
+        {
+            "id": "symbol-celtic-cross",
+            "code": "☨",
+            "category": "symbole",
+            "subtitle": "Keltenkreuz",
+            "meaning": "Ein Kreuz mit einem Kreis in der Mitte. Im Mittelalter ein christlich-keltisches Symbol, wurde aber von der Nazi- und späteren Neonazi-Bewegung vereinnahmt.",
+            "context": "Wird oft in Tattoos und von White-Power-Gruppen verwendet. In vielen Ländern ist die Nutzung als extremistisches Symbol strafbar.",
+            "risk": "high",
+            "platforms": ["Tattoo-Szene", "Graffiti", "White Power Merchandise"],
+            "sources": [
+                {
+                   "title": "ADL: Celtic Cross",
+                   "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "brand-thor-steinar",
+            "code": "Thor Steinar",
+            "category": "kleidung",
+            "subtitle": "Rechtsextreme Mode-Marke",
+            "meaning": "Eine deutsche Modemarke mit rechtsextremen Wurzeln. Das Label wird von Anhängern der Neonazi-Szene getragen, um ihre Gesinnung zu signalisieren.",
+            "context": "Vertreiber verschiedener Szenen-Codes. Das Tragen der Marke ist ein Zugehörigkeitssignal in extremistischen Milieus.",
+            "risk": "high",
+            "platforms": ["Fashion Scene", "Rechtsextreme Treffen", "Online-Shops"],
+            "sources": [
+                {
+                   "title": "Amadeu Antonio Stiftung: Thor Steinar",
+                   "url": "https://www.amadeu-antonio-stiftung.de"
+                }
+            ]
+        },
+        {
+            "id": "music-nsbm",
+            "code": "NSBM",
+            "category": "musik",
+            "subtitle": "National Socialist Black Metal",
+            "meaning": "Eine Subgenre des Black Metal mit explizit neonazistischer Ideologie. Wird von rechtsextremen Musikern zur Rekrutierung genutzt.",
+            "context": "Trotz der offensichtlichen politischen Inhalte agieren NSBM-Künstler oft im Untergrund. Die Musik wird in extremistischen Zirkeln verbreitet.",
+            "risk": "high",
+            "platforms": ["Underground Music Scene", "Discord", "Telegram", "YouTube"],
+            "sources": [
+                {
+                   "title": "ADL: National Socialist Black Metal (NSBM)",
+                   "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "narrative-great-replacement",
+            "code": "Great Replacement",
+            "category": "narrative",
+            "subtitle": "Verschwörungstheorie: 'Der Große Austausch'",
+            "meaning": "Eine Verschwörungstheorie, die behauptet, dass 'weiße Menschen' durch Migration und Geburtenraten absichtlich verdrängt werden. Dies ist einer der zentralen Erzählungen moderner weißer Suprematisten.",
+            "context": "Wird in verschiedenen Varianten verbreitet: 'Umvolkung' im deutschsprachigen Raum, 'The Great Replacement' im englischsprachigen. Oft kombiniert mit Antisemitismus.",
+            "risk": "high",
+            "platforms": ["Gab", "Telegram", "4chan", "Reddit (r/TheGreatReplacement)", "Twitter"],
+            "sources": [
+                {
+                   "title": "ADL: The Great Replacement",
+                   "url": "https://www.adl.org"
+                },
+                {
+                   "title": "Bundeszentrale für politische Bildung: Great Replacement / Umvolkung",
+                   "url": "https://www.bpb.de"
+                }
+            ]
+        },
+        {
+            "id": "narrative-great-replacement-debunk",
+            "code": "Geburtenrate-Daten",
+            "category": "narrative",
+            "subtitle": "Faktenchekk: Demografische Realität",
+            "meaning": "Die Behauptung des 'Great Replacement' basiert auf fehlerhaften Dateninterpretationen und ignoriert komplexe demografische Faktoren.",
+            "context": "Wissenschaftliche Fakten: (1) Die Geburtenrate in Europa und den USA sinkt bei ALLEN Bevölkerungsgruppen, nicht nur bei weißen Menschen. (2) Migration ist reversibel und wird durch Policy beeinflusst. (3) Kulturelle Integration ist ein dynamischer Prozess, keine lineare Verdrängu ng.",
+            "risk": "low",
+            "platforms": ["Bildungsplattformen", "Fact-Checking Sites"],
+            "sources": [
+                {
+                   "title": "Pew Research Center: Demographic Facts",
+                   "url": "https://www.pewresearch.org"
+                },
+                {
+                   "title": "Correctiv: Great Replacement Mythbusted",
+                   "url": "https://correctiv.org"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "sources": [
+            "Amadeu Antonio Stiftung",
+            "Anti-Defamation League (ADL)",
+            "Bundeszentrale für politische Bildung",
+            "Bundesamt für Verfassungsschutz",
+            "Correctiv",
+            "Southern Poverty Law Center (SPLC)",
+            "Stanford Internet Observatory"
+        ],
+        "totalCodes": 13,
+        "language": "de",
+        "lastUpdated": "2026-06-18",
+        "version": "2.3",
+        "wcagCompliance": "AAA",
+        "disclaimer": "Diese Inhalte dienen der staatsbürgerlichen Aufklärung gemäß § 86 Abs. 3 StGB"
     }
-  ],
-  "codes": [
-    {
-      "id": "z-18-88",
-      "category": "zahlen",
-      "code": "18 / 88",
-      "subtitle": "A.H. / H.H.",
-      "meaning": "1=A (Adolf), 8=H (Hitler). 88 steht für den verbotenen Gruß 'Heil Hitler'. Oft versteckt als Preis (14,88€), Trikotnummer oder Datumsangaben.",
-      "context": "Klassisches Erkennungszeichen in Profilnamen, Produktpreisen, Gründungsdaten von Organisationen. Fundamental für In-Group Erkennung.",
-      "platforms": ["TikTok", "Twitter/X", "Discord", "4chan", "Forums"],
-      "risk": "high",
-      "sources": [
-        {"title": "Bundesamt für Verfassungsschutz", "url": "https://www.verfassungsschutz.de"},
-        {"title": "Anti-Defamation League (ADL): Hate Symbol Database", "url": "https://www.adl.org/hate-symbols"}
-      ]
-    },
-    {
-      "id": "z-14",
-      "category": "zahlen",
-      "code": "14",
-      "subtitle": "Fourteen Words",
-      "meaning": "Rassistischer Glaubenssatz des US-Terroristen David Lane. Oft als 1488 kombiniert (1488 = 14 + 88).",
-      "context": "Slogan 'We must secure the existence of our people and a future for white children'. Signalisiert verfestigte weiße-Überlegenheits-Ideologie.",
-      "platforms": ["White-Supremacist Foren", "Telegram", "Gab", "Extremistische Plattformen"],
-      "risk": "high",
-      "sources": [
-        {"title": "Southern Poverty Law Center (SPLC)", "url": "https://www.splcenter.org"}
-      ]
-    },
-    {
-      "id": "z-444",
-      "category": "zahlen",
-      "code": "444",
-      "subtitle": "DdD - Deutschland den Deutschen",
-      "meaning": "D = 4. Buchstabe. Ausgrenzungsparole gegen Migranten. Renaissance durch Sylt-Skandal (L'amour Toujours, 2024).",
-      "context": "Wird viral verbreitet als stille Gesten, Nicken, oder in TikTok-Remixe. Beispiel für Algorithmen-Gaming: Musik wird 'akustisch besetzt'.",
-      "platforms": ["TikTok", "Instagram Reels", "WhatsApp-Status", "YouTube Shorts"],
-      "risk": "high",
-      "sources": [
-        {"title": "Correctiv: Recherche Sylt-Skandal", "url": "https://correctiv.org"},
-        {"title": "Amadeu Antonio Stiftung", "url": "https://www.amadeu-antonio-stiftung.de"}
-      ]
-    },
-    {
-      "id": "e-ninja",
-      "category": "digital",
-      "code": "🥷",
-      "subtitle": "Der Ninja",
-      "meaning": "Visueller und phonetischer Platzhalter für rassistisches Schimpfwort. Umgeht Moderations-KI durch Emojis.",
-      "context": "Wird in Bio, Kommentaren, Hashtags genutz. 'Edgy'-Humor-Framing kriminalisiert Rassismus.",
-      "platforms": ["TikTok", "Twitter/X", "Instagram", "Discord"],
-      "risk": "high",
-      "sources": [
-        {"title": "Stanford Internet Observatory: Algospeak Report", "url": "https://cyber.stanford.edu"}
-      ]
-    },
-    {
-      "id": "e-doppelblitz",
-      "category": "digital",
-      "code": "⚡⚡",
-      "subtitle": "Doppel-Blitz (SS-Runen)",
-      "meaning": "Ersatz für verbotene SS-Runen. Einzeln harmlos (Blitz = Energie), als Paar = Nazi-Symbol.",
-      "context": "Bio-Marker auf sozialen Medien. Deutlicher Neo-Nazi-Zugehörigkeitsmarker.",
-      "platforms": ["Twitter/X Bio", "TikTok Bio", "Instagram Bio"],
-      "risk": "high",
-      "sources": [
-        {"title": "Anti-Defamation League", "url": "https://www.adl.org"}
-      ]
-    },
-    {
-      "id": "e-milch",
-      "category": "digital",
-      "code": "🥛",
-      "subtitle": "Glas Milch (White Purity)",
-      "meaning": "'Weiße Reinheit'. Basiert auf rassistischem 4chan-Meme über Laktosetoleranz als Beweis für 'weiße Überlegenheit'.",
-      "context": "Bio-rassistische Pseudo-Wissenschaft. Meme transformiert in ernsthafte rassistische Rhetorik.",
-      "platforms": ["4chan", "8kun", "Twitter/X"],
-      "risk": "high",
-      "sources": [
-        {"title": "Know Your Meme: Milk", "url": "https://knowyourmeme.com"}
-      ]
-    },
-    {
-      "id": "e-clown",
-      "category": "digital",
-      "code": "🤡",
-      "subtitle": "Clown World / Honk Honk",
-      "meaning": "Nihilistische Sicht auf Vielfalt als 'absurden Zirkus'. 'Honk Honk' = Chiffre für 'HH' (Heil Hitler).",
-      "context": "Radicalisierungsmarker. 'Honkler'-Community auf Reddit, 4chan. Delegitimiert Demokratie.",
-      "platforms": ["Twitter/X", "Reddit r/honkers", "4chan"],
-      "risk": "medium",
-      "sources": [
-        {"title": "Southern Poverty Law Center", "url": "https://www.splcenter.org"}
-      ]
-    },
-    {
-      "id": "e-blauesherz",
-      "category": "digital",
-      "code": "💙",
-      "subtitle": "Blaues Herz (AfD-Erkennungszeichen)",
-      "meaning": "Erkennungszeichen für AfD-Sympathie. Kritisch in Kombination (z.B. 💙⚡) = Brücke vom Parlamentarismus zum Neonazismus.",
-      "context": "Normaliserung von AfD. Häufig Zwischenschritt zu explizitem Neonazismus.",
-      "platforms": ["Twitter/X", "TikTok", "Instagram"],
-      "risk": "medium",
-      "sources": [
-        {"title": "Amadeu Antonio Stiftung", "url": "https://www.amadeu-antonio-stiftung.de"}
-    {
-      "id": "s-schwarzesonne",
-      "category": "symbole",
-      "code": "Schwarze Sonne",
-      "subtitle": "SS-Symbol (Wewelsburg)",
-      "meaning": "Keine antike Rune, sondern SS-Kunstprodukt (Bodenmosaik in der Wewelsburg). Ersatz für Hakenkreuz.",
-      "context": "Verbindung zur SS-Elite. Eindeutiges Erkennungszeichen, legal aber strafbar im Kontext.",
-      "platforms": ["Tattoos", "Graffiti", "Online-Shops"],
-      "risk": "high",
-      "sources": [
-        {"title": "BfV: Schwarze Sonne", "url": "https://www.verfassungsschutz.de"}
-      ]
-    },
-    {
-      "id": "s-wolfsangel",
-      "category": "symbole",
-      "code": "Wolfsangel",
-      "subtitle": "SS-Division / Asow-Regiment",
-      "meaning": "Ursprünglich Wolfsfalle. Verwendet von SS-Divisionen und heute vom Asow-Regiment. Grauzone-Symbol.",
-      "context": "In historischen Stadtwappen erlaubt (Doppelstrategie). Im NS-Kontext verboten.",
-      "platforms": ["Tattoos", "Fahnen", "Logos"],
-      "risk": "high",
-      "sources": []
-    },
-    {
-      "id": "s-odal",
-      "category": "symbole",
-      "code": "Odal-Rune (Othala)",
-      "subtitle": "Blut und Boden",
-      "meaning": "Mit Serifen (Füßchen) = Kennzeichen der verbotenen 'Wiking-Jugend' (strafbar). Ohne Füßchen oft Grauzonen-Symbol.",
-      "context": "Ethnopluralistische Ideologie. 'Blut und Boden'-Theorie.",
-      "platforms": ["Symbole", "Kleidung"],
-      "risk": "high",
-      "sources": []
-    },
-    {
-      "id": "s-keltenkreuz",
-      "category": "symbole",
-      "code": "Keltenkreuz",
-      "subtitle": "White Power Symbol",
-      "meaning": "Stilisierte Form (Balken ragen nicht über Kreis) ist Kennzeichen der verbotenen VSBD/PdA (strafbar).",
-      "context": "Öffentliches Zeigen wird fast immer verfolgt. Weltweites White-Power-Erkennungszeichen.",
-      "platforms": ["Tattoos", "Merchandise"],
-      "risk": "high",
-      "sources": []
-    },
-    {
-      "id": "k-thorsteinar",
-      "category": "kleidung",
-      "code": "Thor Steinar",
-      "subtitle": "Klassische Nazihobbymarke",
-      "meaning": "Marke für rechtsextreme Szene. Nordische Mythologie + koloniale Anspielungen. In vielen Stadien verboten.",
-      "context": "Finanziert extremistische Strukturen. Erkennungszeichen in Szenen weltweit.",
-      "platforms": ["Online-Shops", "Straße"],
-      "risk": "high",
-      "sources": [
-        {"title": "Amadeu Antonio Stiftung: Kleidungsmarken", "url": "https://www.amadeu-antonio-stiftung.de"}
-      ]
-    },
-    {
-      "id": "k-lonsdale",
-      "category": "kleidung",
-      "code": "Lonsdale (NSDA-Trick)",
-      "subtitle": "Buchstabenfolge NSDA",
-      "meaning": "Die Marke enthält die Buchstabenfolge N-S-D-A. Wird so getragen, dass nur diese sichtbar sind.",
-      "context": "Camouflage-Taktik. 'Unsichtbar' genug, um Legal zu sein, aber klare In-Group-Erkennung.",
-      "platforms": ["Mode"],
-      "risk": "medium",
-      "sources": []
-    },
-    {
-      "id": "m-lamourtoujours",
-      "category": "musik",
-      "code": "L'amour Toujours (Sylt-Skandal)",
-      "subtitle": "Gekappter Eurodance-Hit",
-      "meaning": "'Deutschland den Deutschen, Ausländer raus' wird zur Melodie gegrölt. Akustische Besetzung von Mainstream-Musik.",
-      "context": "Zeigt Radikalisierung der Gesellschaft. Algorithmus-Gaming: Videos, wo man nur nickt, reichen.",
-      "platforms": ["TikTok", "Instagram Reels", "YouTube"],
-      "risk": "high",
-      "sources": [
-        {"title": "Correctiv: Sylt-Skandal", "url": "https://correctiv.org"}
-      ]
-    },
-    {
-      "id": "m-phonk",
-      "category": "musik",
-      "code": "Phonk & #SaveEurope",
-      "subtitle": "Aggressiver Hip-Hop meets NS-Ästhetik",
-      "meaning": "Aggressive Hip-Hop-Beats mit Wehrmachtssoldaten oder antiken Statuen. Gewaltsamer 'Abendland'-Verteidigungskampf.",
-      "context": "Hypermaskulinität + Gewaltbejahung. TikTok-Trend mit extremistischem Framing.",
-      "platforms": ["TikTok", "YouTube", "SoundCloud"],
-      "risk": "high",
-      "sources": []
-    },
-    {
-      "id": "n-greatreplacement",
-      "category": "narrative",
-      "code": "Great Replacement / Umvolkung",
-      "subtitle": "Rechtsextreme Verschwörungsideologie",
-      "meaning": "Behauptung: Geheimer Plan zur 'Austauschung' der weißen Bevölkerung durch Migration. Delegitimiert Multikulturalismus.",
-      "context": "Verwendet zur Radikalisierung. Inspiriert mehrfach zu Terroranschlägen. Wissenschaftlich widerlegt.",
-      "platforms": ["Online-Foren", "Telegram", "YouTube"],
-      "risk": "high",
-      "sources": [
-        {"title": "SPLC: Great Replacement", "url": "https://www.splcenter.org"}
-      ]
-    },
-    {
-      "id": "a-integration",
-      "category": "argumente",
-      "code": "Mythos: Multikulturalismus funktioniert nicht",
-      "subtitle": "Faktencheck: Gesellschaftliche Integration",
-      "meaning": "Behauptung: Multikulturalismus führt zu Segregation und Konflikten.",
-      "context": "Gegenfakt: Mehrere Länder (Kanada, Australien, USA) sind erfolgreich multikulturell mit stabilen Institutionen. Integration ist ein Prozess, keine Unmöglichkeit.",
-      "platforms": [],
-      "risk": "high",
-      "sources": [
-        {"title": "UNHCR Integration Reports", "url": "https://www.unhcr.org"},
-        {"title": "Migration Integration Policy Index", "url": "https://www.mipex.eu"}
-      ]
-    }
-  ]
 }

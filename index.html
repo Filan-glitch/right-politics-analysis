@@ -16,16 +16,16 @@
         <div class="max-w-4xl mx-auto">
             <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
                 Die Architektur des Hasses.<br>
-                <span class="text-indigo-400">Codes erkennen. Metapolitik verstehen.</span>
+                <span class="text-indigo-300">Codes erkennen. Metapolitik verstehen.</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p class="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto">
                 Rechtsextremismus hat eine semiotische Metamorphose durchlaufen. Statt Springerstiefeln sehen wir heute Emojis, "Algospeak" und popkulturelle Referenzen.
                 Dieser Leitfaden dekonstruiert die Chiffren, Runen und digitalen Dog Whistles, mit denen extremistische Akteure versuchen, den vorpolitischen Raum zu besetzen.
             </p>
-            <button id="enter-btn" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-indigo-500/50 transition transform hover:-translate-y-1">
+            <button id="enter-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-indigo-500/50 transition transform hover:-translate-y-1" aria-label="Analyse starten">
                 Analyse starten
             </button>
-            <p class="mt-6 text-xs text-slate-500 uppercase tracking-widest">Ein Bildungsprojekt basierend auf aktuellen Monitoring-Berichten</p>
+            <p class="mt-6 text-xs text-gray-300 uppercase tracking-widest">Ein Bildungsprojekt basierend auf aktuellen Monitoring-Berichten</p>
         </div>
     </section>
 
@@ -42,11 +42,12 @@
                             type="search" 
                             id="search-input" 
                             placeholder="Suche..." 
-                            class="w-full px-4 py-2 rounded-md bg-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                            class="w-full px-4 py-2 rounded-md bg-slate-700 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-300"
                             aria-label="Codes und Symbole durchsuchen">
                     </div>
-                    <button id="dark-mode-toggle" class="px-3 py-2 rounded-md bg-slate-700 hover:bg-slate-600 transition" aria-label="Dark Mode umschalten">
-                        🌙
+                    <button id="dark-mode-toggle" class="px-3 py-2 rounded-md bg-slate-700 hover:bg-slate-600 transition" aria-label="Dark Mode umschalten" aria-pressed="false">
+                        <span aria-hidden="true">🌙</span>
+                        <span class="sr-only">Dark Mode aktivieren</span>
                     </button>
                 </div>
             </div>

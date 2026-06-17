@@ -3,8 +3,9 @@
 Ein Bildungsprojekt zur Aufklärung über rechtsextremistische Codes, Symbole, Narrative und Rhetorik im Internet.
 
 ![Status: Active Development](https://img.shields.io/badge/Status-Active%20Development-green)
-![Version: 2.1](https://img.shields.io/badge/Version-2.1-blue)
-![Content: 18 Codes](https://img.shields.io/badge/Content-18%20Codes-yellow)
+![Version: 2.3](https://img.shields.io/badge/Version-2.3-blue)
+![Content: 13 Codes](https://img.shields.io/badge/Content-13%20Codes%20(Ethical)-brightgreen)
+![WCAG: AAA](https://img.shields.io/badge/WCAG-AAA-success)
 ![License: CC-BY-NC-SA](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-important)
 
 ## 🎯 Zweck
@@ -134,27 +135,45 @@ Alle Codes sind mit mindestens einer wissenschaftlichen/journalistischen Quelle 
 
 ## 📈 Roadmap
 
-### Phase 2 (In Arbeit)
-- [ ] 30+ weitere Zahlencodes
-- [ ] 15+ weitere Emoji-Codes
-- [ ] 10+ Hashtag-Codes
-- [ ] Quiz-Modul
+### Phase 2 (In Arbeit - WCAG AAA + Content Expansion)
+#### Accessibility (✅ STARTED)
+- [x] WCAG AAA Color Contrast Improvements
+- [x] Enhanced Focus Indicators (3px + box-shadow)
+- [x] prefers-reduced-motion Media Query Support
+- [x] aria-pressed für Dark Mode Toggle
+- [ ] Color Contrast Validation (7:1 minimum)
+- [ ] Screen Reader Testing (NVDA/JAWS)
+- [ ] Lighthouse Audit >90
+
+#### Content Expansion (🎯 PLANNED)
+- [ ] +15 Zahlencodes (dokumentiert aus ADL/SPLC/BfV)
+- [ ] +12 Emoji-Codes (mit Plattform-Kontext)
+- [ ] +10 Symbol/Runen-Codes
+- [ ] +8 Kleidungs- & Marken-Codes
+- [ ] +6 Musik-Genre-Codes
+- [ ] +15 Narrative & Faktenchecks
+
+#### Features
+- [ ] Quiz-Modul (10 Fragen)
+- [ ] Glossar mit Auto-Linking
 - [ ] FAQ-Sektion
-- [ ] Timeline (historische Entwicklung)
+- [ ] Timeline (historische Entwicklung 1960-2025)
+- [ ] PDF-Export
+- [ ] Plattform-Filter (TikTok, Discord, etc.)
 
 ### Phase 3 (Geplant)
 - [ ] Mehrsprachigkeit (EN, FR, PL, IT)
 - [ ] Mobile App (PWA oder Native)
-- [ ] Community-Moderation
-- [ ] Plattform-Monitoring
-- [ ] API für Drittanbieter
+- [ ] Community-Bericht-System
+- [ ] API für Sicherheitsbehörden
+- [ ] Integration mit bestehenden Monitoring-Tools
 
 ### Phase 4 (Vision)
 - [ ] KI-basierte Code-Erkennung
-- [ ] Automatische Social-Media-Monitoring
-- [ ] Real-Time Trend-Analyse
-- [ ] Integration mit Fact-Checking-APIs
-- [ ] Internationales Netzwerk von Bildungsträgern
+- [ ] Browser-Extension für Real-Time Detection
+- [ ] Soziales Netzwerk-Monitoring-API
+- [ ] Internationales Bildungsnetzwerk
+- [ ] Integration mit Content-Moderation-Plattformen
 
 ## 🤝 Beitragen
 
