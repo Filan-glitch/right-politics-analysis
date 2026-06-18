@@ -176,12 +176,12 @@ class App {
         ` : '';
 
         card.innerHTML = `
-            <div class="flex justify-between items-start mb-3">
-                <div class="flex-1">
-                    <span class="text-3xl font-bold">${code.code}</span>
+            <div class="flex flex-wrap gap-3 justify-between items-start mb-3">
+                <div class="flex-1 min-w-0">
+                    <span class="text-3xl font-bold break-words">${code.code}</span>
                     ${code.subtitle ? `<p class="text-sm font-semibold text-indigo-600 dark:text-indigo-400">${code.subtitle}</p>` : ''}
                 </div>
-                <span class="${riskClass} ml-2 flex-shrink-0">
+                <span class="${riskClass} flex-shrink-0">
                     ${riskLabel}
                 </span>
             </div>
