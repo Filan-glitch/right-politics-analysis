@@ -115,39 +115,69 @@ body.dark-mode .code-card {
     border-left-color: #818cf8;
 }
 
-/* Risiko-Badges */
+/* Risiko-Badges - KONSISTENTES DESIGN */
+.risk-critical {
+    display: inline-block;
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+body.dark-mode .risk-critical {
+    background-color: #991b1b;
+    color: #fecaca;
+}
+
 .risk-high {
-    background-color: #fee2e2;
-    color: #991b1b;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    font-size: 0.75rem;
-    font-weight: 600;
+    display: inline-block;
+    background-color: #ea580c;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
 body.dark-mode .risk-high {
-    background-color: #7f1d1d;
-    color: #fca5a5;
+    background-color: #c2410c;
+    color: #ffedd5;
 }
 
 .risk-medium {
-    background-color: #fef3c7;
-    color: #92400e;
+    display: inline-block;
+    background-color: #f59e0b;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
 body.dark-mode .risk-medium {
-    background-color: #78350f;
-    color: #fde68a;
+    background-color: #b45309;
+    color: #fef3c7;
 }
 
 .risk-low {
-    background-color: #dcfce7;
-    color: #166534;
+    display: inline-block;
+    background-color: #16a34a;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
 body.dark-mode .risk-low {
     background-color: #15803d;
-    color: #86efac;
+    color: #dcfce7;
 }
 
 /* Musik-Player */
@@ -358,37 +388,6 @@ body.dark-mode select:focus-visible,
 body.dark-mode textarea:focus-visible {
     outline-color: #818cf8;
     box-shadow: 0 0 0 4px rgba(129, 140, 248, 0.2);
-}
-
-/* WCAG-AAA: Enhanced Color Contrast */
-.risk-high {
-    background-color: #fecaca;
-    color: #7f1d1d;
-}
-
-body.dark-mode .risk-high {
-    background-color: #991b1b;
-    color: #fecaca;
-}
-
-.risk-medium {
-    background-color: #fcd34d;
-    color: #78350f;
-}
-
-body.dark-mode .risk-medium {
-    background-color: #92400e;
-    color: #fef3c7;
-}
-
-.risk-low {
-    background-color: #86efac;
-    color: #15803d;
-}
-
-body.dark-mode .risk-low {
-    background-color: #166534;
-    color: #dcfce7;
 }
 
 /* WCAG-AAA: Enhanced Text Color Contrast */

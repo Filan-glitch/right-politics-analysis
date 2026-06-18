@@ -147,7 +147,7 @@ class App {
         card.className = 'code-card animate-fade-in';
 
         const riskClass = `risk-${code.risk || 'medium'}`;
-        const riskLabel = code.risk === 'high' ? 'KRITISCH' : code.risk === 'critical' ? '⚠️ KRITISCH' : code.risk === 'medium' ? 'MITTEL' : 'GERING';
+        const riskLabel = code.risk === 'critical' ? 'KRITISCH' : code.risk === 'high' ? 'HOCH' : code.risk === 'medium' ? 'MITTEL' : 'GERING';
         
         const platformsHtml = code.platforms ? code.platforms
             .map(p => `<span class="platform-badge">${p}</span>`)
