@@ -46,15 +46,21 @@
             "meaning": "Die Zahl 8 steht für den 8. Buchstaben des Alphabets (H). 88 = HH = 'Heil Hitler'. Ein verbreiteter Code in Neonazi-Szenen.",
             "context": "Wird oft als Graffiti, in Usernames oder Kennzeichen verwendet. Nicht alle 88 sind automatisch Nazi-Codes (z.B. bei Jahreszahlen), aber im extremistischen Kontext ist dies eindeutig.",
             "risk": "high",
-            "platforms": ["Discord", "Twitter", "4chan", "YouTube Comments", "Telegram"],
+            "platforms": [
+                "Discord",
+                "Twitter",
+                "4chan",
+                "YouTube Comments",
+                "Telegram"
+            ],
             "sources": [
                 {
-                   "title": "Anti-Defamation League: Hate Symbols Database - 88",
-                   "url": "https://www.adl.org/hate-symbols"
+                    "title": "Anti-Defamation League: Hate Symbols Database - 88",
+                    "url": "https://www.adl.org/hate-symbols"
                 },
                 {
-                   "title": "Bundesamt für Verfassungsschutz: Rechtsextremismus",
-                   "url": "https://www.bfv.bund.de"
+                    "title": "Bundesamt für Verfassungsschutz: Rechtsextremismus",
+                    "url": "https://www.bfv.bund.de"
                 }
             ]
         },
@@ -66,15 +72,21 @@
             "meaning": "Bezieht sich auf den Slogan 'We must secure the existence of our people and a future for white children' von David Lane, einem führenden weißen Suprematisten.",
             "context": "Oft kombiniert mit 88 zu '1488' (14 Words + 88). Wird in Tattoos, Graffiti und Online-Nicknames verwendet.",
             "risk": "high",
-            "platforms": ["Discord", "Reddit", "4chan", "Twitter", "Gab"],
+            "platforms": [
+                "Discord",
+                "Reddit",
+                "4chan",
+                "Twitter",
+                "Gab"
+            ],
             "sources": [
                 {
-                   "title": "Southern Poverty Law Center: 14 Words",
-                   "url": "https://www.splcenter.org"
+                    "title": "Southern Poverty Law Center: 14 Words",
+                    "url": "https://www.splcenter.org"
                 },
                 {
-                   "title": "Amadeu Antonio Stiftung: Zahlencode 14",
-                   "url": "https://www.amadeu-antonio-stiftung.de"
+                    "title": "Amadeu Antonio Stiftung: Zahlencode 14",
+                    "url": "https://www.amadeu-antonio-stiftung.de"
                 }
             ]
         },
@@ -86,11 +98,16 @@
             "meaning": "A = 1. Buchstabe, H = 8. Buchstabe. 18 = AH = 'Adolf Hitler'. Ein direkter Bezug zum Naziführer.",
             "context": "Seltener als 88, aber in aktivistischen Szenen bekannt. Manchmal kombiniert zu '18/88'.",
             "risk": "high",
-            "platforms": ["Discord", "4chan", "Telegram", "White Power Forums"],
+            "platforms": [
+                "Discord",
+                "4chan",
+                "Telegram",
+                "White Power Forums"
+            ],
             "sources": [
                 {
-                   "title": "Anti-Defamation League: 18 Code",
-                   "url": "https://www.adl.org/hate-symbols"
+                    "title": "Anti-Defamation League: 18 Code",
+                    "url": "https://www.adl.org/hate-symbols"
                 }
             ]
         },
@@ -102,11 +119,15 @@
             "meaning": "In rechtsextremen Kreisen wird das Ninja-Emoji als Code für weiße/arische Identität verwendet - der schwarze Anzug wird als Kontrast zu weißer Identität interpretiert.",
             "context": "Oft in Kombination mit anderen Symbolen verwendet. Funktioniert als 'Plausible Deniability' - das Emoji hat eine harmlose Oberflächenbedeutung.",
             "risk": "medium",
-            "platforms": ["TikTok", "Instagram", "Twitter"],
+            "platforms": [
+                "TikTok",
+                "Instagram",
+                "Twitter"
+            ],
             "sources": [
                 {
-                   "title": "Correctiv: Emoji-Codes in Sozialen Medien",
-                   "url": "https://correctiv.org"
+                    "title": "Correctiv: Emoji-Codes in Sozialen Medien",
+                    "url": "https://correctiv.org"
                 }
             ]
         },
@@ -118,11 +139,16 @@
             "meaning": "Zwei Blitze symbolisieren die Nazi-Sig-Runen (᠆᠆), ein Symbol der SS und der Nazi-Bewegung.",
             "context": "Wird in Bios, Hashtags und Kommentaren verwendet. Kombination mehrerer Blitze in Texten kann auch Code sein.",
             "risk": "high",
-            "platforms": ["Discord", "Twitter", "Instagram", "TikTok"],
+            "platforms": [
+                "Discord",
+                "Twitter",
+                "Instagram",
+                "TikTok"
+            ],
             "sources": [
                 {
-                   "title": "ADL: Sig Runes",
-                   "url": "https://www.adl.org/hate-symbols"
+                    "title": "ADL: Sig Runes",
+                    "url": "https://www.adl.org/hate-symbols"
                 }
             ]
         },
@@ -134,11 +160,16 @@
             "meaning": "Weiße Flüssigkeit = 'weiße Rasse'. Ein Emoji-Code für weiße Überlegenheitsideologie. Auch als 'Based and Whitepilled' verwendet.",
             "context": "Teil des 'Great Replacement'-Narrativs, wo Milch als Symbol für 'Reinheit' und 'weiße Identität' gedeutet wird.",
             "risk": "medium",
-            "platforms": ["Reddit", "4chan", "Discord", "TikTok"],
+            "platforms": [
+                "Reddit",
+                "4chan",
+                "Discord",
+                "TikTok"
+            ],
             "sources": [
                 {
-                   "title": "ADL: White Supremacy Emojis",
-                   "url": "https://www.adl.org"
+                    "title": "ADL: White Supremacy Emojis",
+                    "url": "https://www.adl.org"
                 }
             ]
         },
@@ -150,11 +181,16 @@
             "meaning": "'Honk Honk' = 'HH' = Heil Hitler. Das Clown-Emoji wird verwendet, um eine nihilistische Kritik an der modernen Demokratie auszudrücken.",
             "context": "Teil der 'Clown World'-Rhetorik: Die Welt als absurder Zirkus darstellen, um gegen demokratische Prozesse zu argumentieren.",
             "risk": "medium",
-            "platforms": ["4chan", "Reddit", "Discord", "Twitter"],
+            "platforms": [
+                "4chan",
+                "Reddit",
+                "Discord",
+                "Twitter"
+            ],
             "sources": [
                 {
-                   "title": "ADL: Clown Emoji (Honk Honk)",
-                   "url": "https://www.adl.org/hate-symbols"
+                    "title": "ADL: Clown Emoji (Honk Honk)",
+                    "url": "https://www.adl.org/hate-symbols"
                 }
             ]
         },
@@ -166,17 +202,21 @@
             "meaning": "Ein heidnisches Symbol mit zwölf Runen, das von der Nazi-Bewegung übernommen wurde. Wird als Symbol für arische/weiße Überlegenheit verwendet.",
             "context": "Findet sich in Tattoos, Websites und extremistischen Materialen. Es ist ein zentrales Symbol der modernen Neonazi-Szene.",
             "risk": "high",
-            "platforms": ["White Power Forums", "Telegramm", "Discord"],
+            "platforms": [
+                "White Power Forums",
+                "Telegramm",
+                "Discord"
+            ],
             "image": "assets/BlackSun.png",
             "imageAlt": "Schwarze Sonne Symbol - ein Kreis mit zwölf Runen",
             "sources": [
                 {
-                   "title": "ADL: Black Sun Symbol",
-                   "url": "https://www.adl.org/hate-symbols"
+                    "title": "ADL: Black Sun Symbol",
+                    "url": "https://www.adl.org/hate-symbols"
                 },
                 {
-                   "title": "Bundesamt für Verfassungsschutz: Extremistische Symbole",
-                   "url": "https://www.bfv.bund.de"
+                    "title": "Bundesamt für Verfassungsschutz: Extremistische Symbole",
+                    "url": "https://www.bfv.bund.de"
                 }
             ]
         },
@@ -188,13 +228,17 @@
             "meaning": "Ein Kreuz mit einem Kreis in der Mitte. Im Mittelalter ein christlich-keltisches Symbol, wurde aber von der Nazi- und späteren Neonazi-Bewegung vereinnahmt.",
             "context": "Wird oft in Tattoos und von White-Power-Gruppen verwendet. In vielen Ländern ist die Nutzung als extremistisches Symbol strafbar.",
             "risk": "high",
-            "platforms": ["Tattoo-Szene", "Graffiti", "White Power Merchandise"],
+            "platforms": [
+                "Tattoo-Szene",
+                "Graffiti",
+                "White Power Merchandise"
+            ],
             "image": "assets/CelticCross.png",
             "imageAlt": "Keltenkreuz - ein Kreuz mit Kreis in der Mitte",
             "sources": [
                 {
-                   "title": "ADL: Celtic Cross",
-                   "url": "https://www.adl.org/hate-symbols"
+                    "title": "ADL: Celtic Cross",
+                    "url": "https://www.adl.org/hate-symbols"
                 }
             ]
         },
@@ -206,17 +250,21 @@
             "meaning": "Ein germanisches Runen-Symbol, das von der Nazi-Bewegung vereinnahmt wurde, speziell von der SS. Modern wird es als Symbol für Aryan Brotherhood und White Power Bewegungen verwendet.",
             "context": "Häufig in Neonazi-Tattoos, Graffiti und Merchandise. Das Symbol ist in Deutschland und Österreich unter bestimmten Kontexten illegal.",
             "risk": "high",
-            "platforms": ["Tattoo-Szene", "White Power Websites", "Discord"],
+            "platforms": [
+                "Tattoo-Szene",
+                "White Power Websites",
+                "Discord"
+            ],
             "image": "assets/Wolfsangel.png",
             "imageAlt": "Wolfsangel - ein germanisches Rune-Symbol",
             "sources": [
                 {
-                   "title": "BfV: Wolfsangel Symbol",
-                   "url": "https://www.bfv.bund.de"
+                    "title": "BfV: Wolfsangel Symbol",
+                    "url": "https://www.bfv.bund.de"
                 },
                 {
-                   "title": "ADL: Nazi Symbols and Runes",
-                   "url": "https://www.adl.org"
+                    "title": "ADL: Nazi Symbols and Runes",
+                    "url": "https://www.adl.org"
                 }
             ]
         },
@@ -228,13 +276,17 @@
             "meaning": "Eine germanische Rune, die Heimat/Erbland darstellt. Wurde von der Nazi-Bewegung für die Ideologie von 'Blut und Boden' (blood and soil) verwendet.",
             "context": "Wird in extremistischen Tattoos und als Symbol für die Idee eines homogenen ethno-States verwendet. Part der modernen Neonazi-Ästhetik.",
             "risk": "high",
-            "platforms": ["White Power Communities", "Tattoo-Szene", "Forums"],
+            "platforms": [
+                "White Power Communities",
+                "Tattoo-Szene",
+                "Forums"
+            ],
             "image": "assets/OdalRune.png",
             "imageAlt": "Odal-Rune - germanisches Rune-Symbol für Heimat",
             "sources": [
                 {
-                   "title": "BfV: Runen und ihre extremistische Verwendung",
-                   "url": "https://www.bfv.bund.de"
+                    "title": "BfV: Runen und ihre extremistische Verwendung",
+                    "url": "https://www.bfv.bund.de"
                 }
             ]
         },
@@ -246,13 +298,16 @@
             "meaning": "Ein keltisches/altes europäisches Symbol mit drei Armen. Wird von extremistischen Gruppen zur Darstellung von 'europaischen' oder 'arischen' Wurzeln verwendet.",
             "context": "Das Symbol selbst hat historische Bedeutung, wird aber in extremistischen Kontexten zur Identitätsbildung genutzt. Oft kombiniert mit anderen Runen.",
             "risk": "medium",
-            "platforms": ["Extremist Websites", "Tattoo-Szene"],
+            "platforms": [
+                "Extremist Websites",
+                "Tattoo-Szene"
+            ],
             "image": "assets/Triskele.png",
             "imageAlt": "Triskele - dreiarmiges keltisches Symbol",
             "sources": [
                 {
-                   "title": "ADL: Celtic and Germanic Symbols",
-                   "url": "https://www.adl.org"
+                    "title": "ADL: Celtic and Germanic Symbols",
+                    "url": "https://www.adl.org"
                 }
             ]
         },
@@ -264,11 +319,15 @@
             "meaning": "Eine deutsche Modemarke mit rechtsextremen Wurzeln. Das Label wird von Anhängern der Neonazi-Szene getragen, um ihre Gesinnung zu signalisieren.",
             "context": "Vertreiber verschiedener Szenen-Codes. Das Tragen der Marke ist ein Zugehörigkeitssignal in extremistischen Milieus.",
             "risk": "high",
-            "platforms": ["Fashion Scene", "Rechtsextreme Treffen", "Online-Shops"],
+            "platforms": [
+                "Fashion Scene",
+                "Rechtsextreme Treffen",
+                "Online-Shops"
+            ],
             "sources": [
                 {
-                   "title": "Amadeu Antonio Stiftung: Thor Steinar",
-                   "url": "https://www.amadeu-antonio-stiftung.de"
+                    "title": "Amadeu Antonio Stiftung: Thor Steinar",
+                    "url": "https://www.amadeu-antonio-stiftung.de"
                 }
             ]
         },
@@ -280,11 +339,16 @@
             "meaning": "Eine Subgenre des Black Metal mit explizit neonazistischer Ideologie. Wird von rechtsextremen Musikern zur Rekrutierung genutzt.",
             "context": "Trotz der offensichtlichen politischen Inhalte agieren NSBM-Künstler oft im Untergrund. Die Musik wird in extremistischen Zirkeln verbreitet.",
             "risk": "high",
-            "platforms": ["Underground Music Scene", "Discord", "Telegram", "YouTube"],
+            "platforms": [
+                "Underground Music Scene",
+                "Discord",
+                "Telegram",
+                "YouTube"
+            ],
             "sources": [
                 {
-                   "title": "ADL: National Socialist Black Metal (NSBM)",
-                   "url": "https://www.adl.org/hate-symbols"
+                    "title": "ADL: National Socialist Black Metal (NSBM)",
+                    "url": "https://www.adl.org/hate-symbols"
                 }
             ]
         },
@@ -296,17 +360,21 @@
             "meaning": "Eine Musik-Bewegung, die aus den 1970er Jahren stammt. RAC verbindet aggressive Rockmusik mit explizit neonazistischen und rassistischen Texten.",
             "context": "RAC-Bands fungieren als Rekrutierungswerkzeuge. Die Szene ist international und wird über Underground-Netzwerke verbreitet. In Deutschland häufig als 'Rechtsrock' bekannt.",
             "risk": "high",
-            "platforms": ["Underground Music Scene", "White Power Networks", "Discord"],
+            "platforms": [
+                "Underground Music Scene",
+                "White Power Networks",
+                "Discord"
+            ],
             "audioExample": "assets/böhse_onkelz.mp3",
             "audioLabel": "Beispiel: Rechtsrock/RAC Musik (Warnung: Extremistische Inhalte)",
             "sources": [
                 {
-                   "title": "ADL: Rock Against Communism",
-                   "url": "https://www.adl.org"
+                    "title": "ADL: Rock Against Communism",
+                    "url": "https://www.adl.org"
                 },
                 {
-                   "title": "BfV: Rechtsextreme Musik",
-                   "url": "https://www.bfv.bund.de"
+                    "title": "BfV: Rechtsextreme Musik",
+                    "url": "https://www.bfv.bund.de"
                 }
             ]
         },
@@ -318,13 +386,18 @@
             "meaning": "Eine moderne Musikbewegung, die synthwave-Ästhetik mit rechtsextremen Idealen kombiniert. Verfügt über retrogelookkünstlerische Verpackung extremistischer Botschaften.",
             "context": "Fashwave nutzt 1980er-Ästhetik als 'Plausible Deniability'. Die Musik wird auf Social Media verbreitet, oft mit vagen politischen Botschaften. Zielt auf junge Demografie ab.",
             "risk": "high",
-            "platforms": ["Instagram", "TikTok", "Spotify", "SoundCloud"],
+            "platforms": [
+                "Instagram",
+                "TikTok",
+                "Spotify",
+                "SoundCloud"
+            ],
             "audioExample": "assets/fashwave.mp3",
             "audioLabel": "Beispiel: Fashwave-Musik (Ästhetik mit extremistischen Wurzeln)",
             "sources": [
                 {
-                   "title": "Stanford Internet Observatory: Fashwave Analysis",
-                   "url": "https://www.standord.edu"
+                    "title": "Stanford Internet Observatory: Fashwave Analysis",
+                    "url": "https://www.standord.edu"
                 }
             ]
         },
@@ -336,13 +409,17 @@
             "meaning": "Ein Hip-Hop-Subgenre, das 1990er-Samples nutzt. Während die Mehrheit nicht politisch ist, wurden bestimmte Phonk-Künstler und -Accounts von Neonazis kooptiert.",
             "context": "Phonk ist nicht per se extremistisch, aber wird von extremistischen Akteuren zur Tarnung verwendet. Der 'Phonk'-Hashtag auf TikTok enthält teilweise rechtsextreme Inhalte von Künstlern.",
             "risk": "medium",
-            "platforms": ["SoundCloud", "TikTok", "Discord"],
+            "platforms": [
+                "SoundCloud",
+                "TikTok",
+                "Discord"
+            ],
             "audioExample": "assets/phonk.mp3",
             "audioLabel": "Beispiel: Phonk-Musik (nicht automatisch extremistisch)",
             "sources": [
                 {
-                   "title": "Correctiv: Phonk und Extremismus",
-                   "url": "https://correctiv.org"
+                    "title": "Correctiv: Phonk und Extremismus",
+                    "url": "https://correctiv.org"
                 }
             ]
         },
@@ -354,17 +431,21 @@
             "meaning": "Eine der bekanntesten rechtsextremistischen Bands aus Deutschland. Seit 1989 aktiv, Musik mit explizit neonazistischen Texten und Aufrufen zu Gewalt.",
             "context": "Landser ist verboten in Deutschland. Trotzdem verbreitet sich die Musik in extremistischen Underground-Netzwerken und über VPNs. Ein Hauptrekrutierungstool.",
             "risk": "critical",
-            "platforms": ["Underground Networks", "Telegram", "Encrypted Channels"],
+            "platforms": [
+                "Underground Networks",
+                "Telegram",
+                "Encrypted Channels"
+            ],
             "audioExample": "assets/landser.mp3",
             "audioLabel": "Beispiel: Landser-Musik (Warnung: Extremistische Neonazi-Musik - in Deutschland verboten)",
             "sources": [
                 {
-                   "title": "BfV: Landser Band",
-                   "url": "https://www.bfv.bund.de"
+                    "title": "BfV: Landser Band",
+                    "url": "https://www.bfv.bund.de"
                 },
                 {
-                   "title": "Bundeszentrale für politische Bildung: Rechtsrock",
-                   "url": "https://www.bpb.de"
+                    "title": "Bundeszentrale für politische Bildung: Rechtsrock",
+                    "url": "https://www.bpb.de"
                 }
             ]
         },
@@ -376,13 +457,17 @@
             "meaning": "Eine bekannte russische Rechtsrock-Band. Musik mit nationalistischen und rassistischen Inhalten. Teil des internationalen Neonazi-Musiknetzwerks.",
             "context": "Lunikoff ist international bekannt und wird auch im deutschsprachigen Raum verbreitet. Vertritt einen völkischen Nationalismus mit explizit antidemokratischen Botschaften.",
             "risk": "high",
-            "platforms": ["YouTube", "VK (VKontakte)", "Telegram"],
+            "platforms": [
+                "YouTube",
+                "VK (VKontakte)",
+                "Telegram"
+            ],
             "audioExample": "assets/lunikoff.mp3",
             "audioLabel": "Beispiel: Lunikoff-Musik (Russischer Rechtsrock)",
             "sources": [
                 {
-                   "title": "ADL: International White Power Music",
-                   "url": "https://www.adl.org"
+                    "title": "ADL: International White Power Music",
+                    "url": "https://www.adl.org"
                 }
             ]
         },
@@ -394,13 +479,17 @@
             "meaning": "Ein deutsches Hip-Hop Duo mit rechtsextremen Wurzeln. Kombiniert Rap mit rassistischen und antisemitischen Inhalten.",
             "context": "Nutzt Hip-Hop-Ästhetik zur Maskierung extremistischer Botschaften. Wird in Jugendmilieus über Streaming-Plattformen verbreitet.",
             "risk": "high",
-            "platforms": ["SoundCloud", "Spotify (teilweise)", "YouTube"],
+            "platforms": [
+                "SoundCloud",
+                "Spotify (teilweise)",
+                "YouTube"
+            ],
             "audioExample": "assets/gerbenok.mp3",
             "audioLabel": "Beispiel: Gerbenok-Musik (Hip-Hop mit extremistischen Inhalten)",
             "sources": [
                 {
-                   "title": "Correctiv: Hip-Hop Extremismus",
-                   "url": "https://correctiv.org"
+                    "title": "Correctiv: Hip-Hop Extremismus",
+                    "url": "https://correctiv.org"
                 }
             ]
         },
@@ -412,13 +501,17 @@
             "meaning": "Eine der ältesten und einflussreichsten deutschen Rechtsrock-Bands. Gegründet 1981, Musik mit nationalistischen und rassistischen Texten.",
             "context": "Böhse Onkelz ist Kultband der extremistischen Szene. Trotz Bandauflösung bleibt der Einfluss enorm. Die Musik wird als Zugehörigkeitssignal in der Szene genutzt.",
             "risk": "high",
-            "platforms": ["Underground Networks", "Streaming (teilweise)", "Festivals"],
+            "platforms": [
+                "Underground Networks",
+                "Streaming (teilweise)",
+                "Festivals"
+            ],
             "audioExample": "assets/böhse_onkelz.mp3",
             "audioLabel": "Beispiel: Böhse Onkelz-Musik (Deutsche Rechtsrock-Legende)",
             "sources": [
                 {
-                   "title": "BfV: Böhse Onkelz",
-                   "url": "https://www.bfv.bund.de"
+                    "title": "BfV: Böhse Onkelz",
+                    "url": "https://www.bfv.bund.de"
                 }
             ]
         },
@@ -430,12 +523,22 @@
             "meaning": "Harmloses italienisches Eurodance-Lied (1999), 2024 instrumentalisiert von Rechtsextremen. Video zeigt Sylt-Urlauber mit 'Deutschland für Deutsche'-Skandierungen.",
             "context": "Das 'Sylt-Skandal'-Phänomen: Instrumental als Erkennungszeichen für Neonazi-Meetups. Harmlose Musik wird ideologisch missbraucht.",
             "risk": "high",
-            "platforms": ["TikTok", "Instagram", "Telegram"],
+            "platforms": [
+                "TikTok",
+                "Instagram",
+                "Telegram"
+            ],
             "audioExample": "assets/lamour_toujours.mp3",
             "audioLabel": "Beispiel: L'amour Toujours (populär im Sylt-Skandal)",
             "sources": [
-                {"title": "Correctiv: Sylt-Skandal", "url": "https://correctiv.org"},
-                {"title": "ARD: Sylt-Doku", "url": "https://www.ard.de"}
+                {
+                    "title": "Correctiv: Sylt-Skandal",
+                    "url": "https://correctiv.org"
+                },
+                {
+                    "title": "ARD: Sylt-Doku",
+                    "url": "https://www.ard.de"
+                }
             ]
         },
         {
@@ -446,11 +549,17 @@
             "meaning": "Klassisches Wehrmacht-Marschlied. Wird von Neonazis als nationale Hymne verwendet.",
             "context": "STRAFBAR in bestimmten Kontexten (§ 86 StGB). Symbol für Nazi-Nostalgie und Militarismus.",
             "risk": "critical",
-            "platforms": ["White Power Forums", "Telegram"],
+            "platforms": [
+                "White Power Forums",
+                "Telegram"
+            ],
             "audioExample": "assets/erika.mp3",
             "audioLabel": "Warnung: Wehrmacht-Marschlied (historisches Dokument)",
             "sources": [
-                {"title": "BfV: Extremistische Musik", "url": "https://www.bfv.bund.de"}
+                {
+                    "title": "BfV: Extremistische Musik",
+                    "url": "https://www.bfv.bund.de"
+                }
             ]
         },
         {
@@ -461,11 +570,18 @@
             "meaning": "Moderne Taktik: KI nutzen, um berühmte Musik mit rassistischen/antisemitischen Texten zu remixen.",
             "context": "2024-Trend: Umgehung von Moderationsrichtlinien durch Deepfakes. 'L'amour Toujours' mit extremistischen Texten.",
             "risk": "high",
-            "platforms": ["TikTok", "Discord", "YouTube"],
+            "platforms": [
+                "TikTok",
+                "Discord",
+                "YouTube"
+            ],
             "audioExample": "assets/ai_covers.mp3",
             "audioLabel": "Beispiel: AI-manipulierter Song-Fragment",
             "sources": [
-                {"title": "Stanford Internet Observatory: AI Misuse", "url": "https://sio.stanford.edu"}
+                {
+                    "title": "Stanford Internet Observatory: AI Misuse",
+                    "url": "https://sio.stanford.edu"
+                }
             ]
         },
         {
@@ -476,11 +592,17 @@
             "meaning": "Skandierter Chant in Skinhead-Szenen. Sexualisierte Gewalt-Drohung gegen Frauen mit Migrationshintergrund.",
             "context": "Teil von Party-Chants auf Rechtsrock-Konzerten. Symbol für Gewaltbereitschaft.",
             "risk": "high",
-            "platforms": ["Underground Szene", "Telegram"],
+            "platforms": [
+                "Underground Szene",
+                "Telegram"
+            ],
             "audioExample": "assets/russenschlampen.mp3",
             "audioLabel": "Warnung: Rassistischer Party-Chant",
             "sources": [
-                {"title": "BfV: Subkultur-Codes", "url": "https://www.bfv.bund.de"}
+                {
+                    "title": "BfV: Subkultur-Codes",
+                    "url": "https://www.bfv.bund.de"
+                }
             ]
         },
         {
@@ -491,11 +613,17 @@
             "meaning": "Anti-Migranten-Kampflied mit aggressiven politischen Botschaften.",
             "context": "Verbreitet in europäischer White Power-Szene. Zur Mobilisierung.",
             "risk": "high",
-            "platforms": ["White Power Szene", "Telegram"],
+            "platforms": [
+                "White Power Szene",
+                "Telegram"
+            ],
             "audioExample": "assets/alibaba.mp3",
             "audioLabel": "Warnung: Europäisches Kampflied",
             "sources": [
-                {"title": "ADL: European Skinhead Music", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: European Skinhead Music",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -506,9 +634,16 @@
             "meaning": "Deutsche Label für White Power Fashion, aggressives Logo-Design, Versandhandel für extremistische Szene.",
             "context": "Produkte: Shirts, Hoodies, Jacken mit rassistischen Motiven. Vertrieb über verschleierte Online-Shops.",
             "risk": "high",
-            "platforms": ["Telegram-Kanäle", "Extremistische Websites", "White Power Shops"],
+            "platforms": [
+                "Telegram-Kanäle",
+                "Extremistische Websites",
+                "White Power Shops"
+            ],
             "sources": [
-                {"title": "BfV: Extremistische Mode", "url": "https://www.bfv.bund.de"}
+                {
+                    "title": "BfV: Extremistische Mode",
+                    "url": "https://www.bfv.bund.de"
+                }
             ]
         },
         {
@@ -519,9 +654,15 @@
             "meaning": "Extremistische Fashion-Brand, verbunden mit Nordic Resistance Movement. Skandinavische White Power Szene.",
             "context": "Kleidung, Patches, Accessoires mit rassistischen und antisemitischen Symbolen.",
             "risk": "critical",
-            "platforms": ["Schwedische Webshops", "Telegram"],
+            "platforms": [
+                "Schwedische Webshops",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "ADL: Ansgar Aryan", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: Ansgar Aryan",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -532,10 +673,20 @@
             "meaning": "Russisch-ukrainische Modemarke mit globaler Verbreitung. Hochgradig rassistisches und antisemitisches Merch.",
             "context": "Finanziert Neonazi-Organisationen. Kleidung als Symbol extremer Szenezugehörigkeit.",
             "risk": "critical",
-            "platforms": ["Online-Shops", "Instagram (Proxy)", "Telegram"],
+            "platforms": [
+                "Online-Shops",
+                "Instagram (Proxy)",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "ADL: White Rex", "url": "https://www.adl.org"},
-                {"title": "Bellingcat: White Rex Investigation", "url": "https://bellingcat.com"}
+                {
+                    "title": "ADL: White Rex",
+                    "url": "https://www.adl.org"
+                },
+                {
+                    "title": "Bellingcat: White Rex Investigation",
+                    "url": "https://bellingcat.com"
+                }
             ]
         },
         {
@@ -546,9 +697,15 @@
             "meaning": "Britische Boxsport-Marke, kooptiert von extremistischen Gruppen. Logo wird für Rassismus-Codes genutzt.",
             "context": "Shirt-Design kaschiert oft die Initialen 'SKREWDRIVER' (berüchtigte WP-Band). Kleidungsmarker extremer Szenen.",
             "risk": "high",
-            "platforms": ["UK White Power Szene", "Online"],
+            "platforms": [
+                "UK White Power Szene",
+                "Online"
+            ],
             "sources": [
-                {"title": "ADL: Lonsdale", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: Lonsdale",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -559,10 +716,20 @@
             "meaning": "'Traditional Wives' - Fashion-Bewegung mit rassistischen, antisemitischen und patriarchalen Werten.",
             "context": "Verbreitet sich über TikTok/Instagram. Fördert White-Nationalist Narrative unter dem Deckmantel von 'Rückbesinnung'. Oft gekoppelt mit Antisemitismus und QAnon.",
             "risk": "high",
-            "platforms": ["TikTok", "Instagram", "Pinterest"],
+            "platforms": [
+                "TikTok",
+                "Instagram",
+                "Pinterest"
+            ],
             "sources": [
-                {"title": "ADL: Tradwives", "url": "https://www.adl.org"},
-                {"title": "Think Tank Analysis", "url": "https://theconversation.com"}
+                {
+                    "title": "ADL: Tradwives",
+                    "url": "https://www.adl.org"
+                },
+                {
+                    "title": "Think Tank Analysis",
+                    "url": "https://theconversation.com"
+                }
             ]
         },
         {
@@ -573,15 +740,21 @@
             "meaning": "Eine Verschwörungstheorie, die behauptet, dass 'weiße Menschen' durch Migration und Geburtenraten absichtlich verdrängt werden. Dies ist einer der zentralen Erzählungen moderner weißer Suprematisten.",
             "context": "Wird in verschiedenen Varianten verbreitet: 'Umvolkung' im deutschsprachigen Raum, 'The Great Replacement' im englischsprachigen. Oft kombiniert mit Antisemitismus.",
             "risk": "high",
-            "platforms": ["Gab", "Telegram", "4chan", "Reddit (r/TheGreatReplacement)", "Twitter"],
+            "platforms": [
+                "Gab",
+                "Telegram",
+                "4chan",
+                "Reddit (r/TheGreatReplacement)",
+                "Twitter"
+            ],
             "sources": [
                 {
-                   "title": "ADL: The Great Replacement",
-                   "url": "https://www.adl.org"
+                    "title": "ADL: The Great Replacement",
+                    "url": "https://www.adl.org"
                 },
                 {
-                   "title": "Bundeszentrale für politische Bildung: Great Replacement / Umvolkung",
-                   "url": "https://www.bpb.de"
+                    "title": "Bundeszentrale für politische Bildung: Great Replacement / Umvolkung",
+                    "url": "https://www.bpb.de"
                 }
             ]
         },
@@ -593,15 +766,18 @@
             "meaning": "Die Behauptung des 'Great Replacement' basiert auf fehlerhaften Dateninterpretationen und ignoriert komplexe demografische Faktoren.",
             "context": "Wissenschaftliche Fakten: (1) Die Geburtenrate in Europa und den USA sinkt bei ALLEN Bevölkerungsgruppen, nicht nur bei weißen Menschen. (2) Migration ist reversibel und wird durch Policy beeinflusst. (3) Kulturelle Integration ist ein dynamischer Prozess, keine lineare Verdrängu ng.",
             "risk": "low",
-            "platforms": ["Bildungsplattformen", "Fact-Checking Sites"],
+            "platforms": [
+                "Bildungsplattformen",
+                "Fact-Checking Sites"
+            ],
             "sources": [
                 {
-                   "title": "Pew Research Center: Demographic Facts",
-                   "url": "https://www.pewresearch.org"
+                    "title": "Pew Research Center: Demographic Facts",
+                    "url": "https://www.pewresearch.org"
                 },
                 {
-                   "title": "Correctiv: Great Replacement Mythbusted",
-                   "url": "https://correctiv.org"
+                    "title": "Correctiv: Great Replacement Mythbusted",
+                    "url": "https://correctiv.org"
                 }
             ]
         },
@@ -613,10 +789,21 @@
             "meaning": "DdD - 4. Buchstabe des Alphabets. Nationalistische Parole für Ausweisung von Migranten.",
             "context": "Massive Renaissance durch 'L'amour Toujours'-Skandal (Sylt-Effekt 2024). Der harmlose Eurodance-Hit wurde akustisch besetzt.",
             "risk": "high",
-            "platforms": ["TikTok", "Instagram", "YouTube", "Discord"],
+            "platforms": [
+                "TikTok",
+                "Instagram",
+                "YouTube",
+                "Discord"
+            ],
             "sources": [
-                {"title": "Correctiv: Sylt-Skandal", "url": "https://correctiv.org"},
-                {"title": "BfV: Rechtsextremistische Codes", "url": "https://www.bfv.bund.de"}
+                {
+                    "title": "Correctiv: Sylt-Skandal",
+                    "url": "https://correctiv.org"
+                },
+                {
+                    "title": "BfV: Rechtsextremistische Codes",
+                    "url": "https://www.bfv.bund.de"
+                }
             ]
         },
         {
@@ -627,10 +814,21 @@
             "meaning": "Auch 13/90. Verdrehte Kriminalstatistiken zur wissenschaftlichen Legitimation von Rassismus.",
             "context": "Klassiker der White-Supremacy-Propaganda. Kontext-Manipulation zur Tarnung von Rassismus.",
             "risk": "high",
-            "platforms": ["Reddit", "4chan", "Twitter", "YouTube"],
+            "platforms": [
+                "Reddit",
+                "4chan",
+                "Twitter",
+                "YouTube"
+            ],
             "sources": [
-                {"title": "Mediendienst Integration", "url": "https://mediendienst-integration.de"},
-                {"title": "ADL: Racist Stats", "url": "https://www.adl.org"}
+                {
+                    "title": "Mediendienst Integration",
+                    "url": "https://mediendienst-integration.de"
+                },
+                {
+                    "title": "ADL: Racist Stats",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -641,9 +839,16 @@
             "meaning": "19. Buchstabe (S) + 8. Buchstabe (H) = SH = Sieg Heil",
             "context": "Seltener als 88, aber in aktivistischen Szenen bekannt. Plausible Deniability-Strategie.",
             "risk": "high",
-            "platforms": ["Discord", "Telegram", "White Power Forums"],
+            "platforms": [
+                "Discord",
+                "Telegram",
+                "White Power Forums"
+            ],
             "sources": [
-                {"title": "ADL: Nazi Codes", "url": "https://www.adl.org/hate-symbols"}
+                {
+                    "title": "ADL: Nazi Codes",
+                    "url": "https://www.adl.org/hate-symbols"
+                }
             ]
         },
         {
@@ -654,9 +859,16 @@
             "meaning": "Code für feindselige Haltung gegenüber Antifa und linken Gruppen.",
             "context": "In Nutzernamen, Graffiti, Symbolen. Signalisiert Gewaltbereitschaft.",
             "risk": "medium",
-            "platforms": ["Telegram", "Discord", "Graffiti"],
+            "platforms": [
+                "Telegram",
+                "Discord",
+                "Graffiti"
+            ],
             "sources": [
-                {"title": "BfV: Extremistische Codes", "url": "https://www.bfv.bund.de"}
+                {
+                    "title": "BfV: Extremistische Codes",
+                    "url": "https://www.bfv.bund.de"
+                }
             ]
         },
         {
@@ -667,10 +879,19 @@
             "meaning": "Missbrauchte Statistik (271.301 Sterbeurkunden, nicht Gesamtopfer) zur Leugnung der 6 Millionen Toten.",
             "context": "STRAFBAR (§ 130 StGB). Millionen Ermordete wurden nicht registriert, fehlen daher in dieser Zahl.",
             "risk": "critical",
-            "platforms": ["White Power Forums", "Telegram"],
+            "platforms": [
+                "White Power Forums",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "Gedenkstätte Auschwitz", "url": "https://auschwitz.org"},
-                {"title": "ADL: Holocaust Denial", "url": "https://www.adl.org"}
+                {
+                    "title": "Gedenkstätte Auschwitz",
+                    "url": "https://auschwitz.org"
+                },
+                {
+                    "title": "ADL: Holocaust Denial",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -681,9 +902,15 @@
             "meaning": "Offen antisemitische Verherrlichung des Holocaust. Fordert Ausrottung.",
             "context": "Erkennungszeichen und Provokation. Extremste antisemitische Gewaltbereitschaft.",
             "risk": "critical",
-            "platforms": ["White Power Forums", "Telegram"],
+            "platforms": [
+                "White Power Forums",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "ADL: 6MWE", "url": "https://www.adl.org/hate-symbols"}
+                {
+                    "title": "ADL: 6MWE",
+                    "url": "https://www.adl.org/hate-symbols"
+                }
             ]
         },
         {
@@ -694,10 +921,19 @@
             "meaning": "Prophezeiung eines endzeitlichen Rassenkriegs. Neonazi-Ideologie.",
             "context": "Signalisiert extrem hohe Gewaltbereitschaft. Mobilisierung zu Krieg.",
             "risk": "critical",
-            "platforms": ["White Power Forums", "Telegram"],
+            "platforms": [
+                "White Power Forums",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "ADL: RaHoWa", "url": "https://www.adl.org"},
-                {"title": "SPLC: Racial Holy War", "url": "https://www.splcenter.org"}
+                {
+                    "title": "ADL: RaHoWa",
+                    "url": "https://www.adl.org"
+                },
+                {
+                    "title": "SPLC: Racial Holy War",
+                    "url": "https://www.splcenter.org"
+                }
             ]
         },
         {
@@ -708,9 +944,15 @@
             "meaning": "Antisemitischer Verschwörungsmythos: Staat wird von Juden 'besetzt' und kontrolliert.",
             "context": "Legitimiert Terror gegen den Staat. Klassischer antisemitischer Verschwörungsmythos.",
             "risk": "critical",
-            "platforms": ["White Power Forums", "Telegram"],
+            "platforms": [
+                "White Power Forums",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "ADL: ZOG", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: ZOG",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -721,9 +963,16 @@
             "meaning": "Erkennungszeichen für AfD-Sympathisanten und parlamentarische Rechte.",
             "context": "Kritisch in Kombination (💙⚡): Brücke vom Parlamentarismus zur Neonazi-Bewegung.",
             "risk": "medium",
-            "platforms": ["Twitter", "Instagram", "TikTok"],
+            "platforms": [
+                "Twitter",
+                "Instagram",
+                "TikTok"
+            ],
             "sources": [
-                {"title": "ADL: Blue Heart", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: Blue Heart",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -734,9 +983,16 @@
             "meaning": "Abwertung der Mehrheit als 'Schlafschafe', blind gegenüber 'Wahrheit'.",
             "context": "Zentral in QAnon und Querdenken-Kontexten. Entmenschlichung.",
             "risk": "medium",
-            "platforms": ["Telegram", "Discord", "Querdenken"],
+            "platforms": [
+                "Telegram",
+                "Discord",
+                "Querdenken"
+            ],
             "sources": [
-                {"title": "ADL: Sheep", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: Sheep",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -747,9 +1003,16 @@
             "meaning": "Phonetisch: 'Juice' klingt wie 'Jews'. 'Gas the 🧃' = Chiffre für antisemitische Gewaltaufrufe.",
             "context": "Extremer antisemitischer Code zur Verschleierung von Gewalt.",
             "risk": "critical",
-            "platforms": ["4chan", "Reddit", "Discord"],
+            "platforms": [
+                "4chan",
+                "Reddit",
+                "Discord"
+            ],
             "sources": [
-                {"title": "ADL: Juice/Jews Code", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: Juice/Jews Code",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -760,9 +1023,16 @@
             "meaning": "Ersatzsymbol für verbotenen Reichsadler. Nationalistische Gesinnung ohne offene Symbole.",
             "context": "Plausible Deniability-Strategie: harmlose Oberflächenbedeutung, tiefere Bedeutung erkannt.",
             "risk": "medium",
-            "platforms": ["Twitter", "Instagram", "Telegram"],
+            "platforms": [
+                "Twitter",
+                "Instagram",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "ADL: Eagle", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: Eagle",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -773,9 +1043,16 @@
             "meaning": "Neutales Zeichen als 'White Power'-Chiffre in extremistischen Kontexten.",
             "context": "Stark kontextabhängig. In extremistischen Szenen eindeutig.",
             "risk": "medium",
-            "platforms": ["Instagram", "Twitter", "TikTok"],
+            "platforms": [
+                "Instagram",
+                "Twitter",
+                "TikTok"
+            ],
             "sources": [
-                {"title": "ADL: OK Hand", "url": "https://www.adl.org/hate-symbols"}
+                {
+                    "title": "ADL: OK Hand",
+                    "url": "https://www.adl.org/hate-symbols"
+                }
             ]
         },
         {
@@ -786,9 +1063,16 @@
             "meaning": "Rot-Weiß-Schwarz = Reichsfarben. Digitale Anspielung auf NS-Ideologie.",
             "context": "Markiert völkisch-nationalistische Positionen codiert.",
             "risk": "high",
-            "platforms": ["Instagram", "Twitter", "TikTok"],
+            "platforms": [
+                "Instagram",
+                "Twitter",
+                "TikTok"
+            ],
             "sources": [
-                {"title": "ADL: German Colors", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: German Colors",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -799,9 +1083,16 @@
             "meaning": "Pepe-Motive als Szene-Marker in Online-Rechts-Szenen.",
             "context": "Nicht automatisch extremistisch, aber in Kombination Warnsignal. Kooptiert von Neonazis.",
             "risk": "medium",
-            "platforms": ["4chan", "Reddit", "Twitter"],
+            "platforms": [
+                "4chan",
+                "Reddit",
+                "Twitter"
+            ],
             "sources": [
-                {"title": "ADL: Pepe", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: Pepe",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -812,9 +1103,15 @@
             "meaning": "Codierte Referenz auf antisemitische oder Verschwörungserzählungen.",
             "context": "Besonders auffällig kombiniert mit QAnon-Begriffen.",
             "risk": "medium",
-            "platforms": ["Twitter", "Telegram"],
+            "platforms": [
+                "Twitter",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "ADL: QAnon Symbols", "url": "https://www.adl.org"}
+                {
+                    "title": "ADL: QAnon Symbols",
+                    "url": "https://www.adl.org"
+                }
             ]
         },
         {
@@ -825,66 +1122,325 @@
             "meaning": "Symbol für 'Verteidigung Europas' und ethnopluralistische Kampfbegriffe.",
             "context": "Gekoppelt mit 'Reconquista'-Narrativen. Ethnonationalistischer Kampf.",
             "risk": "medium",
-            "platforms": ["Twitter", "Telegram"],
+            "platforms": [
+                "Twitter",
+                "Telegram"
+            ],
             "sources": [
-                {"title": "ADL: Combat Symbols", "url": "https://www.adl.org"}
-        ]
-    },
-    {
-        "id": "narrative-kernenergie-propaganda",
-        "code": "Energiepolitik / Kernkraft als 'Nationale Lösung'",
-        "category": "narrative",
-        "subtitle": "Faktencheckk: Energiewende-Mythen",
-        "meaning": "Extremisten nutzen Energiepolitik-Debatten, um ein 'ethnisch homogenes' Deutschland unter Kernkraft-Herrschaft zu propagieren.",
-        "context": "Die Kernkraft-'Lösung' wird als nationale Technologie hochstilisiert. Unterschwellig: Technokratie und ethno-nationalistische Kontrollideologie.",
-        "risk": "medium",
-        "platforms": ["Alternative Newsseites", "Telegram"],
-        "sources": [
-            {"title": "Correctiv: Energie-Mythen", "url": "https://correctiv.org"}
-        ]
-    },
-    {
-        "id": "narrative-migration-kriminalität-correlation",
-        "code": "Migrations-Kriminalitäts-Link",
-        "category": "narrative",
-        "subtitle": "Faktencheckk: Statistiken ohne Kausalität",
-        "meaning": "Extremistische Behauptung, dass Migration automatisch zu Kriminalität führt. Ignoriert sozioökonomische Faktoren.",
-        "context": "Statistisch ist die Korrelation SCHWÄCHER als bei ähnlichen sozioökonomischen Gruppen. Kausalität ist nicht nachgewiesen. Wird zur Dehumanisierung genutzt.",
-        "risk": "high",
-        "platforms": ["AfD-Netzwerk", "Telegram", "Twitter"],
-        "sources": [
-            {"title": "Criminology Review: Immigration & Crime", "url": "https://journals.sagepub.com"},
-            {"title": "Bundeszentrale für politische Bildung", "url": "https://www.bpb.de"}
-        ]
-    },
-    {
-        "id": "narrative-rassismus-biologie-debunk",
-        "code": "Biologie / Rasse-Wissenschaft",
-        "category": "narrative",
-        "subtitle": "Faktencheckk: Wissenschaftliche Widerlegung von 'Rassen'",
-        "meaning": "Extremisten nutzen pseudowissenschaftliche Theorien von 'biologischen Rassen'. WIDERLEGT: Moderne Genetik zeigt, dass 'Rasse' sozial konstruiert ist, nicht biologisch.",
-        "context": "99.9% der menschlichen DNA ist identisch. Genetische Vielfalt INNERHALB von 'Rassen' ist größer als ZWISCHEN ihnen. Rassismus ist keine Biologie, sondern Ideologie.",
-        "risk": "high",
-        "platforms": ["White Nationalist Wissenschaft-Blogs"],
-        "sources": [
-            {"title": "Nature: Race and Genetics", "url": "https://www.nature.com"},
-            {"title": "American Association of Physical Anthropologists", "url": "https://physanth.org"}
-        ]
-    },
-    {
-        "id": "narrative-wirtschaft-eth-nationalist",
-        "code": "Wirtschaft / 'Deutsche Mark' Nostalgie",
-        "category": "narrative",
-        "subtitle": "Faktencheckk: Währungs-Mythen als Ethno-Nationalismus",
-        "meaning": "Extremisten vereinnahmen Kritik an Euro, um Nostalgie für Deutschmark und 'Deutsche' Wirtschaft zu fördern. Unterschwellig: ethnische Wirtschaftskontrolle.",
-        "context": "Wirt Schaftliche Argumente werden zu rassistischen Mobilisierungsmitteln umfunktioniert.",
-        "risk": "medium",
-        "platforms": ["AfD-Reden", "Alternative Medien"],
-        "sources": [
-            {"title": "Bundeszentrale für politische Bildung: Euro-Kritik", "url": "https://www.bpb.de"}
-        ]
-    }
-    ],
+                {
+                    "title": "ADL: Combat Symbols",
+                    "url": "https://www.adl.org"
+                }
+            ]
+        },
+        {
+            "id": "narrative-kernenergie-propaganda",
+            "code": "Energiepolitik / Kernkraft als 'Nationale Lösung'",
+            "category": "narrative",
+            "subtitle": "Faktencheckk: Energiewende-Mythen",
+            "meaning": "Extremisten nutzen Energiepolitik-Debatten, um ein 'ethnisch homogenes' Deutschland unter Kernkraft-Herrschaft zu propagieren.",
+            "context": "Die Kernkraft-'Lösung' wird als nationale Technologie hochstilisiert. Unterschwellig: Technokratie und ethno-nationalistische Kontrollideologie.",
+            "risk": "medium",
+            "platforms": [
+                "Alternative Newsseites",
+                "Telegram"
+            ],
+            "sources": [
+                {
+                    "title": "Correctiv: Energie-Mythen",
+                    "url": "https://correctiv.org"
+                }
+            ]
+        },
+        {
+            "id": "narrative-migration-kriminalität-correlation",
+            "code": "Migrations-Kriminalitäts-Link",
+            "category": "narrative",
+            "subtitle": "Faktencheckk: Statistiken ohne Kausalität",
+            "meaning": "Extremistische Behauptung, dass Migration automatisch zu Kriminalität führt. Ignoriert sozioökonomische Faktoren.",
+            "context": "Statistisch ist die Korrelation SCHWÄCHER als bei ähnlichen sozioökonomischen Gruppen. Kausalität ist nicht nachgewiesen. Wird zur Dehumanisierung genutzt.",
+            "risk": "high",
+            "platforms": [
+                "AfD-Netzwerk",
+                "Telegram",
+                "Twitter"
+            ],
+            "sources": [
+                {
+                    "title": "Criminology Review: Immigration & Crime",
+                    "url": "https://journals.sagepub.com"
+                },
+                {
+                    "title": "Bundeszentrale für politische Bildung",
+                    "url": "https://www.bpb.de"
+                }
+            ]
+        },
+        {
+            "id": "narrative-rassismus-biologie-debunk",
+            "code": "Biologie / Rasse-Wissenschaft",
+            "category": "narrative",
+            "subtitle": "Faktencheckk: Wissenschaftliche Widerlegung von 'Rassen'",
+            "meaning": "Extremisten nutzen pseudowissenschaftliche Theorien von 'biologischen Rassen'. WIDERLEGT: Moderne Genetik zeigt, dass 'Rasse' sozial konstruiert ist, nicht biologisch.",
+            "context": "99.9% der menschlichen DNA ist identisch. Genetische Vielfalt INNERHALB von 'Rassen' ist größer als ZWISCHEN ihnen. Rassismus ist keine Biologie, sondern Ideologie.",
+            "risk": "high",
+            "platforms": [
+                "White Nationalist Wissenschaft-Blogs"
+            ],
+            "sources": [
+                {
+                    "title": "Nature: Race and Genetics",
+                    "url": "https://www.nature.com"
+                },
+                {
+                    "title": "American Association of Physical Anthropologists",
+                    "url": "https://physanth.org"
+                }
+            ]
+        },
+        {
+            "id": "narrative-wirtschaft-eth-nationalist",
+            "code": "Wirtschaft / 'Deutsche Mark' Nostalgie",
+            "category": "narrative",
+            "subtitle": "Faktencheckk: Währungs-Mythen als Ethno-Nationalismus",
+            "meaning": "Extremisten vereinnahmen Kritik an Euro, um Nostalgie für Deutschmark und 'Deutsche' Wirtschaft zu fördern. Unterschwellig: ethnische Wirtschaftskontrolle.",
+            "context": "Wirt Schaftliche Argumente werden zu rassistischen Mobilisierungsmitteln umfunktioniert.",
+            "risk": "medium",
+            "platforms": [
+                "AfD-Reden",
+                "Alternative Medien"
+            ],
+            "sources": [
+                {
+                    "title": "Bundeszentrale für politische Bildung: Euro-Kritik",
+                    "url": "https://www.bpb.de"
+                }
+            ]
+        },
+        {
+            "id": "code-28",
+            "code": "28",
+            "category": "zahlen",
+            "subtitle": "BH - Blood & Honour",
+            "meaning": "28 steht für B und H, die Initialen des rechtsextremen Netzwerks Blood & Honour.",
+            "context": "Findet sich in Nutzernamen, Aufklebern und Merchandising der Szene.",
+            "risk": "high",
+            "platforms": [
+                "Telegram",
+                "Discord",
+                "Graffiti",
+                "Merchandise"
+            ],
+            "sources": [
+                {
+                    "title": "ADL: Blood & Honour",
+                    "url": "https://www.adl.org"
+                }
+            ]
+        },
+        {
+            "id": "code-1681",
+            "code": "16/81",
+            "category": "zahlen",
+            "subtitle": "Patriot Front Code",
+            "meaning": "16 = P, 81 = AH. Wird von Teilen der US-White-Supremacy-Szene genutzt.",
+            "context": "Vor allem im nordamerikanischen Kontext verbreitet.",
+            "risk": "high",
+            "platforms": [
+                "Telegram",
+                "X",
+                "Gab"
+            ],
+            "sources": [
+                {
+                    "title": "ADL Hate Symbols",
+                    "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "code-211",
+            "code": "211",
+            "category": "zahlen",
+            "subtitle": "White Power",
+            "meaning": "2 = B, 11 = K. Steht für den Slogan 'White Power'.",
+            "context": "Historischer Skinhead- und Neonazi-Code.",
+            "risk": "high",
+            "platforms": [
+                "Graffiti",
+                "Telegram",
+                "Foren"
+            ],
+            "sources": [
+                {
+                    "title": "ADL Hate Symbols",
+                    "url": "https://www.adl.org/hate-symbols"
+                }
+            ]
+        },
+        {
+            "id": "emoji-tree",
+            "code": "🌲",
+            "category": "digital",
+            "subtitle": "'Pine Tree' Symbolik",
+            "meaning": "Wird teilweise von ethnonationalistischen Gruppen als Symbol vermeintlich nordischer Identität verwendet.",
+            "context": "Stark kontextabhängig und nicht automatisch extremistisch.",
+            "risk": "low",
+            "platforms": [
+                "Instagram",
+                "Telegram",
+                "X"
+            ],
+            "sources": [
+                {
+                    "title": "Extremism Research Network",
+                    "url": "https://www.isdglobal.org"
+                }
+            ]
+        },
+        {
+            "id": "symbol-tyr-rune",
+            "code": "ᛏ",
+            "category": "symbole",
+            "subtitle": "Tyr-Rune",
+            "meaning": "Historische Rune, die von NS-Organisationen und späteren Neonazi-Gruppen vereinnahmt wurde.",
+            "context": "Kontextabhängig; historische Nutzung ist nicht extremistisch.",
+            "risk": "high",
+            "platforms": [
+                "Tattoos",
+                "Aufkleber",
+                "Merchandise"
+            ],
+            "image": "assets/Tyr-Rune.jpg",
+            "imageAlt": "Tyr-Rune",
+            "sources": [
+                {
+                    "title": "BfV: Runensymbolik",
+                    "url": "https://www.bfv.bund.de"
+                }
+            ]
+        },
+        {
+            "id": "symbol-hammerskins",
+            "code": "Gekreuzte Hämmer",
+            "category": "symbole",
+            "subtitle": "Hammerskins-Symbol",
+            "meaning": "Erkennungszeichen des internationalen rechtsextremen Hammerskins-Netzwerks.",
+            "context": "Vor allem in Musik- und Kameradschaftsszenen.",
+            "risk": "high",
+            "platforms": [
+                "Konzerte",
+                "Telegram",
+                "Merchandise"
+            ],
+            "image": "assets/Hammerskins-logo.jpg",
+            "imageAlt": "Hammerskins-Symbol",
+            "sources": [
+                {
+                    "title": "BfV: Hammerskins",
+                    "url": "https://www.bfv.bund.de"
+                }
+            ]
+        },
+        {
+            "id": "kleidung-consdaple",
+            "code": "Consdaple",
+            "category": "kleidung",
+            "subtitle": "Szene-Marke mit NSDAP-Anspielung",
+            "meaning": "Markenname wurde wegen der Buchstabenfolge 'NSDAP' in der Szene bekannt.",
+            "context": "Wird häufig als subtile politische Markierung beschrieben.",
+            "risk": "high",
+            "platforms": [
+                "Online-Shops",
+                "Szene-Treffen"
+            ],
+            "sources": [
+                {
+                    "title": "Amadeu Antonio Stiftung",
+                    "url": "https://www.amadeu-antonio-stiftung.de"
+                }
+            ]
+        },
+        {
+            "id": "kleidung-masterrace",
+            "code": "Masterrace Europe",
+            "category": "kleidung",
+            "subtitle": "White-Power-Merchandise",
+            "meaning": "Bekleidungslabel mit ethnonationalistischen Bezügen.",
+            "context": "Teil internationaler White-Power-Vertriebsnetzwerke.",
+            "risk": "high",
+            "platforms": [
+                "Online-Shops",
+                "Telegram"
+            ],
+            "sources": [
+                {
+                    "title": "BfV: Rechtsextreme Szeneprodukte",
+                    "url": "https://www.bfv.bund.de"
+                }
+            ]
+        },
+        {
+            "id": "music-white-power",
+            "code": "White Power Music",
+            "category": "musik",
+            "subtitle": "Internationales Rekrutierungsgenre",
+            "meaning": "Sammelbegriff für rechtsextreme Musik unterschiedlicher Stilrichtungen.",
+            "context": "Dient Vernetzung, Identitätsbildung und Rekrutierung.",
+            "risk": "high",
+            "platforms": [
+                "Telegram",
+                "Streaming",
+                "Konzerte"
+            ],
+            "sources": [
+                {
+                    "title": "Bundeszentrale für politische Bildung: Rechtsrock",
+                    "url": "https://www.bpb.de"
+                }
+            ]
+        },
+        {
+            "id": "narrative-kulturmarxismus",
+            "code": "Kulturmarxismus",
+            "category": "narrative",
+            "subtitle": "Verschwörungsmythos",
+            "meaning": "Behauptet eine koordinierte Unterwanderung westlicher Gesellschaften durch linke Eliten.",
+            "context": "Historisch eng mit antisemitischen Verschwörungserzählungen verwoben.",
+            "risk": "high",
+            "platforms": [
+                "Blogs",
+                "Telegram",
+                "YouTube"
+            ],
+            "sources": [
+                {
+                    "title": "bpb: Verschwörungsideologien",
+                    "url": "https://www.bpb.de"
+                }
+            ]
+        },
+        {
+            "id": "narrative-ethnopluralismus",
+            "code": "Ethnopluralismus",
+            "category": "narrative",
+            "subtitle": "Neue Rechte",
+            "meaning": "Stellt ethnische Trennung als angeblich friedliche Alternative dar.",
+            "context": "Kritiker sehen darin eine modernisierte Form ethnonationalistischer Ideologie.",
+            "risk": "high",
+            "platforms": [
+                "Blogs",
+                "Podcasts",
+                "Telegram"
+            ],
+            "sources": [
+                {
+                    "title": "Amadeu Antonio Stiftung",
+                    "url": "https://www.amadeu-antonio-stiftung.de"
+                }
+            ]
+        }
+    ],
     "metadata": {
         "sources": [
             "Amadeu Antonio Stiftung",
@@ -895,10 +1451,10 @@
             "Southern Poverty Law Center (SPLC)",
             "Stanford Internet Observatory"
         ],
-        "totalCodes": 54,
+        "totalCodes": 65,
         "language": "de",
-        "lastUpdated": "2026-06-20T15:00:00Z",
-        "version": "3.0",
+        "lastUpdated": "2026-06-18T00:00:00Z",
+        "version": "3.1",
         "wcagCompliance": "AAA",
         "disclaimer": "Diese Inhalte dienen der staatsbürgerlichen Aufklärung gemäß § 86 Abs. 3 StGB. Phase 2.3: COMPLETE - 54 codes fully recovered and enhanced from backup (104% of original)."
     }
