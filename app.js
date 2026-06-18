@@ -9,7 +9,7 @@ class App {
         this.allCodes = [];
         this.currentCategory = null;
         this.filteredResults = [];
-        this.darkMode = this.loadDarkMode();
+        this.darkMode = true;
         this.activeAudio = null;
         this.activeMusicButton = null;
     }
@@ -23,12 +23,6 @@ class App {
             this.buildNavigation();
             this.setupEventListeners();
             this.applyDarkMode();
-            
-            // WCAG-AAA: Dark Mode Button Status setzen
-            const toggle = document.getElementById('dark-mode-toggle');
-            if (toggle) {
-                toggle.setAttribute('aria-pressed', this.darkMode ? 'true' : 'false');
-            }
             
             // Erste Kategorie laden
             this.selectCategory(this.data.categories[0].id);
@@ -228,9 +222,6 @@ class App {
         const searchInput = document.getElementById('search-input');
         searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
 
-        // Dark Mode
-        document.getElementById('dark-mode-toggle').addEventListener('click', () => this.toggleDarkMode());
-
         // Musik-Player (delegiert)
         document.addEventListener('click', (e) => {
             if (e.target.classList.contains('music-play-btn')) {
@@ -354,34 +345,10 @@ class App {
         button.textContent = button.dataset.defaultLabel || '▶ Betroffenen Ausschnitt abspielen';
     }
 
-    toggleDarkMode() {
-        this.darkMode = !this.darkMode;
-        this.applyDarkMode();
-        localStorage.setItem('darkMode', JSON.stringify(this.darkMode));
-        
-        // WCAG-AAA: aria-pressed aktualisieren
-        const toggle = document.getElementById('dark-mode-toggle');
-        if (toggle) {
-            toggle.setAttribute('aria-pressed', this.darkMode ? 'true' : 'false');
-        }
-    }
-
     applyDarkMode() {
-        const html = document.documentElement;
-        if (this.darkMode) {
-            html.classList.add('dark');
-            document.body.classList.add('dark-mode');
-        } else {
-            html.classList.remove('dark');
-            document.body.classList.remove('dark-mode');
-        }
-    }
-
-    loadDarkMode() {
-        const saved = localStorage.getItem('darkMode');
-        if (saved) return JSON.parse(saved);
-        // Systemeinstellung nutzen
-        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // Dark Mode ist jetzt Standard und kann nicht toggled werden
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark-mode');
     }
 
     hideLanding() {
